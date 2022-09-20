@@ -1,36 +1,42 @@
 $(function () {
   new WOW().init();
+
+  $("body").on("hidden.bs.modal", function () {
+    if ($(".modal.show").length > 0) {
+      $("body").addClass("modal-open");
+    }
+  });
+  
   // music
-  var musicBg = document.getElementById('bg_music');
+  var musicBg = document.getElementById("bg_music");
   var isPlayMusic = false;
-  $('.music').on('click',function () {
-    if ($(this).hasClass('active')) {
+  $(".music").on("click", function () {
+    if ($(this).hasClass("active")) {
       musicBg.pause();
-      $('.music').removeClass('active');
+      $(".music").removeClass("active");
       isPlayMusic = false;
-    } 
-    else {
+    } else {
       musicBg.play();
-      $('.music').addClass('active');
+      $(".music").addClass("active");
       isPlayMusic = true;
     }
   });
 
-  // scroll to 
-  $("a.scroll-btn[href^='#']").on('click', function (e) {
+  // scroll to
+  $("a.scroll-btn[href^='#']").on("click", function (e) {
     // prevent default anchor click behavior
     e.preventDefault();
 
-    $(this).parent().addClass('active');
-    $(this).parent().siblings().removeClass('active');
+    $(this).parent().addClass("active");
+    $(this).parent().siblings().removeClass("active");
 
-    $('.navbar-collapse').removeClass('in');
+    $(".navbar-collapse").removeClass("in");
 
     // store hash
     var hash = this.hash;
 
     // animate
-    $('html, body').animate(
+    $("html, body").animate(
       {
         scrollTop: $(hash).offset().top - 80,
       },
@@ -48,13 +54,13 @@ $(function () {
     $(".sidebar").toggleClass("on");
   });
 
-   // sidebar menu
-   $("#sidebarCollapse").on("click", function () {
+  // sidebar menu
+  $("#sidebarCollapse").on("click", function () {
     $("#nav-panel").addClass("show");
     $(".app_overlay").addClass("open");
     $("body").addClass("modal-open");
   });
-  
+
   // side menu btn
   $(".sidemenu-btn").on("click", function () {
     $("#sidemenu-bar").toggleClass("on");
@@ -82,14 +88,11 @@ $(function () {
       500
     );
   });
-
-  
 });
 
-
 // accept action
-const termsAndConditions = document.querySelector('.terms-and-conditions');
-const acceptButton = document.querySelector('.accept');
+const termsAndConditions = document.querySelector(".terms-and-conditions");
+const acceptButton = document.querySelector(".accept");
 
 function obCallback(payload) {
   if (payload[0].intersectionRatio === 1) {

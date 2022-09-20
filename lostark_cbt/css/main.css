@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Playfair+Display&display=swap");
 body {
-  font-family: "Noto Sans TC", "Microsoft JhengHei", "Playfair Display",
- sans-serif, Arial;
+  font-family: "Noto Sans TC", "Microsoft JhengHei", "Playfair Display", sans-serif, Arial;
   font-weight: 400;
   font-size: 17px;
   color: #fff;
@@ -1954,3 +1953,4 @@ hr {
 #ft .copyright .ratingInfo {
   line-height: 17px;
 }
+/*# sourceMappingURL=main.css.map */
