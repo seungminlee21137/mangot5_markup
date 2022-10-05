@@ -6,7 +6,41 @@ $(function () {
       $("body").addClass("modal-open");
     }
   });
-  
+
+  $('.event-tab-btn').on('click', function () {
+    $('#event-tab').tab('show');
+  });
+
+  $('.cbt-btn-show').on('click', function () {
+    $('#adventure-tab').tab('show');
+  });
+
+  $('.js-confirm').on('click', function () {
+    
+    var text;
+    if ($(this).attr('data-confirm-text')) {
+      text = $(this).attr('data-confirm-text');
+    }
+
+    var ok = confirm(text);
+
+    if (ok) {
+      console.log(text);
+      $('#event-tab').tab('show');
+
+      setTimeout(function () {
+
+        $('html').stop().animate({
+          scrollTop: $('#mainTab').offset().top
+        }, 500);
+
+      }, 100);
+
+    } else {
+      return false;
+    }
+  });
+
   // music
   var musicBg = document.getElementById("bg_music");
   var isPlayMusic = false;
@@ -36,9 +70,8 @@ $(function () {
     var hash = this.hash;
 
     // animate
-    $("html, body").animate(
-      {
-        scrollTop: $(hash).offset().top - 80,
+    $("html, body").animate({
+        scrollTop: $(hash).offset().top - 100,
       },
       800,
       function () {
@@ -53,6 +86,8 @@ $(function () {
   $(".sidebtn, .side-close").on("click", function () {
     $(".sidebar").toggleClass("on");
   });
+
+
 
   // sidebar menu
   $("#sidebarCollapse").on("click", function () {
@@ -81,8 +116,7 @@ $(function () {
   });
 
   $(".scroll-top").click(function () {
-    $("body, html").animate(
-      {
+    $("body, html").animate({
         scrollTop: 0,
       },
       500
