@@ -123,13 +123,11 @@
               class="navbar-brand"><img
                 src="https://landing.mangot5.com/template/lostark/event/landing/test99/images/nav-logo.png" alt=""></a>
             <ul class="nav bd-sidenav">
-              <li><a href="">參加CBT抽多項豪禮</a></li>
-              <li><a href="">每日簽到免費送</a></li>
-              <li><a href="">HOT TIME領獎勵</a></li>
-              <li><a href="">成長達人送金書</a></li>
-              <li><a href="">達成目標拿限定禮</a></li>
-              <li><a href="">活動注意事項</a></li>
-              <li><a class="scroll-btn" href="#wrapper">TOP</a></li>
+              <li><a href="https://www.mangot5.com/Index/Member/Register#step-1" target="_blank">註冊會員</a></li>
+              <li><a href="">遊戲指南</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#getlotteryModal">實體中獎名單</a></li>
+              <li><a class="adventure-tab-btn scroll-btn" href="#mainTab" data-toggle="tab">報名參加限量刪檔封測</a></li>
+              <li><a class="event-tab-btn scroll-btn" href="#mainTab" data-toggle="tab">參加CBT抽多項豪禮</a></li>
             </ul>
           </div>
         </div>
@@ -147,7 +145,8 @@
         <h1 class="title wow blurFadeInUp" data-wow-delay="1s"><img src="images/title.png" alt="" /></h1>
         <p class="date wow blurFadeInUp" data-wow-delay="1.5s"><img src="images/date.png" alt="" /></p>
 
-        <a href="#mainTab" class="cbt-btn-show scroll-btn cbt-btn wow blurFadeInUp" data-wow-delay="2s" data-toggle="tab">報名參加CBT</a>
+        <a href="#mainTab" class="adventure-tab-btn scroll-btn cbt-btn wow blurFadeInUp" data-wow-delay="2s"
+          data-toggle="tab">報名參加CBT</a>
 
         <!-- confirm action -->
         <a href="#" class="js-confirm cbt-btn wow blurFadeInUp" data-wow-delay="2s"
@@ -237,15 +236,17 @@
             type="button"><span>募集CBT冒險家</span></button>
         </li>
         <li class="nav-item cbt-new" role="presentation">
-          <button class="nav-link" id="event-tab" data-toggle="tab" data-target="#event" type="button"><span>CBT精彩活動</span></button>
+          <button class="nav-link" id="event-tab" data-toggle="tab" data-target="#event"
+            type="button"><span>CBT精彩活動</span></button>
         </li>
       </ul>
 
       <!-- tabs content -->
       <div class="tab-content" id="mainTabContent">
+
+        <!-- 募集CBT冒險家 -->
         <div class="tab-pane fade show active" id="adventure" role="tabpanel" aria-labelledby="adventure-tab">
           <div class="adventure">
-            <!-- <h1 class="tit text-center"><img src="images/adventure-tit.png" alt=""></h1> -->
             <div class="content-box text-center">
               <h4>限量菁英刪檔封測期間</h4>
               <p>2022.11.24 12:00 - 2022.11.28 12:00</p>
@@ -280,6 +281,7 @@
 
 
                 <div class="adventure-form-list">
+                  <!-- CBT申請表單 -->
                   <div class="adventure-form-box">
 
                     <form action="" method="post">
@@ -397,10 +399,11 @@
                       <button type="submit" class="btn btn-submit">我要參加CBT</button>
                     </form>
                   </div>
+                  <!-- CBT申請表單 -->
 
                   <!-- CBT申請結束狀態 -->
                   <div class="adventure-form-box">
-                    <!-- CBT申請結束overlay -->
+                    <!-- CBT申請結束 overlay -->
                     <div class="adventure-form-end">
                       <span><img src="images/warrningtag.png" alt=""></span>
                       <h3>限量菁英刪檔封測​<br>
@@ -528,38 +531,25 @@
                 <ul>
                   <li>＊請在電話中輸入您常用的手機電話號碼，手機號碼完成認證後，將會自動綁定更新至您所登入的會員帳號資料中。</li>
                   <li>＊如您會員帳號手機號碼已認證，活動登入帳號後系統將自動代入您已認證手機號碼，須重新進行手機號碼的認證，</li>
-                  <li>請確認是否仍為有效手機號碼，如您已更換新手機號碼，請至<span class="link"><a href="">客服中心回報</a></span>處理。</li>
-                  <li>＊如欲<span class="note">重置手機號碼驗證或修改e-mail信箱</span>，請與<span class="link"><a
-                        href="">客服中心回報</a></span>處理。 </li>
+                  <li>請確認是否仍為有效手機號碼，如您已更換新手機號碼，請至<span class="link"><a href="https://www.mangot5.com/Index/Member/Login?ref=/Index/Service/Customer" target="_blank">客服中心回報</a></span>處理。</li>
+                  <li>＊如欲<span class="note">重置手機號碼驗證或修改e-mail信箱</span>，請與<span class="link"><a href="https://www.mangot5.com/Index/Member/Login?ref=/Index/Service/Customer" target="_blank">客服中心回報</a></span>處理。 </li>
                 </ul>
-                <div class="notice-gift">
-                  <a class="event-tab-btn scroll-btn" href="#mainTab" data-toggle="tab"><img src="images/gift.jpg"
-                      alt=""></a>
-
-                </div>
-                <a href="#" class="notice-btn" data-toggle="modal" data-target="#noticeModal">限量菁英刪檔封測注意事項</a>
+                
               </div>
+              <div class="notice-gift">
+                <a class="event-tab-btn scroll-btn" href="#mainTab" data-toggle="tab"><img src="images/gifts.jpg"
+                    alt=""></a>
+              </div>
+              <a href="#" class="notice-btn" data-toggle="modal" data-target="#noticeModal">限量菁英刪檔封測注意事項</a>
               <div class="mm-1"></div>
               <div class="mm-2"></div>
             </div>
           </div>
         </div>
+        <!-- CBT精彩活動 -->
         <div class="tab-pane fade" id="event" role="tabpanel" aria-labelledby="event-tab">
           <div class="event">
-            <aside id="sidemenu-bar">
-              <button class="sidemenu-btn">menu</button>
-              <ul class="nav bd-sidenav">
-                <li><a href="">參加CBT抽多項豪禮</a></li>
-                <li><a href="">每日簽到免費送</a></li>
-                <li><a href="">HOT TIME領獎勵</a></li>
-                <li><a href="">成長達人送金書</a></li>
-                <li><a href="">達成目標拿限定禮</a></li>
-                <li><a href="">活動注意事項</a></li>
-                <li><a class="scroll-btn" href="#wrapper">TOP</a></li>
-              </ul>
-            </aside>
             <div class="content-box text-center">
-
               <ul class="nav nav-tabs event-tabs align-items-center justify-content-center" id="eventTab"
                 role="tablist">
                 <li class="nav-item" role="presentation">
@@ -574,12 +564,13 @@
                 </li>
                 <li class="nav-item" role="presentation">
 
-                  <button class="nav-link" id="game-event-tab" data-toggle="tab" data-target="#game-event" type="button" role="tab" aria-controls="game-event" aria-selected="false">
+                  <button class="nav-link" id="game-event-tab" data-toggle="tab" data-target="#game-event" type="button"
+                    role="tab" aria-controls="game-event" aria-selected="false">
                     <div class="event-tag">EVENT.2</div>
                     遊戲內活動開催中
                     <p>多樣獎勵任你拿</p>
                     <span class="hint">11.14開放 敬請期待</span>
-                    
+
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
@@ -594,6 +585,21 @@
                 </li>
               </ul>
               <div class="tab-content" id="eventTabContent">
+                <!-- left sidebar menu -->
+                <aside id="sidemenu-bar" class="on">
+                  <button class="sidemenu-btn">menu</button>
+                  <ul class="nav bd-sidenav">
+                    <li><a class="cbt-tab-btn scroll-btn" href="#cbt" data-toggle="tab">參加CBT抽多項豪禮</a></li>
+                    <li><a class="game-event-btn scroll-btn" href="#signIn" data-toggle="tab">每日簽到免費送</a></li>
+                    <li><a class="game-event-btn scroll-btn" href="#hotTime" data-toggle="tab">HOT TIME領獎勵</a></li>
+                    <li><a class="cbt-target-btn scroll-btn" href="#growUp" data-toggle="tab">成長達人送喵喵</a></li>
+                    <li><a class="cbt-target-btn scroll-btn" href="#forward"  data-toggle="tab">達成目標拿限定禮</a></li>
+                    <li><a class="scroll-btn" href="#" data-toggle="modal" data-target="#eventNoticeModal">活動注意事項</a></li>
+                    <li><a class="scroll-btn" href="#wrapper">TOP</a></li>
+                  </ul>
+                </aside>
+                <!-- left sidebar menu -->
+                <!-- 活動1 -->
                 <div class="tab-pane fade show active" id="cbt" role="tabpanel" aria-labelledby="cbt-tab">
                   <div class="cbt">
                     <!-- <h1 class="tit"><img src="images/event-tit.png" alt=""></h1> -->
@@ -604,7 +610,7 @@
                     <p>凡申請報名參加「限量菁英刪檔封測」成功的冒險家</p>
                     <h1 class="title-label t1">申請報名拿限定表情符號</h1>
                     <p>於限量菁英刪檔封測招募期間，申請報名參加「限量菁英刪檔封測」成功的冒險家，<br>
-                      即可擁有正式營運時可兌換的「CBT限定紀念表情符號禮包」！</p>
+                      即可擁有正式營運時可兌換的「CBT限定表情符號禮包」！</p>
 
                     <div class="rewards table-responsive">
                       <div class="carry"><img src="images/carry-all.png" alt=""></div>
@@ -618,10 +624,10 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>申請報名參加「限量菁英刪黨封測」的所有玩家</td>
+                            <td>申請報名參加「限量菁英刪檔封測」的所有玩家</td>
                             <td>
                               <div class="icon"><img src="images/icon/event1-1.png" alt=""></div>
-                              <p class="icon-txt">CBT限定紀念表情符號禮包</p>
+                              <p class="icon-txt">CBT限定表情符號禮包</p>
                             </td>
                             <td>遠征隊</td>
                           </tr>
@@ -656,30 +662,30 @@
 
                     <div class="rewards-gift">
                       <div class="hot-gift">
-                        <div class="icon"><img src="images/icon/event1-2.png" alt=""></div>
-                        <p class="icon-txt">限定CBT參加禮包<br>(綁定：遠征隊)</p>
+                        <div class="icon"><img src="images/icon/event1-hot.png" alt=""></div>
+                        <p class="icon-txt">限定CBT參加禮包<br>(遠征隊綁定)</p>
                       </div>
                       <div class="rewards-list">
                         <ul>
                           <li>
-                            <div class="icon"><img src="images/icon/event1-3.png" alt=""></div>
+                            <div class="icon"><img src="images/icon/event1-2.png" alt=""></div>
                             <p class="icon-txt">蘊含路沛恩之光<br>的貨幣箱子 <i>x1</i></p>
                           </li>
                           <li>
-                            <div class="icon"><img src="images/icon/event1-4.png" alt=""></div>
-                            <p class="icon-txt">恢復戰鬥道具箱子<br><i>x5</i></p>
+                            <div class="icon"><img src="images/icon/event1-3.png" alt=""></div>
+                            <p class="icon-txt">復活羽毛<br><i>x5</i></p>
                           </li>
                           <li>
-                            <div class="icon"><img src="images/icon/event1-5.png" alt=""></div>
+                            <div class="icon"><img src="images/icon/event1-4.png" alt=""></div>
                             <p class="icon-txt">[活動]薇亞特莉絲<br>的祝福(7天) <i>x1</i></p>
                           </li>
                           <li>
-                            <div class="icon"><img src="images/icon/event1-6.png" alt=""></div>
+                            <div class="icon"><img src="images/icon/event1-5.png" alt=""></div>
                             <p class="icon-txt">[活動]妮娜芙的祝福<br>(7天) <i>x1</i></p>
                           </li>
                           <li>
-                            <div class="icon"><img src="images/icon/event1-7.png" alt=""></div>
-                            <p class="icon-txt">『天選之人』<br>CBT限定稱號券 <i>x1</i></p>
+                            <div class="icon"><img src="images/icon/event1-6.png" alt=""></div>
+                            <p class="icon-txt">CBT限定稱號<br>"天選之人" <i>x1</i></p>
                           </li>
                         </ul>
                       </div>
@@ -690,7 +696,7 @@
                       屆時請冒險家至【快樂玩平台】→【服務中心】→【兌換優惠券】進行獎勵兌換。</p>
 
                     <h1 class="popularity-tit"><img src="images/popularity-tit.png" alt=""></h1>
-                    <div class="rewards-gift-box">
+                    <div class="rewards-gifts">
                       <img src="images/gift.png" alt="">
                     </div>
 
@@ -707,1066 +713,1560 @@
                         <tbody>
 
                           <tr>
-                            <td rowspan="6">CBT期間有登入遊戲紀錄</td>
-                            <td>ASUS 電競主機+鍵盤滑鼠組抽獎資格</td>
-                            <td>G15CF搭配RTX3070 顯卡，含鍵盤滑鼠組 價值：70,990</td>
+                            <td class="w12" rowspan="6">CBT期間有登入遊戲紀錄</td>
+                            <td>ASUS 電競主機+鍵盤滑鼠組</td>
+                            <td>G15CF搭配RTX3070 顯卡，含鍵盤滑鼠組(價值：70,990)</td>
                             <td>1</td>
                           </tr>
                           <tr>
 
-                            <td>ASUS ROG PG32UQ 32吋4K HDMI2.1電競螢幕抽獎資格</td>
-                            <td>HDR 600/HDMI 2.1 IPS/G-Sync相容/144Hz/1ms 價值：26,888</td>
+                            <td>ASUS ROG PG32UQ 32吋4K HDMI2.1電競螢幕</td>
+                            <td>HDR 600/HDMI 2.1 IPS/G-Sync相容/144Hz/1ms(價值：26,888)</td>
                             <td>3</td>
                           </tr>
                           <tr>
 
                             <td>Razer Leviathan V2 利維坦巨獸 喇叭</td>
-                            <td>價值：7,990</td>
+                            <td>反應頻率:45Hz-20kHz/連接類型:藍牙 5.2；對電腦的 USB 音訊輸入<br>(價值：7,990)</td>
                             <td>3</td>
                           </tr>
                           <tr>
 
                             <td>JBL Quantum ONE RGB專業級降噪電競耳機</td>
-                            <td>價值：7,800</td>
+                            <td>JBL QuantumSPHERE 360TM 頭部追蹤功能(價值：7,800)</td>
                             <td>3</td>
                           </tr>
                           <tr>
 
-                            <td>【Razer 雷蛇】Blade 15.6吋144Hz電競筆電抽獎資格</td>
-                            <td>144Hz FHD霧面顯示器/ i7-10750H/RTX2060/
-                              16G RAM/512G SSD/Win10/價值：61,990
-                            </td>
+                            <td>【Razer 雷蛇】Blade 15.6吋144Hz電競筆電</td>
+                            <td>FHD霧面顯示器/ i7-10750H/RTX2060/ 16G RAM/512G SSD/Win10<br>(價值：61,990)</td>
                             <td>1</td>
                           </tr>
                           <tr>
 
-                            <td>失落的方舟滑鼠墊抽獎資格</td>
-                            <td>價值：430</td>
+                            <td>失落的方舟滑鼠墊</td>
+                            <td>《失落的方舟：LOST ARK》CBT紀念限定經典滑鼠墊<br>長寬：30x80cm(價值：430)</td>
                             <td>50</td>
                           </tr>
                           <tr>
                             <td colspan="4">
-                              實體獎項於抽出得獎者後，依所得稅法規定，機會中獎之獎項價值若超過NT$1,000，所得將列入個人年度綜合所得稅申報，<br>需下載「活動領獎單」填妥後寄回本公司或<span class="link"><a href="">活動小組信箱</a></span>，實體獎項的寄出時間於以上程序完成後另行通知。</td>
+                              實體獎項於抽出得獎者後，依所得稅法規定，機會中獎之獎項價值若超過NT$1,000，所得將列入個人年度綜合所得稅申報，<br>需下載<span class="link"><a href="https://www.mangot5.com/Index/Service/Download" target="_blank">「活動領獎單」</a></span>填妥後寄回本公司或<span class="link"><a href="mailto:dna-angel@mangot5.com">活動小組信箱</a></span>，實體獎項的寄出時間於以上程序完成後另行通知。</td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
 
                     <i class="note">※實體獎項中獎名單公佈※</i>
-                    <p>2022.11.28 12:00 限量菁英刪檔封測結束後，預計在2022.12.9(五)前於官方FB粉絲團、活動頁面中公佈。</p>
+                    <p>活動結束後預計在2022.12.9(五)前於官方FB粉絲團、活動頁面中公佈。</p>
 
                     <i class="note mgt40">※實體獎項中獎通知方式※</i>
                     <p>於發表中選通知期間以「E-mail」的方式通知。</p>
 
                     <div class="char-1"></div>
-                    
+
                   </div>
                 </div>
+                <!-- 活動1 -->
+
+                <!-- 活動2 -->
                 <div class="tab-pane fade" id="game-event" role="tabpanel" aria-labelledby="game-event-tab">
-                  <h4>這是內容2</h4>
-                  <h4>這是內容2</h4>
-                  <h4>這是內容2</h4>
-                  <h4>這是內容2</h4>
-                  <h4>這是內容2</h4>
+                  
+                  <div class="game-event">
+                    <h4>活動期間</h4>
+                    <p>2022.11.24 12:00 - 2022.11.28 12:00</p>
+                    <h4>活動對象</h4>
+                    <p>中選「限量菁英刪檔封測」的冒險家</p>
+                    <h1 id="signIn" class="title-label t1">每日簽到免費送</h1>
+                    <p>活動期間登入遊戲，依登入日期獲得對應虛擬獎禮之外，<br>
+                      累積登入滿４天則有機會獲得「GeForce RTX 3090 顯示卡」一個！
+                    </p>
+                    <div class="rewards-gift mgt40">
+                      <div class="hot-gift date-1">
+                        <div class="icon"><img src="images/icon/event2-hot-1.png" alt=""></div>
+                        <p class="icon-txt">方舟CBT體驗禮包 x1</p>
+                      </div>
+                      <div class="rewards-list">
+                        <ul>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-1.png" alt=""></div>
+                            <p class="icon-txt">藍水晶50個寶箱<br><i>x5</i></p>
+                          </li>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-2.png" alt=""></div>
+                            <p class="icon-txt">賽巴斯提安<br>寵物選擇寶箱 <i>x1</i></p>
+                          </li>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-3.png" alt=""></div>
+                            <p class="icon-txt">寵物支援效果<br>體驗券(5天) <i>x1</i></p>
+                          </li>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-4.png" alt=""></div>
+                            <p class="icon-txt">寵物功能<br>體驗券(5天) <i>x1</i></p>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rewards-gift">
+                      <div class="hot-gift date-2">
+                        <div class="icon"><img src="images/icon/event2-hot-2.png" alt=""></div>
+                        <p class="icon-txt">魔法學會特製染色寶箱 x10</p>
+                      </div>
+                      <div class="rewards-list">
+                        <ul>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-5.png" alt=""></div>
+                            <p class="icon-txt">魔法學會光澤試劑<br><i>x10</i></p>
+                          </li>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-6.png" alt=""></div>
+                            <p class="icon-txt">魔法學會圖案試劑<br><i>x10</i></p>
+                          </li>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-7.png" alt=""></div>
+                            <p class="icon-txt">魔法學會染色試劑<br><i>x10</i></p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rewards-gift">
+                      <div class="hot-gift date-3">
+                        <div class="icon"><img src="images/icon/event2-hot-1.png" alt=""></div>
+                        <p class="icon-txt">好感CBT體驗禮包 x1</p>
+                      </div>
+                      <div class="rewards-list">
+                        <ul>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-8.png" alt=""></div>
+                            <p class="icon-txt">英雄好感度<br>選擇寶箱 <i>x10</i></p>
+                          </li>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-8.png" alt=""></div>
+                            <p class="icon-txt">傳說好感度<br>選擇寶箱 <i>x3</i></p>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rewards-gift">
+                      <div class="hot-gift date-4">
+                        <div class="icon"><img src="images/icon/event2-hot-1.png" alt=""></div>
+                        <p class="icon-txt">卡片CBT體驗禮包 x1</p>
+                      </div>
+                      <div class="rewards-list">
+                        <ul>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-9.png" alt=""></div>
+                            <p class="icon-txt">所有卡片禮包<br><i>x30</i></p>
+                          </li>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-10.png" alt=""></div>
+                            <p class="icon-txt">永恆精髓<br><i>x4</i></p>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rewards-gift">
+                      <div class="hot-gift date-5">
+                        <div class="icon"><img src="images/icon/event2-hot-3.png" alt=""></div>
+                        <p class="icon-txt">坐騎：獨角獸坐騎選擇寶箱 x1</p>
+                      </div>
+                      <div class="rewards-list">
+                        <ul>
+                          <li>
+                            <div class="icon iconfix"><img src="images/icon/event2-11.png" alt=""></div>
+                            <p class="icon-txt">坐騎：白雪獨角獸<br><i>x1</i></p>
+                          </li>
+                          <li>
+                            <div class="icon iconfix"><img src="images/icon/event2-12.png" alt=""></div>
+                            <p class="icon-txt">坐騎：粉紅獨角獸<br><i>x1</i></p>
+                          </li>
+                          <li>
+                            <div class="icon iconfix"><img src="images/icon/event2-13.png" alt=""></div>
+                            <p class="icon-txt">坐騎：極光獨角獸<br><i>x1</i></p>
+                          </li>
+                          <li>
+                            <div class="icon iconfix"><img src="images/icon/event2-14.png" alt=""></div>
+                            <p class="icon-txt">坐騎：黑獨角獸<br><i>x1</i></p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="rewards-gift">
+                      <div class="hot-gift date-6">
+                        <div class="icon"><img src="images/icon/event2-hot-4.png" alt=""></div>
+                        <p class="icon-txt">轉轉眼鏡選擇寶箱 x1</p>
+                      </div>
+                      <div class="rewards-list">
+                        <ul>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-15.png" alt=""></div>
+                            <p class="icon-txt">黑轉轉眼鏡<br><i>x1</i></p>
+                          </li>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-16.png" alt=""></div>
+                            <p class="icon-txt">黃金轉轉眼鏡<br><i>x1</i></p>
+                          </li>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-17.png" alt=""></div>
+                            <p class="icon-txt">藍轉轉眼鏡<br><i>x1</i></p>
+                          </li>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-18.png" alt=""></div>
+                            <p class="icon-txt">紅轉轉眼鏡<br><i>x1</i></p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="rewards-gift">
+                      <div class="hot-gift date-7">
+                        <div class="icon"><img src="images/icon/event2-hot-5.png" alt=""></div>
+                        <p class="icon-txt">擺設：天使之翼拍照區 x1</p>
+                      </div>
+                      <div class="rewards-list">
+                        <ul>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-19.png" alt=""></div>
+                            <p class="icon-txt">擺設：天使之翼<br>拍照區 <i>x1</i></p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <i>※限量菁英刪檔封測(CBT)為刪檔測試，活動結束後僅保留快樂玩平台帳號，遊戲內資料將會全數刪除。</i>
+                    <h1 class="popularity-tit"><img src="images/plusbonus-tit.png" alt=""></h1>
+                    <div class="rewards-graphics">
+                      <img src="images/graphics-card.png" alt="">
+                    </div>
+                    <div class="rewards table-responsive">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">活動條件</th>
+                            <th scope="col">活動獎勵</th>
+                            <th scope="col">抽出名額</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>累積登入四天</td>
+                            <td>GeForce RTX 3090 顯示卡</td>
+                            <td>1名</td>
+                          </tr>
+                          <tr>
+                            <td class="precautions" colspan="3">
+                              實體獎項於抽出得獎者後，依所得稅法規定，機會中獎之獎項價值若超過NT$1,000，所得將列入個人年度綜合所得稅申報，<br>需下載<span class="link"><a
+                                  href="https://www.mangot5.com/Index/Service/Download"
+                                  target="_blank">「活動領獎單」</a></span>填妥後寄回本公司或<span class="link"><a
+                                  href="mailto:dna-angel@mangot5.com">活動小組信箱</a></span>，實體獎項的寄出時間於以上程序完成後另行通知。</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <i class="note">※實體獎項中獎名單公佈※</i>
+                    <p>活動結束後預計在2022.12.9(五)前於官方FB粉絲團、活動頁面中公佈。</p>
+                    <i class="note mgt40">※實體獎項中獎通知方式※</i>
+                    <p>於發表中選通知期間以「E-mail」的方式通知。</p>
+                    <h1 id="hotTime" class="title-label t2">HOT TIME領獎勵</h1>
+                    <p>活動期間登入遊戲，依登入天數獲得對應虛擬獎勵。</p>
+
+                    <div class="rewards-view mgt40">
+                      <div class="row gutters-5">
+                        <div class="col-sm-4">
+                          <div class="rewards-gift">
+                            <div class="hot-gift date-1">
+                              <div class="icon"><img src="images/icon/event2-hot-6.png" alt=""></div>
+                              <p class="icon-txt">方舟CBT祝福禮包 x1</p>
+                            </div>
+                            <div class="rewards-list">
+                              <ul>
+                                <li>
+                                  <div class="icon"><img src="images/icon/event1-4.png" alt=""></div>
+                                  <p class="icon-txt">[活動]薇亞特莉絲的祝福<br>(7天) <i>x1</i></p>
+                                </li>
+                                <li>
+                                  <div class="icon"><img src="images/icon/event1-3.png" alt=""></div>
+                                  <p class="icon-txt">復活羽毛<br><i>x20</i></p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="rewards-gift">
+                            <div class="hot-gift date-2">
+                              <div class="icon"><img src="images/icon/event2-hot-6.png" alt=""></div>
+                              <p class="icon-txt">方舟CBT戰鬥實用禮包 x1</p>
+                            </div>
+                            <div class="rewards-list">
+                              <ul>
+                                <li>
+                                  <div class="icon"><img src="images/icon/event2-20.png" alt=""></div>
+                                  <p class="icon-txt">恢復戰鬥道具寶箱<br><i>x5</i></p>
+                                </li>
+                                <li>
+                                  <div class="icon"><img src="images/icon/event2-21.png" alt=""></div>
+                                  <p class="icon-txt">增益型戰鬥道具寶箱<br><i>x5</i></p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="rewards-gift">
+                            <div class="hot-gift date-3">
+                              <div class="icon"><img src="images/icon/event2-hot-6.png" alt=""></div>
+                              <p class="icon-txt">方舟CBT航海支援禮包 x1</p>
+                            </div>
+                            <div class="rewards-list">
+                              <ul>
+                                <li>
+                                  <div class="icon iconfix"><img src="images/icon/event2-25.png" alt=""></div>
+                                  <p class="icon-txt">船隻外觀：諾特斯<br>黃昏虎鯨(7天) <i>x1</i></p>
+                                </li>
+                                <li>
+                                  <div class="icon"><img src="images/icon/event2-26.png" alt=""></div>
+                                  <p class="icon-txt">克林斯奈爾的閃亮硬幣<br><i>x10</i></p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <i>※限量菁英刪檔封測(CBT)為刪檔測試，活動結束後僅保留快樂玩平台帳號，遊戲內資料將會全數刪除。</i>
+                    <h1 class="popularity-tit"><img src="images/online-gift-tit.png" alt=""></h1>
+                    <p>每日登入遊戲累積在線滿60分鐘，可使成長型獎勵「HotTime活動獎勵寶箱」升級，<br>
+                      並於活動最後一天獲得對應成長階段的獎勵。</p>
+
+                    <div class="rewards-gift mgt40">
+                      <div class="hot-gift date-1">
+                        <div class="icon"><img src="images/icon/event2-hot-7.png" alt=""></div>
+                        <p class="icon-txt">累積在線60分鐘</p>
+                      </div>
+                      <div class="rewards-list">
+                        <ul>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-22.png" alt=""></div>
+                            <p class="icon-txt">蘊含路沛恩之光的<br>貨幣寶箱 <i>x1</i></p>
+                          </li>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-23.png" alt=""></div>
+                            <p class="icon-txt">船隻成長支援寶箱<br><i>x1</i></p>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rewards-gift">
+                      <div class="hot-gift date-2">
+                        <div class="icon"><img src="images/icon/event2-hot-8.png" alt=""></div>
+                        <p class="icon-txt">累積在線60分鐘</p>
+                      </div>
+                      <div class="rewards-list">
+                        <ul>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-22.png" alt=""></div>
+                            <p class="icon-txt">蘊含路沛恩之光的<br>貨幣寶箱 <i>x2</i></p>
+                          </li>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-24.png" alt=""></div>
+                            <p class="icon-txt">航海硬幣選擇寶箱 <br><i>x3</i></p>
+                          </li>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-23.png" alt=""></div>
+                            <p class="icon-txt">船隻成長支援寶箱 <br><i>x3</i></p>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rewards-gift">
+                      <div class="hot-gift date-3">
+                        <div class="icon"><img src="images/icon/event2-hot-9.png" alt=""></div>
+                        <p class="icon-txt">累積在線60分鐘</p>
+                      </div>
+                      <div class="rewards-list">
+                        <ul>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-22.png" alt=""></div>
+                            <p class="icon-txt">蘊含路沛恩之光的<br>貨幣寶箱 <i>x3</i></p>
+                          </li>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-24.png" alt=""></div>
+                            <p class="icon-txt">航海硬幣選擇寶箱 <br><i>x5</i></p>
+                          </li>
+                          <li>
+                            <div class="icon"><img src="images/icon/event2-23.png" alt=""></div>
+                            <p class="icon-txt">船隻成長支援寶箱 <br><i>x5</i></p>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                    <i>※限量菁英刪檔封測(CBT)為刪檔測試，活動結束後僅保留快樂玩平台帳號，遊戲內資料將會全數刪除。</i>
+                    <a href="#" class="btn btn-submit btn-grow" data-toggle="modal"
+                      data-target="#growthRewardModal">成長型獎勵獲得說明</a>
+                    <h1 class="title-label t3">轉盤小遊戲</h1>
+                    <p>活動期間可透過遊戲內的活動UI或右方活動按鈕，開啟轉盤小遊戲，<br>
+                      於遊戲中完成活動條件即可獲得分數，利用該分數可進行轉盤小遊戲獲得對應虛擬獎禮。</p>
+                    <a class="turntable soon" href="#"><img src="images/turntable-bn.jpg" alt=""></a>
+                    <div class="char-2"></div>
+                  </div>
+
+
                 </div>
+                <!-- 活動2 -->
+
+                <!-- 活動3 -->
                 <div class="tab-pane fade" id="cbt-target" role="tabpanel" aria-labelledby="cbt-target-tab">
-                  <h4>這是內容3</h4>
-                  <h4>這是內容3</h4>
-                  <h4>這是內容3</h4>
-                  <h4>這是內容3</h4>
-                  <h4>這是內容3</h4>
+                  <div class="cbt-target">
+                    <h4>活動期間</h4>
+                    <p>2022.11.24 12:00 - 2022.11.28 12:00</p>
+                    <h4>活動對象</h4>
+                    <p>中選「限量菁英刪檔封測」的冒險家</p>
+                    <h1 id="growUp" class="title-label t1">成長達人送喵喵</h1>
+                    <p>活動期間內達成下列成長目標的前50名，即獲得正式營運時可兌換的虛寶獎勵，<br>並有機會將「RAZER ISKUR X 電競椅」帶回家！</p>
+                    <i>※以下三項成長目標的獎勵，一個帳號僅限獲取一次。<br>
+                      ※如同時達成兩項以上成長目標，請於公布獲獎名單後五個工作天內至客服中心回報，或於客服中心通知信件回覆欲選擇之獎項。</i>
+                    <div class="rewards table-responsive">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">成長目標</th>
+                            <th scope="col">名額</th>
+                            <th scope="col">虛擬獎勵</th>
+                            <th scope="col">綁定</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>角色最高等級<br><i>(同等時依EXP最多者)</i></td>
+                            <td>最高等級<br>前50名</td>
+                            <td>愛睏小貓帽飾選擇寶箱 <i>x1</i><br>[活動]薇亞特莉絲的祝福(14天) <i>x1</i><br>CBT限定稱號"小菜一碟" <i>x1</i></td>
+                            <td>遠征隊</td>
+                          </tr>
+                          <tr>
+                            <td>收集最多摩可可種子者</td>
+                            <td>收集最多<br>前50名</td>
+                            <td>愛睏小貓帽飾選擇寶箱 <i>x1</i><br>[活動]薇亞特莉絲的祝福(14天) <i>x1</i><br>CBT限定稱號"再挖就到地心了" <i>x1</i></td>
+                            <td>遠征隊</td>
+                          </tr>
+                          <tr>
+                            <td>完成最多任務</td>
+                            <td>完成最多<br>前50名</td>
+                            <td>愛睏小貓帽飾選擇寶箱 <i>x1</i><br>[活動]薇亞特莉絲的祝福(14天) <i>x1</i><br>CBT限定稱號"這點任務難不倒我" <i>x1</i></td>
+                            <td>遠征隊</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <i class="note">※活動虛擬獎勵發放※</i>
+                    <p>※虛擬獎勵於正式營運後，發放至符合活動條件的快樂玩平台遊戲帳號中，<br>
+                      屆時請冒險家至【快樂玩平台】→【服務中心】→【兌換優惠券】進行獎勵兌換。</p>
+                    <h1 id="forward" class="popularity-tit"><img src="images/forward-tit.png" alt=""></h1>
+                    <div class="razer"><img src="images/razer.png" alt=""></div>
+                    <div class="rewards table-responsive">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">活動獎勵</th>
+                            <th scope="col">活動條件</th>
+                            <th scope="col">抽出名額</th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td rowspan="3">RAZER ISKUR X 人體工學電競椅<br>(價值：11,900)</td>
+                            <td>角色最高等級<br>前50名</td>
+                            <td>1名</td>
+                          </tr>
+                          <tr>
+                            <td>收集最多摩可可種子<br>前50名</td>
+                            <td>1名</td>
+                          </tr>
+                          <tr>
+                            <td>完成最多任務<br>前50名</td>
+                            <td>1名</td>
+                          </tr>
+                          <tr>
+                            <td class="precautions" colspan="3">
+                              實體獎項於抽出得獎者後，依所得稅法規定，機會中獎之獎項價值若超過NT$1,000，所得將列入個人年度綜合所得稅申報，需下載<span class="link"><a
+                                  href="https://www.mangot5.com/Index/Service/Download"
+                                  target="_blank">「活動領獎單」</a></span>填妥後寄回本公司或<span class="link"><a
+                                  href="mailto:dna-angel@mangot5.com">活動小組信箱</a></span>，實體獎項的寄出時間於以上程序完成後另行通知。</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <i class="note">※實體獎項中獎名單公佈※</i>
+                    <p>活動結束後預計在2022.12.9(五)前於官方FB粉絲團、活動頁面中公佈。</p>
+                    <i class="note mgt40">※實體獎項中獎通知方式※</i>
+                    <p>於發表中選通知期間以「E-mail」的方式通知。</p>
+                    <div class="char-3"></div>
+                  </div>
                 </div>
-                
+                <!-- 活動3 -->
+
+                <!-- 注意事項 -->
+                <a href="#" class="notice-btn" data-toggle="modal" data-target="#eventNoticeModal">活動注意事項​</a>
               </div>
-              <a href="#" class="notice-btn" data-toggle="modal" data-target="#eventNoticeModal">活動注意事項​</a>
+
             </div>
           </div>
 
         </div>
       </div>
 
-      <div class="fullscreen-video">
-        <video id="video-background" autoplay muted playsinline loop
-          poster="https://landing.mangot5.com/template/lostark/event/landing/test99/images/poster.jpg">
-          <source src="https://landing.mangot5.com/template/lostark/event/landing/test99/media/lostark_intro.mp4"
-            type="video/webm">
-        </video>
+  </div>
+  </div>
+
+  <div class="fullscreen-video">
+    <video id="video-background" autoplay muted playsinline loop
+      poster="https://landing.mangot5.com/template/lostark/event/landing/test99/images/poster.jpg">
+      <source src="https://landing.mangot5.com/template/lostark/event/landing/test99/media/lostark_intro.mp4"
+        type="video/webm">
+    </video>
+  </div>
+  </main>
+
+
+
+  <!-- footer info -->
+  <footer id="ft">
+    <div class="container">
+      <ul class="copyright">
+        <li>
+          <img src="https://landing.mangot5.com/template/lostark/event/landing/test99/images/happytuk.png" />
+        </li>
+        <li>
+          <img src="https://landing.mangot5.com/template/lostark/event/landing/test99/images/smilgate.png" />
+        </li>
+        <li>
+          Published by HAPPYTUK Co., Ltd. under license.
+          <span class="copytxt">ⓒ 2022 Smilegate RPG, Inc. All rights reserved.</span>
+        </li>
+        <li>
+          Lost Ark and the Lost Ark logo are trademarks of Smilegate RPG,
+          Inc. Used by HAPPYTUK Co., Ltd. under license.
+        </li>
+        <li>
+          <span class="rating"><img
+              src="https://landing.mangot5.com/template/lostark/event/landing/test99/images/rating-18.jpg"
+              alt="" /></span>
+          本遊戲部分內容涉及暴力恐怖情節，請避免沉迷遊戲<br />
+          本遊戲部分內容需另行支付費用，須滿18歲始得購買或使用
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- mobile menu overlay -->
+  <div class="app_overlay"></div>
+
+  <!-- scroll top -->
+  <button class="scroll-top">
+    <div class="arrow"></div>
+  </button>
+
+  <!-- sidebar -->
+  <aside id="sidebar">
+    <div class="sidebar">
+      <button class="sidebtn">好康活動</button>
+      <button class="side-close">x</button>
+      <ul>
+
+        <!-- <li><a href=""><img src="images/side-bn/bn-2.jpg" alt=""></a></li> -->
+        <li><a href="#" data-toggle="modal" data-target="#getlotteryModal"><img src="images/side-bn/bn-3.jpg"
+              alt=""></a></li>
+      </ul>
+    </div>
+  </aside>
+
+
+
+  <!-- news popup -->
+  <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+            研發 MMORPG《失落的方舟》台灣代理權確定</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><img src="images/bg.jpg" alt=""></p>
+          <p>SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+            研發 MMORPG《失落的方舟》台灣代理權確定</p>
+          <p>SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+            研發 MMORPG《失落的方舟》台灣代理權確定</p>
+          <p>SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+            研發 MMORPG《失落的方舟》台灣代理權確定</p>
+          <p>SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+            研發 MMORPG《失落的方舟》台灣代理權確定</p>
+          <p>SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+            研發 MMORPG《失落的方舟》台灣代理權確定</p>
+          <p>SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+            研發 MMORPG《失落的方舟》台灣代理權確定</p>
+          <p>SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+            研發 MMORPG《失落的方舟》台灣代理權確定</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-back" data-dismiss="modal" data-toggle="modal"
+            data-target="#newsAllModal">返回公告一覽​</button>
+        </div>
       </div>
-    </main>
+    </div>
+  </div>
+  <!-- news popup -->
 
-
-
-    <!-- footer info -->
-    <footer id="ft">
-      <div class="container">
-        <ul class="copyright">
-          <li>
-            <img src="https://landing.mangot5.com/template/lostark/event/landing/test99/images/happytuk.png" />
-          </li>
-          <li>
-            <img src="https://landing.mangot5.com/template/lostark/event/landing/test99/images/smilgate.png" />
-          </li>
-          <li>
-            Published by HAPPYTUK Co., Ltd. under license.
-            <span class="copytxt">ⓒ 2022 Smilegate RPG, Inc. All rights reserved.</span>
-          </li>
-          <li>
-            Lost Ark and the Lost Ark logo are trademarks of Smilegate RPG,
-            Inc. Used by HAPPYTUK Co., Ltd. under license.
-          </li>
-          <li>
-            <span class="rating"><img
-                src="https://landing.mangot5.com/template/lostark/event/landing/test99/images/rating-18.jpg"
-                alt="" /></span>
-            本遊戲部分內容涉及暴力恐怖情節，請避免沉迷遊戲<br />
-            本遊戲部分內容需另行支付費用，須滿18歲始得購買或使用
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <!-- mobile menu overlay -->
-    <div class="app_overlay"></div>
-    <!-- sidebar -->
-    <aside id="sidebar">
-      <div class="sidebar">
-        <button class="sidebtn">好康活動</button>
-        <button class="side-close">x</button>
-        <ul>
-
-          <!-- <li><a href=""><img src="images/side-bn/bn-2.jpg" alt=""></a></li> -->
-          <li><a href="#" data-toggle="modal" data-target="#getlotteryModal"><img src="images/side-bn/bn-3.jpg"
-                alt=""></a></li>
-        </ul>
-      </div>
-    </aside>
-
-
-
-    <!-- news popup -->
-    <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-              研發 MMORPG《失落的方舟》台灣代理權確定</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+  <!-- news all popup -->
+  <div class="modal fade" id="newsAllModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-lg modal-dialog-centered newsall-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">NEWS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <tbody class="text-nowrap">
+                <tr>
+                  <td>
+                    <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
+                      data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+                      研發 MMORPG《失落的方舟》台灣代理權確定
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
+                      data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+                      研發 MMORPG《失落的方舟》台灣代理權確定
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
+                      data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+                      研發 MMORPG《失落的方舟》台灣代理權確定
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
+                      data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+                      研發 MMORPG《失落的方舟》台灣代理權確定
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
+                      data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+                      研發 MMORPG《失落的方舟》台灣代理權確定
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
+                      data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+                      研發 MMORPG《失落的方舟》台灣代理權確定
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
+                      data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+                      研發 MMORPG《失落的方舟》台灣代理權確定
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
+                      data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+                      研發 MMORPG《失落的方舟》台灣代理權確定
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
+                      data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+                      研發 MMORPG《失落的方舟》台灣代理權確定
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
+                      data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
+                      研發 MMORPG《失落的方舟》台灣代理權確定
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="modal-body">
-            <p><img src="images/bg.jpg" alt=""></p>
-            <p>SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-              研發 MMORPG《失落的方舟》台灣代理權確定</p>
-            <p>SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-              研發 MMORPG《失落的方舟》台灣代理權確定</p>
-            <p>SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-              研發 MMORPG《失落的方舟》台灣代理權確定</p>
-            <p>SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-              研發 MMORPG《失落的方舟》台灣代理權確定</p>
-            <p>SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-              研發 MMORPG《失落的方舟》台灣代理權確定</p>
-            <p>SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-              研發 MMORPG《失落的方舟》台灣代理權確定</p>
-            <p>SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-              研發 MMORPG《失落的方舟》台灣代理權確定</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-back" data-dismiss="modal" data-toggle="modal"
-              data-target="#newsAllModal">返回公告一覽​</button>
+
+        </div>
+        <div class="modal-footer">
+          <div class="pagination-box d-flex justify-content-center align-items-center">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&#60;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&#62;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
     </div>
-    <!-- news popup -->
+  </div>
+  <!-- news all popup -->
 
-    <!-- news all popup -->
-    <div class="modal fade" id="newsAllModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-lg modal-dialog-centered newsall-modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title text-center">NEWS</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+  <!-- accept popup -->
+  <div class="modal fade" id="acceptModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">"失落的方舟：LOST ARK" 限量菁英刪檔封測(CBT)使用條款</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body terms-and-conditions txt-scroll">
+
+          <p>這些使用條款規定了HAPPYTUK Co., Ltd(以下簡稱"公司")應向測試者提供由公司運營的“失落的方舟：LOST ARK”的限量菁英刪檔封測(CBT)版測試的條款和條件。測試應根據本使用條款提供。
+          </p>
+          <p>遊戲正式上線後將無法繼承任何相關資料。</p>
+          <dl>
+            <div class="section">
+              <dt>一、定義</dt>
+              <dd>
+                <ol>
+                  <li>"遊戲"是指由本公司運營和提供的遊戲標題"失落的方舟：LOST ARK"。</li>
+                  <li>"測試"是指使用遊戲的測試版完成其最終版本的測試。</li>
+                  <li>"測試人員"是指中選參與測試的每位使用者。</li>
+                  <li>"使用條款"是指這些“失落的方舟：LOST ARK”限量菁英刪檔封測(CBT)版測試使用條款，適用於公司和測試人員參與測試。</li>
+                  <li>"測試人員數據"是指通過測試人員參與測試而在公司伺服器等中積累的數據。</li>
+                </ol>
+              </dd>
+
+            </div>
+            <div class="section">
+              <dt>二、測試人員的義務和責任</dt>
+              <dd>
+                <ol>
+                  <li>測試人員應與公司合作，回報在參與測試期間發現的與遊戲內容和/或遊戲環境有關的任何問題。</li>
+                  <li>測試人員應負責管理其ID和密碼(如適用)，不得將其洩露給任何第三方(包括測試中的其他測試人員)或允許任何第三方在有或沒有測試人員的情況下使用它們。</li>
+                  <li>測試人員應對測試中使用其ID和密碼(如適用)進行的任何和所有行為負責，無論測試人員是否進行了任何此類行為。</li>
+                </ol>
+              </dd>
+            </div>
+            <div class="section">
+              <dt>三、參加限量菁英刪檔封測(CBT)</dt>
+              <dd>
+                <ol>
+                  <li>當測試人員按下「我要參加CBT」按鈕申請參加限量菁英刪檔封測(CBT)時，被視為已同意這些使用條款。</li>
+                  <li>如果測試人員是未成年人，則測試人員向公司保證，他們已獲得其所有父母，監護人和/或其他法定代理人的事先同意，以參與測試並遵守本使用條款。</li>
+                  <li>測試人員應自行負責管理其遊戲帳戶資訊和與自己相關的其他資訊，以及與參與測試相關的設置和其他資訊。</li>
+                </ol>
+              </dd>
+            </div>
+            <div class="section">
+              <dt>四、使用條件 </dt>
+              <dd>
+                <ol>
+                  <li>測試人員應自行負責使用測試。</li>
+                  <li>測試人員應自行負責並支付費用，準備供其用於測試的電信線路和設備。</li>
+                  <li>推薦電腦規格由本公司CBT遊戲主程式下載頁中呈現。測試在除推薦規格以外的任何電腦規格中可能無法按預期運行。</li>
+                </ol>
+              </dd>
+            </div>
+            <div class="section">
+              <dt>五、禁止事項</dt>
+              <dt>公司應禁止測試人員從事與測試有關的以下任何行為： </dt>
+              <dd>
+                <ol>
+                  <li>誹謗或侮辱本公司或任何第三方的行為，或其他使任何第三方感到不適的行為，無論此類行為是否公開;</li>
+                  <li>損害本公司或任何第三方的隱私、榮譽或聲譽的行為;</li>
+                  <li>侵犯或可能侵犯測試中包含的版權、商標權或其他智慧財產權、肖像權、形象權或其他權利的行為;</li>
+                  <li>發佈猥褻或暴力資訊;</li>
+                  <li>違反公共政策的行為;</li>
+                  <li>政治、宗教或其他類似行為;</li>
+                  <li>違反任何法律的行為;</li>
+                  <li>未經本公司事先同意，使用測試牟利;</li>
+                  <li>通過測試獲得的任何資訊的商業用途;</li>
+                  <li>未經公司批准，舉辦與測試有關的任何活動;</li>
+                  <li>妨礙考試操作的行為;</li>
+                  <li>損害測試聲譽的行為;</li>
+                  <li>虛假信息登記;</li>
+                  <li>未經授權使用在測試中註冊的其他測試人員的資訊;</li>
+                  <li>未經授權訪問本公司或任何第三方的伺服器;</li>
+                  <li>與測試相關的任何程式的更改，分析，逆向工程等;</li>
+                  <li>其他本公司判斷為不適當的行為。</li>
+                </ol>
+              </dd>
+            </div>
+            <div class="section">
+              <dt>六、智慧財產權等</dt>
+              <dd>
+                <ol>
+                  <li>測試人員僅有權在本使用條款規定的範圍內使用測試的功能、內容和其他服務、利益等，不得獲得測試中的任何擁有權或智慧財產權或其他權利。</li>
+                  <li>與測試相關的版權和其他智慧財產權應屬於本公司或已將此類權利許可給本公司的任何人。除本使用條款中明確規定的權利外，測試的使用不得轉讓或授予測試人員任何權利。</li>
+                  <li>
+                    測試人員通過測試輸入或發佈的任何資訊的版權、商標權和其他智慧財產權均屬於測試人員;但是，如果測試人員不得獲得公司或第三方擁有版權或任何其他智慧財產權的測試者條目或發佈中包含的資訊的任何智慧財產權，包括但不限於公司在測試中提供的內容。測試人員保證測試人員通過測試輸入或發佈的資訊不會侵犯任何第三方的任何智慧財產權或其他權利，並應授予公司使用，複製，改編和對其智慧財產權進行其他二次使用的權利，而無需考慮，永久且沒有任何條件。測試者不得向本公司或任何可能繼承或已從本公司許可權利的第三方行使作者的精神權利。
+                  </li>
+                </ol>
+              </dd>
+            </div>
+            <div class="section">
+              <dt>七、測試人員資訊和測試人員資料</dt>
+              <dd>
+                <ol>
+                  <li>本公司應根據本公司另行規定的隱私政策處理測試人員的資訊。</li>
+                  <li>
+                    公司有權在測試期間未經測試人員同意的情況下使用測試人員於限量菁英刪檔封測(CBT)期間所有相關GAMELOG上的資訊，以分析和改進遊戲，並且在此範圍內，公司可以將測試人員客戶端中的任何相關信息上傳到公司的伺服器。
+                  </li>
+                  <li>測試期間累積的測試者數據不會作為測試者的玩家數據保留在遊戲的商業服務中。</li>
+                </ol>
+              </dd>
+            </div>
+            <div class="section">
+              <dt>八、無擔保</dt>
+              <dt>本公司對以下事項不作任何保證：</dt>
+              <dd>
+                <ol>
+                  <li>測試的內容將符合測試人員的意願或使用目的;</li>
+                  <li>與測試人員使用測試相關的數據將被正確存儲並且不會丟失，與測試相關的資訊將正確傳輸並正確顯示在測試人員的設備上;</li>
+                  <li>測試不會被終止、中斷或暫停;</li>
+                  <li>未經事先通知，測試中提供的功能或內容不會被修改，暫停，停止或終止;</li>
+                  <li>遊戲的最終版本將發佈;</li>
+                  <li>測試的應用程式將正常運行;</li>
+                  <li>測試人員通過測試獲得的資訊將是正確或可靠的。</li>
+                </ol>
+              </dd>
+            </div>
+            <div class="section">
+              <dt>九、免責聲明</dt>
+              <dt>
+                (1) 如果以下任何損害不能歸因於公司的故意不當行為或疏忽，則公司不對以下任何損害承擔責任：
+              </dt>
+              <dd>
+                <ol class="roman">
+                  <li>由於任何第三方使用第3條第(3)款中定義的資訊而使測試人員遭受的損害;</li>
+                  <li>測試人員與測試中的任何其他測試人員或其他第三方之間產生的衝突和/或損害;</li>
+                  <li>測試人員因未經授權訪問或更改測試而造成的損害;</li>
+                  <li>測試人員因參與或不參與測試而遭受的損害;</li>
+                  <li>測試人員因測試而遭受的與測試有關或導致測試的任何其他損害。</li>
+                </ol>
+              </dd>
+              <dt>(2) 本公司不得參與測試人員與第三方（包括測試中的其他測試人員）之間就測試人員使用測試而引起的任何衝突。 </dt>
+            </div>
+            <div class="section">
+              <dt>十、暫停或終止提供測試</dt>
+              <dt>(1) 在以下情況下，公司可自行決定暫停提供測試，恕不另行通知或要求測試人員：</dt>
+              <dd>
+                <ol class="roman">
+                  <li>測試人員違反或涉嫌違反本使用條款;</li>
+                  <li>根據測試的目的，公司確定測試人員的任何行為都是不適當的。</li>
+                  <li>測試人員因未經授權訪問或更改測試而造成的損害;</li>
+                  <li>測試人員因參與或不參與測試而遭受的損害;</li>
+                  <li>測試人員因測試而遭受的與測試有關或導致測試的任何其他損害。</li>
+                </ol>
+              </dd>
+              <dt>(2) 在以下情況下，公司可以自行決定終止提供測試，恕不另行通知或要求測試人員： </dd>
+              <dd>
+                <ol class="roman">
+                  <li>測試人員違反這些使用條款，並且公司確定此類違反是重大的;</li>
+                  <li>測試人員的任何行為都會對公司造成損害。</li>
+                </ol>
+              </dd>
+              <dt>(3) 對於測試人員或任何第三方因上述第(1)和(2)款規定的暫停或終止測試規定而遭受的任何損害，公司概不負責。 </dt>
+            </div>
+            <div class="section">
+              <dt>十一、損害賠償 </dt>
+              <dd>如果公司因測試人員的行為而遭受任何損害，測試人員應賠償公司。</dd>
+            </div>
+            <div class="section">
+              <dt>十二、測試的修改、暫停、中止或終止</dt>
+              <dd>
+                <ol>
+                  <li>公司可以在事先通知後修改，暫停，中止或終止測試的全部或任何部分。</li>
+                  <li>儘管有前款規定，如果由於緊急原因而不可避免地，公司可以修改，暫停或終止測試，恕不另行通知。</li>
+                  <li>對於測試人員或任何第三方因公司根據本第12條採取的任何行為而遭受的任何損害，公司概不負責。</li>
+                </ol>
+              </dd>
+            </div>
+            <div class="section">
+              <dt>十三、不可轉讓</dt>
+              <dd>未經本公司明確同意，測試人員不得將其與測試和本使用條款有關的全部或任何部分權利和義務轉讓給任何第三方或已被任何第三方繼承。</dd>
+            </div>
+            <div class="section">
+              <dt>十四、準據法</dt>
+              <dd>測試和本使用條款應受日本法律管轄。</dd>
+            </div>
+            <div class="section">
+              <dt>十五、衝突解決</dt>
+              <dd>
+                如果測試人員與本公司之間就測試發生任何衝突，雙方應努力通過善意的討論來解決此類衝突。如果雙方通過討論無法達成協議，並且任何一方提起訴訟，則雙方同意對該訴訟的一審由東京地方法院專屬管轄。</dd>
+            </div>
+            <div class="section">
+              <dt>十六、通知</dt>
+              <dd>公司向測試人員發出的通知可以在限量菁英刪檔封測招募活動頁上NEWS上發佈，並且任何如此發出的通知應在可訪問時視為已發送給測試人員。</dd>
+            </div>
+            <div class="section">
+              <dt>十七、可分割性</dt>
+              <dd>如果本使用條款的任何規定因任何原因被認定為無效，則此類無效不應影響本使用條款其餘規定的有效性。</dd>
+            </div>
+            <div class="section">
+              <dt>十八、修改</dt>
+              <dd>公司可以在未經測試人員同意的情況下修改這些使用條款。對本使用條款的任何修改應按照第16條規定的方式通知測試人員，並在通知後生效並適用於測試人員。</dd>
+            </div>
+            <div class="section">
+              <dd>成立時間：2022年1月13日 </dd>
+            </div>
+
+          </dl>
+          <button class="accept" disabled>我已閱讀完成並同意條款​</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- accept popup -->
+
+  <!-- lottery popup -->
+  <div class="modal fade" id="getlotteryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="lottery">
+            <div id="carouselLottery" class="carousel slide" data-ride="carousel" data-interval="false">
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#carouselLottery" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselLottery" data-slide-to="1"></li>
+                <li data-target="#carouselLottery" data-slide-to="2"></li>
+              </ul>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <caption>
+                        第一期活動中獎名單​
+                      </caption>
+                      <thead>
+                        <tr>
+                          <th class="text-nowrap" scope="col">得獎獎項</th>
+                          <th class="text-nowrap" scope="col">會員帳號​</th>
+                          <th class="text-nowrap" scope="col">姓名</th>
+                          <th class="text-nowrap" scope="col">聯絡電話</th>
+                        </tr>
+                      </thead>
+                      <tbody class="text-nowrap">
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <caption>
+                        第二期活動中獎名單​
+                      </caption>
+                      <thead>
+                        <tr>
+                          <th class="text-nowrap" scope="col">得獎獎項</th>
+                          <th class="text-nowrap" scope="col">會員帳號​</th>
+                          <th class="text-nowrap" scope="col">姓名</th>
+                          <th class="text-nowrap" scope="col">聯絡電話</th>
+                        </tr>
+                      </thead>
+                      <tbody class="text-nowrap">
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <caption>
+                        第三期活動中獎名單​
+                      </caption>
+                      <thead>
+                        <tr>
+                          <th class="text-nowrap" scope="col">得獎獎項</th>
+                          <th class="text-nowrap" scope="col">會員帳號​</th>
+                          <th class="text-nowrap" scope="col">姓名</th>
+                          <th class="text-nowrap" scope="col">聯絡電話</th>
+                        </tr>
+                      </thead>
+                      <tbody class="text-nowrap">
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                        <tr>
+                          <td>獎項名稱</td>
+                          <td>Ji32k754cl4​</td>
+                          <td>陳O霞​</td>
+                          <td>0937xxxxxx​</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#carouselLottery" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#carouselLottery" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
           </div>
-          <div class="modal-body">
-            <div class="table-responsive">
-              <table class="table table-hover">
-                <tbody class="text-nowrap">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- lottery popup -->
+  <!-- game download popup -->
+  <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="dl-header">
+            <div class="dl-info">
+              <h1>客戶端下載</h1>
+              <h1>CLIENT DOWNLOAD</h1>
+              <p>請安裝快樂玩超高速下載器進行客戶端的下載，<br>
+                所需硬碟空間容量：50G以上 的可用空間</p>
+              <a href="#" class="dl-btn">主程式下載</a>
+            </div>
+          </div>
+
+          <div class="dl-detail">
+            <h6>▼ LOST ARK 失落的方舟系統需求：</h6>
+            <div class="dl-client-check table-responsive">
+              <table class="table table-bordered">
+                <thead>
                   <tr>
-                    <td>
-                      <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
-                        data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-                        研發 MMORPG《失落的方舟》台灣代理權確定
-                      </a>
+                    <th class="category" scope="col">項目</th>
+                    <th class="min" scope="col">最低規格</th>
+                    <th class="max" scope="col">推薦規格</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="category">作業系統</th>
+                    <td class="min" colspan="2">Windows 10(支援 Windows 7 sp1 或更高版本，僅支援 64 位操作系統)</td>
+                  </tr>
+                  <tr>
+                    <th class="category">CPU</th>
+                    <td class="min">Intel Core i3以上 / Ryzen3以上</td>
+                    <td class="max">Intel Core i5以上 / Ryzen5以上</td>
+                  </tr>
+                  <tr>
+                    <th class="category">顯示卡</th>
+                    <td class="min">NVIDIA GeForce GTX 460<br>
+                      AMD Radeon HD 6850<br>
+                      或更高版本</td>
+                    <td class="max data">
+                      <ul>
+                        <li>
+                          <em>1080P FHD</em><br>
+                          NVIDIA GeForce GTX 1050 <br>AMD Radeon RX560 2G以上
+                        </li>
+                        <li>
+                          <em>1440P QHD</em><br>
+                          NVIDIA GeForce RTX 2070 <br>AMD Radeon RX5700XT以上
+                        </li>
+                        <li>
+                          <em>Ultra Specs (4K, UHD)</em><br>
+                          NVIDIA GeForce RTX 2080 <br>AMD Radeon RX 6800以上
+                        </li>
+                      </ul>
                     </td>
                   </tr>
                   <tr>
-                    <td>
-                      <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
-                        data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-                        研發 MMORPG《失落的方舟》台灣代理權確定
-                      </a>
-                    </td>
+                    <th class="category">RAM</th>
+                    <td class="min">8GB以上</td>
+                    <td class="max">16GB以上</td>
                   </tr>
                   <tr>
-                    <td>
-                      <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
-                        data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-                        研發 MMORPG《失落的方舟》台灣代理權確定
-                      </a>
-                    </td>
+                    <th class="category">DirectX</th>
+                    <td class="min" colspan="2">DirectX 9.0c以上 (2010 June)</td>
                   </tr>
                   <tr>
-                    <td>
-                      <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
-                        data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-                        研發 MMORPG《失落的方舟》台灣代理權確定
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
-                        data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-                        研發 MMORPG《失落的方舟》台灣代理權確定
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
-                        data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-                        研發 MMORPG《失落的方舟》台灣代理權確定
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
-                        data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-                        研發 MMORPG《失落的方舟》台灣代理權確定
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
-                        data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-                        研發 MMORPG《失落的方舟》台灣代理權確定
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
-                        data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-                        研發 MMORPG《失落的方舟》台灣代理權確定
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="#" class="modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#newsModal"
-                        data-type="popup-detail">SmileGate 研發 MMORPG《失落的方舟》台灣代理權確定 SmileGate
-                        研發 MMORPG《失落的方舟》台灣代理權確定
-                      </a>
-                    </td>
+                    <th class="category">硬碟容量</th>
+                    <td class="min" colspan="2">50GB以上</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-
-          </div>
-          <div class="modal-footer">
-            <div class="pagination-box d-flex justify-content-center align-items-center">
-              <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                      <span aria-hidden="true">&laquo;</span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                      <span aria-hidden="true">&#60;</span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                  </li>
-                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                      <span aria-hidden="true">&#62;</span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                      <span aria-hidden="true">&raquo;</span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+            <div class="dl-notice">
+              <ul>
+                <li>變更解析度以及遊戲選項設定，可以更順暢的體驗遊戲。</li>
+                <li>為了遊戲能正常的安裝以及執行，建議您安裝最新的作業系統。</li>
+                <li>使用64-bit的作業系統可以提升遊戲品質。</li>
+                <li>套用DirectX 11 顯示卡選項時，建議使用NVIDIA GeForce GTX 660 以上的顯示卡。</li>
+              </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- news all popup -->
+            <div class="dl-list">
+              <h6>下載圖形驅動程式及最新版本</h6>
 
-    <!-- accept popup -->
-    <div class="modal fade" id="acceptModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">"失落的方舟：LOST ARK" 限量菁英刪檔封測(CBT)使用條款</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body terms-and-conditions txt-scroll">
-
-            <p>這些使用條款規定了HAPPYTUK Co., Ltd(以下簡稱"公司")應向測試者提供由公司運營的“失落的方舟：LOST ARK”的限量菁英刪檔封測(CBT)版測試的條款和條件。測試應根據本使用條款提供。
-            </p>
-            <p>遊戲正式上線後將無法繼承任何相關資料。</p>
-            <dl class="row">
-              <div class="section">
-                <dt class="col">1. 定義</dt>
-                <dd class="col">
-                  <ol>
-                    <li>"遊戲"是指由本公司運營和提供的遊戲標題"失落的方舟：LOST ARK"。</li>
-                    <li>"測試"是指使用遊戲的測試版完成其最終版本的測試。</li>
-                    <li>"測試人員"是指中選參與測試的每位使用者。</li>
-                    <li>"使用條款"是指這些“失落的方舟：LOST ARK”限量菁英刪檔封測(CBT)版測試使用條款，適用於公司和測試人員參與測試。</li>
-                    <li>"測試人員數據"是指通過測試人員參與測試而在公司伺服器等中積累的數據。</li>
-                  </ol>
-                </dd>
-
-              </div>
-              <div class="section">
-                <dt class="col">2. 測試人員的義務和責任</dt>
-                <dd class="col">
-                  <ol>
-                    <li>測試人員應與公司合作，回報在參與測試期間發現的與遊戲內容和/或遊戲環境有關的任何問題。</li>
-                    <li>測試人員應負責管理其ID和密碼(如適用)，不得將其洩露給任何第三方(包括測試中的其他測試人員)或允許任何第三方在有或沒有測試人員的情況下使用它們。</li>
-                    <li>測試人員應對測試中使用其ID和密碼(如適用)進行的任何和所有行為負責，無論測試人員是否進行了任何此類行為。</li>
-                  </ol>
-                </dd>
-              </div>
-              <div class="section">
-                <dt class="col">3. 參加限量菁英刪檔封測(CBT)</dt>
-                <dd class="col">
-                  <ol>
-                    <li>當測試人員按下「我要參加CBT」按鈕申請參加限量菁英刪檔封測(CBT)時，被視為已同意這些使用條款。</li>
-                    <li>如果測試人員是未成年人，則測試人員向公司保證，他們已獲得其所有父母，監護人和/或其他法定代理人的事先同意，以參與測試並遵守本使用條款。</li>
-                    <li>測試人員應自行負責管理其遊戲帳戶資訊和與自己相關的其他資訊，以及與參與測試相關的設置和其他資訊。</li>
-                  </ol>
-                </dd>
-              </div>
-              <div class="section">
-                <dt class="col">4. 使用條件 </dt>
-                <dd class="col">
-                  <ol>
-                    <li>測試人員應自行負責使用測試。</li>
-                    <li>測試人員應自行負責並支付費用，準備供其用於測試的電信線路和設備。</li>
-                    <li>推薦電腦規格由本公司CBT遊戲主程式下載頁中呈現。測試在除推薦規格以外的任何電腦規格中可能無法按預期運行。</li>
-                  </ol>
-                </dd>
-              </div>
-              <div class="section">
-                <dt class="col">5. 禁止事項</dt>
-                <dt class="col">公司應禁止測試人員從事與測試有關的以下任何行為： </dt>
-                <dd class="col">
-                  <ol>
-                    <li>誹謗或侮辱本公司或任何第三方的行為，或其他使任何第三方感到不適的行為，無論此類行為是否公開;</li>
-                    <li>損害本公司或任何第三方的隱私、榮譽或聲譽的行為;</li>
-                    <li>侵犯或可能侵犯測試中包含的版權、商標權或其他智慧財產權、肖像權、形象權或其他權利的行為;</li>
-                    <li>發佈猥褻或暴力資訊;</li>
-                    <li>違反公共政策的行為;</li>
-                    <li>政治、宗教或其他類似行為;</li>
-                    <li>違反任何法律的行為;</li>
-                    <li>未經本公司事先同意，使用測試牟利;</li>
-                    <li>通過測試獲得的任何資訊的商業用途;</li>
-                    <li>未經公司批准，舉辦與測試有關的任何活動;</li>
-                    <li>妨礙考試操作的行為;</li>
-                    <li>損害測試聲譽的行為;</li>
-                    <li>虛假信息登記;</li>
-                    <li>未經授權使用在測試中註冊的其他測試人員的資訊;</li>
-                    <li>未經授權訪問本公司或任何第三方的伺服器;</li>
-                    <li>與測試相關的任何程式的更改，分析，逆向工程等;</li>
-                    <li>其他本公司判斷為不適當的行為。</li>
-                  </ol>
-                </dd>
-              </div>
-              <div class="section">
-                <dt class="col">6. 智慧財產權等</dt>
-                <dd class="col">
-                  <ol>
-                    <li>測試人員僅有權在本使用條款規定的範圍內使用測試的功能、內容和其他服務、利益等，不得獲得測試中的任何擁有權或智慧財產權或其他權利。</li>
-                    <li>與測試相關的版權和其他智慧財產權應屬於本公司或已將此類權利許可給本公司的任何人。除本使用條款中明確規定的權利外，測試的使用不得轉讓或授予測試人員任何權利。</li>
-                    <li>
-                      測試人員通過測試輸入或發佈的任何資訊的版權、商標權和其他智慧財產權均屬於測試人員;但是，如果測試人員不得獲得公司或第三方擁有版權或任何其他智慧財產權的測試者條目或發佈中包含的資訊的任何智慧財產權，包括但不限於公司在測試中提供的內容。測試人員保證測試人員通過測試輸入或發佈的資訊不會侵犯任何第三方的任何智慧財產權或其他權利，並應授予公司使用，複製，改編和對其智慧財產權進行其他二次使用的權利，而無需考慮，永久且沒有任何條件。測試者不得向本公司或任何可能繼承或已從本公司許可權利的第三方行使作者的精神權利。
-                    </li>
-                  </ol>
-                </dd>
-              </div>
-              <div class="section">
-                <dt class="col">7. 測試人員資訊和測試人員資料</dt>
-                <dd class="col">
-                  <ol>
-                    <li>本公司應根據本公司另行規定的隱私政策處理測試人員的資訊。</li>
-                    <li>
-                      公司有權在測試期間未經測試人員同意的情況下使用測試人員於限量菁英刪檔封測(CBT)期間所有相關GAMELOG上的資訊，以分析和改進遊戲，並且在此範圍內，公司可以將測試人員客戶端中的任何相關信息上傳到公司的伺服器。
-                    </li>
-                    <li>測試期間累積的測試者數據不會作為測試者的玩家數據保留在遊戲的商業服務中。</li>
-                  </ol>
-                </dd>
-              </div>
-              <div class="section">
-                <dt class="col">8. 無擔保</dt>
-                <dt class="col">本公司對以下事項不作任何保證：</dt>
-                <dd class="col">
-                  <ol>
-                    <li>測試的內容將符合測試人員的意願或使用目的;</li>
-                    <li>與測試人員使用測試相關的數據將被正確存儲並且不會丟失，與測試相關的資訊將正確傳輸並正確顯示在測試人員的設備上;</li>
-                    <li>測試不會被終止、中斷或暫停;</li>
-                    <li>未經事先通知，測試中提供的功能或內容不會被修改，暫停，停止或終止;</li>
-                    <li>遊戲的最終版本將發佈;</li>
-                    <li>測試的應用程式將正常運行;</li>
-                    <li>測試人員通過測試獲得的資訊將是正確或可靠的。</li>
-                  </ol>
-                </dd>
-              </div>
-              <div class="section">
-                <dt class="col">9. 免責聲明</dt>
-                <dt class="col">
-                  (1) 如果以下任何損害不能歸因於公司的故意不當行為或疏忽，則公司不對以下任何損害承擔責任：
-                </dt>
-                <dd class="col">
-                  <ol class="roman">
-                    <li>由於任何第三方使用第3條第(3)款中定義的資訊而使測試人員遭受的損害;</li>
-                    <li>測試人員與測試中的任何其他測試人員或其他第三方之間產生的衝突和/或損害;</li>
-                    <li>測試人員因未經授權訪問或更改測試而造成的損害;</li>
-                    <li>測試人員因參與或不參與測試而遭受的損害;</li>
-                    <li>測試人員因測試而遭受的與測試有關或導致測試的任何其他損害。</li>
-                  </ol>
-                </dd>
-                <dt class="col">(2) 本公司不得參與測試人員與第三方（包括測試中的其他測試人員）之間就測試人員使用測試而引起的任何衝突。 </dt>
-              </div>
-              <div class="section">
-                <dt class="col">10. 暫停或終止提供測試</dt>
-                <dt class="col">(1) 在以下情況下，公司可自行決定暫停提供測試，恕不另行通知或要求測試人員：</dt>
-                <dd class="col">
-                  <ol class="roman">
-                    <li>測試人員違反或涉嫌違反本使用條款;</li>
-                    <li>根據測試的目的，公司確定測試人員的任何行為都是不適當的。</li>
-                    <li>測試人員因未經授權訪問或更改測試而造成的損害;</li>
-                    <li>測試人員因參與或不參與測試而遭受的損害;</li>
-                    <li>測試人員因測試而遭受的與測試有關或導致測試的任何其他損害。</li>
-                  </ol>
-                </dd>
-                <dt class="col">(2) 在以下情況下，公司可以自行決定終止提供測試，恕不另行通知或要求測試人員： </dd>
-                <dd class="col">
-                  <ol class="roman">
-                    <li>測試人員違反這些使用條款，並且公司確定此類違反是重大的;</li>
-                    <li>測試人員的任何行為都會對公司造成損害。</li>
-                  </ol>
-                </dd>
-                <dt class="col">(3) 對於測試人員或任何第三方因上述第(1)和(2)款規定的暫停或終止測試規定而遭受的任何損害，公司概不負責。 </dt>
-              </div>
-              <div class="section">
-                <dt class="col">11. 損害賠償 </dt>
-                <dd class="col">如果公司因測試人員的行為而遭受任何損害，測試人員應賠償公司。</dd>
-              </div>
-              <div class="section">
-                <dt class="col">12. 測試的修改、暫停、中止或終止</dt>
-                <dd class="col">
-                  <ol>
-                    <li>公司可以在事先通知後修改，暫停，中止或終止測試的全部或任何部分。</li>
-                    <li>儘管有前款規定，如果由於緊急原因而不可避免地，公司可以修改，暫停或終止測試，恕不另行通知。</li>
-                    <li>對於測試人員或任何第三方因公司根據本第12條採取的任何行為而遭受的任何損害，公司概不負責。</li>
-                  </ol>
-                </dd>
-              </div>
-              <div class="section">
-                <dt class="col">13. 不可轉讓</dt>
-                <dd class="col">未經本公司明確同意，測試人員不得將其與測試和本使用條款有關的全部或任何部分權利和義務轉讓給任何第三方或已被任何第三方繼承。</dd>
-              </div>
-              <div class="section">
-                <dt class="col">14. 準據法</dt>
-                <dd class="col">測試和本使用條款應受日本法律管轄。</dd>
-              </div>
-              <div class="section">
-                <dt class="col">15. 衝突解決</dt>
-                <dd class="col">
-                  如果測試人員與本公司之間就測試發生任何衝突，雙方應努力通過善意的討論來解決此類衝突。如果雙方通過討論無法達成協議，並且任何一方提起訴訟，則雙方同意對該訴訟的一審由東京地方法院專屬管轄。</dd>
-              </div>
-              <div class="section">
-                <dt class="col">16. 通知</dt>
-                <dd class="col">公司向測試人員發出的通知可以在限量菁英刪檔封測招募活動頁上NEWS上發佈，並且任何如此發出的通知應在可訪問時視為已發送給測試人員。</dd>
-              </div>
-              <div class="section">
-                <dt class="col">17. 可分割性</dt>
-                <dd class="col">如果本使用條款的任何規定因任何原因被認定為無效，則此類無效不應影響本使用條款其餘規定的有效性。</dd>
-              </div>
-              <div class="section">
-                <dt class="col">18. 修改</dt>
-                <dd class="col">公司可以在未經測試人員同意的情況下修改這些使用條款。對本使用條款的任何修改應按照第16條規定的方式通知測試人員，並在通知後生效並適用於測試人員。</dd>
-              </div>
-              <div class="section">
-                <dd class="col">成立時間：2022年1月13日 </dd>
-              </div>
-
-            </dl>
-            <button class="accept" disabled>我已閱讀完成並同意條款​</button>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!-- accept popup -->
-
-    <!-- lottery popup -->
-    <div class="modal fade" id="getlotteryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="lottery">
-              <div id="carouselLottery" class="carousel slide" data-ride="carousel" data-interval="false">
-                <!-- Indicators -->
-                <ul class="carousel-indicators">
-                  <li data-target="#carouselLottery" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselLottery" data-slide-to="1"></li>
-                  <li data-target="#carouselLottery" data-slide-to="2"></li>
-                </ul>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="table-responsive">
-                      <table class="table table-hover">
-                        <caption>
-                          第一期活動中獎名單​
-                        </caption>
-                        <thead>
-                          <tr>
-                            <th class="text-nowrap" scope="col">得獎獎項</th>
-                            <th class="text-nowrap" scope="col">會員帳號​</th>
-                            <th class="text-nowrap" scope="col">姓名</th>
-                            <th class="text-nowrap" scope="col">聯絡電話</th>
-                          </tr>
-                        </thead>
-                        <tbody class="text-nowrap">
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="table-responsive">
-                      <table class="table table-hover">
-                        <caption>
-                          第二期活動中獎名單​
-                        </caption>
-                        <thead>
-                          <tr>
-                            <th class="text-nowrap" scope="col">得獎獎項</th>
-                            <th class="text-nowrap" scope="col">會員帳號​</th>
-                            <th class="text-nowrap" scope="col">姓名</th>
-                            <th class="text-nowrap" scope="col">聯絡電話</th>
-                          </tr>
-                        </thead>
-                        <tbody class="text-nowrap">
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="table-responsive">
-                      <table class="table table-hover">
-                        <caption>
-                          第三期活動中獎名單​
-                        </caption>
-                        <thead>
-                          <tr>
-                            <th class="text-nowrap" scope="col">得獎獎項</th>
-                            <th class="text-nowrap" scope="col">會員帳號​</th>
-                            <th class="text-nowrap" scope="col">姓名</th>
-                            <th class="text-nowrap" scope="col">聯絡電話</th>
-                          </tr>
-                        </thead>
-                        <tbody class="text-nowrap">
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                          <tr>
-                            <td>獎項名稱</td>
-                            <td>Ji32k754cl4​</td>
-                            <td>陳O霞​</td>
-                            <td>0937xxxxxx​</td>
-                          </tr>
-                        </tbody>
-                      </table>
+              <div class="row no-gutters">
+                <div class="col-md-4 col-lg-2">
+                  <div class="dl-list-area d-flex justify-content-center align-items-center">
+                    <div class="dl-icon"><img src="images/dl-icon/directx.png" alt=""></div>
+                    <div class="dl-caption">
+                      <p>DirectX</p>
+                      <a href="https://www.microsoft.com/zh-tw/download/details.aspx?id=8109" class="dl-list-btn"
+                        target="_blank">前往下載</a>
                     </div>
                   </div>
                 </div>
-                <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#carouselLottery" data-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#carouselLottery" data-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- lottery popup -->
-    <!-- game download popup -->
-    <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="dl-header">
-              <div class="dl-info">
-                <h1>客戶端下載</h1>
-                <h1>CLIENT DOWNLOAD</h1>
-                <p>請安裝快樂玩超高速下載器進行客戶端的下載，<br>
-                  所需硬碟空間容量：50G以上 的可用空間</p>
-                <a href="#" class="dl-btn">主程式下載</a>
-              </div>
-            </div>
-
-            <div class="dl-detail">
-              <h6>▼ LOST ARK 失落的方舟系統需求：</h6>
-              <div class="dl-client-check table-responsive">
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th class="category" scope="col">項目</th>
-                      <th class="min" scope="col">最低規格</th>
-                      <th class="max" scope="col">推薦規格</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th class="category">作業系統</th>
-                      <td class="min" colspan="2">Windows 10(支援 Windows 7 sp1 或更高版本，僅支援 64 位操作系統)</td>
-                    </tr>
-                    <tr>
-                      <th class="category">CPU</th>
-                      <td class="min">Intel Core i3以上 / Ryzen3以上</td>
-                      <td class="max">Intel Core i5以上 / Ryzen5以上</td>
-                    </tr>
-                    <tr>
-                      <th class="category">顯示卡</th>
-                      <td class="min">NVIDIA GeForce GTX 460<br>
-                        AMD Radeon HD 6850<br>
-                        或更高版本</td>
-                      <td class="max data">
-                        <ul>
-                          <li>
-                            <em>1080P FHD</em><br>
-                            NVIDIA GeForce GTX 1050 <br>AMD Radeon RX560 2G以上
-                          </li>
-                          <li>
-                            <em>1440P QHD</em><br>
-                            NVIDIA GeForce RTX 2070 <br>AMD Radeon RX5700XT以上
-                          </li>
-                          <li>
-                            <em>Ultra Specs (4K, UHD)</em><br>
-                            NVIDIA GeForce RTX 2080 <br>AMD Radeon RX 6800以上
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="category">RAM</th>
-                      <td class="min">8GB以上</td>
-                      <td class="max">16GB以上</td>
-                    </tr>
-                    <tr>
-                      <th class="category">DirectX</th>
-                      <td class="min" colspan="2">DirectX 9.0c以上 (2010 June)</td>
-                    </tr>
-                    <tr>
-                      <th class="category">硬碟容量</th>
-                      <td class="min" colspan="2">50GB以上</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="col-md-4 col-lg-2">
+                  <div class="dl-list-area d-flex justify-content-center align-items-center">
+                    <div class="dl-icon"><img src="images/dl-icon/radeon.png" alt=""></div>
+                    <div class="dl-caption">
+                      <p>Radeon</p>
+                      <a href="https://www.amd.com/zh-hant/support" class="dl-list-btn" target="_blank">前往下載</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                  <div class="dl-list-area d-flex justify-content-center align-items-center">
+                    <div class="dl-icon"><img src="images/dl-icon/nvdia.png" alt=""></div>
+                    <div class="dl-caption">
+                      <p>Nvidia</p>
+                      <a href="https://www.nvidia.com.tw/Download/index.aspx?lang=tw" class="dl-list-btn"
+                        target="_blank">前往下載</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                  <div class="dl-list-area d-flex justify-content-center align-items-center">
+                    <div class="dl-icon"><img src="images/dl-icon/intel.png" alt=""></div>
+                    <div class="dl-caption">
+                      <p>Intel</p>
+                      <a href="https://www.intel.com.tw/content/www/tw/zh/support/detect.html" class="dl-list-btn"
+                        target="_blank">前往下載</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                  <div class="dl-list-area d-flex justify-content-center align-items-center">
+                    <div class="dl-icon"><img src="images/dl-icon/visualc.png" alt=""></div>
+                    <div class="dl-caption">
+                      <p>Visual C++</p>
+                      <a href="https://www.microsoft.com/zh-tw/download/details.aspx?id=40784" class="dl-list-btn"
+                        target="_blank">前往下載</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                  <div class="dl-list-area d-flex justify-content-center align-items-center">
+                    <div class="dl-icon"><img src="images/dl-icon/xigncode.png" alt=""></div>
+                    <div class="dl-caption">
+                      <p>Xigncode 3</p>
+                      <a href="#" class="dl-list-btn" target="_blank">前往下載</a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="dl-notice">
                 <ul>
-                  <li>變更解析度以及遊戲選項設定，可以更順暢的體驗遊戲。</li>
-                  <li>為了遊戲能正常的安裝以及執行，建議您安裝最新的作業系統。</li>
-                  <li>使用64-bit的作業系統可以提升遊戲品質。</li>
-                  <li>套用DirectX 11 顯示卡選項時，建議使用NVIDIA GeForce GTX 660 以上的顯示卡。</li>
+                  <li>為了更好的遊戲體驗，請確認各硬體的驅動程式是否最新版本。</li>
+                  <li>遊戲內以全螢幕、視窗畫面體驗時，遊戲體驗可能會因硬體製造商不同而有所差異。</li>
                 </ul>
-              </div>
-              <div class="dl-list">
-                <h6>下載圖形驅動程式及最新版本</h6>
-
-                <div class="row no-gutters">
-                  <div class="col-md-4 col-lg-2">
-                    <div class="dl-list-area d-flex justify-content-center align-items-center">
-                      <div class="dl-icon"><img src="images/dl-icon/directx.png" alt=""></div>
-                      <div class="dl-caption">
-                        <p>DirectX</p>
-                        <a href="https://www.microsoft.com/zh-tw/download/details.aspx?id=8109" class="dl-list-btn"
-                          target="_blank">前往下載</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-2">
-                    <div class="dl-list-area d-flex justify-content-center align-items-center">
-                      <div class="dl-icon"><img src="images/dl-icon/radeon.png" alt=""></div>
-                      <div class="dl-caption">
-                        <p>Radeon</p>
-                        <a href="https://www.amd.com/zh-hant/support" class="dl-list-btn" target="_blank">前往下載</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-2">
-                    <div class="dl-list-area d-flex justify-content-center align-items-center">
-                      <div class="dl-icon"><img src="images/dl-icon/nvdia.png" alt=""></div>
-                      <div class="dl-caption">
-                        <p>Nvidia</p>
-                        <a href="https://www.nvidia.com.tw/Download/index.aspx?lang=tw" class="dl-list-btn"
-                          target="_blank">前往下載</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-2">
-                    <div class="dl-list-area d-flex justify-content-center align-items-center">
-                      <div class="dl-icon"><img src="images/dl-icon/intel.png" alt=""></div>
-                      <div class="dl-caption">
-                        <p>Intel</p>
-                        <a href="https://www.intel.com.tw/content/www/tw/zh/support/detect.html" class="dl-list-btn"
-                          target="_blank">前往下載</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-2">
-                    <div class="dl-list-area d-flex justify-content-center align-items-center">
-                      <div class="dl-icon"><img src="images/dl-icon/visualc.png" alt=""></div>
-                      <div class="dl-caption">
-                        <p>Visual C++</p>
-                        <a href="https://www.microsoft.com/zh-tw/download/details.aspx?id=40784" class="dl-list-btn"
-                          target="_blank">前往下載</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-2">
-                    <div class="dl-list-area d-flex justify-content-center align-items-center">
-                      <div class="dl-icon"><img src="images/dl-icon/xigncode.png" alt=""></div>
-                      <div class="dl-caption">
-                        <p>Xigncode 3</p>
-                        <a href="#" class="dl-list-btn" target="_blank">前往下載</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="dl-notice">
-                  <ul>
-                    <li>為了更好的遊戲體驗，請確認各硬體的驅動程式是否最新版本。</li>
-                    <li>遊戲內以全螢幕、視窗畫面體驗時，遊戲體驗可能會因硬體製造商不同而有所差異。</li>
-                  </ul>
-                </div>
               </div>
             </div>
           </div>
-
         </div>
+
       </div>
     </div>
-    <!-- game download popup -->
+  </div>
+  <!-- game download popup -->
 
-    <!-- notice popup -->
-    <div class="modal fade" id="noticeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">參加限量菁英刪檔封測注意事項</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <dl class="row">
-              <div class="section">
-                <dt class="col">&#8227; 在限量菁英刪檔封測中所取得的所有角色數據、貨幣及道具等資料將會在測試結束後全部刪除，遊戲正式上線後將無法繼承任何相關資料。</dt>
-                <dt class="col">遊戲正式上線後將無法繼承任何相關資料。</dt>
-                <dd class="col">
-                  <ul class="dots">
-                    <li>敬請踴躍參與限量菁英刪檔封測及遊戲內相關活動。</li>
-                    <li>限量菁英刪檔封測中無法進行儲值、購點。</li>
-                    <li>限量菁英刪檔封測中有可能發生操作或顯示畫面等預期外的錯誤問題。</li>
-                    <li>舉辦期間有可能在無預告的情況下進行維護。</li>
-                    <li>舉辦期間若於遊戲內發生任何問題，恕不進行個別回覆。關於期間內遊戲所發生的異常情況以及改善建議，可能無法正式進行回覆，但營運團隊將會確認並參考所有反饋意見，以利改進。​</li>
-                    <li>限量菁英刪檔封測提供的服務內容有可能和正式版本有所不同。​</li>
-                    <li>限量菁英刪檔封測的報名者以及參加者若違反參加條件或參加條款，並且經查證後屬實的情況下將失去本次參加測試的機會。​</li>
-                    <li>對於限量菁英刪檔封測的中選結果及抽選方法有疑慮者，恕不進行個別回覆，敬請見諒。​</li>
-                    <li>限量菁英刪檔封測的當選權利為中選者本人所有，無法進行讓渡或交易。​</li>
-                  </ul>
-                </dd>
-              </div>
-              <div class="section">
-                <dt class="col">&#8227; 上傳由本公司所提供之《失落的方舟：LOST ARK》相關遊玩影片時，依循以下規範內容即可做為個人目的使用。</dt>
-                <dd class="col">
-                  <ul class="dots">
-                    <li>請勿公開與本公司的遊戲形象不符合或破壞遊戲形象之影片。</li>
-                    <li>請勿以本公司或者官方名義上傳有違法嫌疑或散發不實內容之影片。</li>
-                    <li>請勿上傳違反公共秩序與道德或侵害他人權利之影片。</li>
-                    <li>請勿上傳可能讓人聯想到特定國家、宗教、人種、民族、團體等，或是帶有歧視色彩之內容。</li>
-                    <li>請勿以遊戲以外之目的上傳影片。</li>
-                  </ul>
-                </dd>
-                <dt class="col">※ 本方針有可能在無預告的情況下進行變更。</dt>
-                <dt class="col">※ 主辦單位保有隨時修改及終止本活動之權利，如有任何變更內容或詳細注意事項將公布於本網頁，恕不另行通知。</dt>
-              </div>
-
-            </dl>
-          </div>
-
+  <!-- notice popup -->
+  <div class="modal fade" id="noticeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">參加限量菁英刪檔封測注意事項</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <div class="modal-body">
+          <dl>
+            <div class="section">
+              <dt>&#8227; 在限量菁英刪檔封測中所取得的所有角色數據、貨幣及道具等資料將會在測試結束後全部刪除，遊戲正式上線後將無法繼承任何相關資料。</dt>
+              <dt>遊戲正式上線後將無法繼承任何相關資料。</dt>
+              <dd>
+                <ul class="dots">
+                  <li>敬請踴躍參與限量菁英刪檔封測及遊戲內相關活動。</li>
+                  <li>限量菁英刪檔封測中無法進行儲值、購點。</li>
+                  <li>限量菁英刪檔封測中有可能發生操作或顯示畫面等預期外的錯誤問題。</li>
+                  <li>舉辦期間有可能在無預告的情況下進行維護。</li>
+                  <li>舉辦期間若於遊戲內發生任何問題，恕不進行個別回覆。關於期間內遊戲所發生的異常情況以及改善建議，可能無法正式進行回覆，但營運團隊將會確認並參考所有反饋意見，以利改進。​</li>
+                  <li>限量菁英刪檔封測提供的服務內容有可能和正式版本有所不同。​</li>
+                  <li>限量菁英刪檔封測的報名者以及參加者若違反參加條件或參加條款，並且經查證後屬實的情況下將失去本次參加測試的機會。​</li>
+                  <li>對於限量菁英刪檔封測的中選結果及抽選方法有疑慮者，恕不進行個別回覆，敬請見諒。​</li>
+                  <li>限量菁英刪檔封測的當選權利為中選者本人所有，無法進行讓渡或交易。​</li>
+                </ul>
+              </dd>
+            </div>
+            <div class="section">
+              <dt>&#8227; 上傳由本公司所提供之《失落的方舟：LOST ARK》相關遊玩影片時，依循以下規範內容即可做為個人目的使用。</dt>
+              <dd>
+                <ul class="dots">
+                  <li>請勿公開與本公司的遊戲形象不符合或破壞遊戲形象之影片。</li>
+                  <li>請勿以本公司或者官方名義上傳有違法嫌疑或散發不實內容之影片。</li>
+                  <li>請勿上傳違反公共秩序與道德或侵害他人權利之影片。</li>
+                  <li>請勿上傳可能讓人聯想到特定國家、宗教、人種、民族、團體等，或是帶有歧視色彩之內容。</li>
+                  <li>請勿以遊戲以外之目的上傳影片。</li>
+                </ul>
+              </dd>
+              <dt>※ 本方針有可能在無預告的情況下進行變更。</dt>
+              <dt>※ 主辦單位保有隨時修改及終止本活動之權利，如有任何變更內容或詳細注意事項將公布於本網頁，恕不另行通知。</dt>
+            </div>
+
+          </dl>
+        </div>
+
       </div>
     </div>
-    <!-- notice popup -->
+  </div>
+  <!-- notice popup -->
 
-    <!-- event notice popup -->
-    <div class="modal fade" id="eventNoticeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">活動注意事項​</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <dl class="row">
-              <div class="section">
-                <dd class="col">
-                  <ul class="dots">
-                    <li>活動獎勵實體品項不限一個帳號獲得各項活動獎勵，如參與多項活動並幸運抽中為中獎者，您將可獲得中獎的所有實體品項。​</li>
-                    <li>11月28日限量菁英刪檔封測(CBT)活動結束後，將於12月9日前公佈中獎名單。​</li>
-                    <li>(※中獎名單將公佈於FB官方粉絲團、活動頁右方功能列中可查看。)​</li>
-                    <li>(※如參加抽獎之登錄資料有誤，請至快樂玩平台客服中心回報。)​</li>
-                    <li>限量菁英刪檔封測(CBT)為刪檔測試，活動結束後僅保留快樂玩平台帳號，遊戲內資料將會全數刪除。</li>
-                    <li>活動虛擬獎勵序號於快樂玩平台＞服務中心＞兌換優惠券進行兌換，且兌換之遊戲帳號內需先有遊戲角色存在。​</li>
-                    <li>虛擬獎勵項目以官方電磁資料為依據進行發放。</li>
-                    <li>正式營運虛擬獎勵序號兌換將於正式營運開服後即可兌換，每帳號限領一次，逾時恕不補發。</li>
-                    <li>若實體獎勵發生缺貨或其它無法採購之情事，將以同類型且價位相近之獎勵取代。 ​</li>
-                    <li>此為機會中獎商品，消費者購買或參與活動不代表即可獲得特定商品。 ​</li>
-                    <li>本次活動僅運送台灣地區(恕不含離島、不運送海外，敬請見諒)，如因填寫資料有誤造成失聯或退件，導致無法收到贈品，將無法重覆投遞。​</li>
-                    <li>實體獎項於抽出得獎者後，依所得稅法規定，機會中獎之獎項價值若超過NT$1,000，所得將列入個人年度綜合所得稅申報，需下載「活動領獎單」填妥後寄回本公司或活動小組信箱。​</li>
-                    <li>實體獎項的寄出時間於上述程序完成後另行通知。​</li>
-                    <li>實體獎勵寄出後，如未領取導致獎勵遭到退回，則視同放棄得獎權利，獎勵將不再寄出。 ​</li>
-                    <li>活動獎勵皆無法轉讓及折抵現金或其它等值商品，若拒絕領取則視同放棄得獎資格。</li>
-                    <li>實體獎項若因中獎者填寫資料錯誤或不完整而遭退回，或因屢次配送聯絡不到本人而遭退回時，將不進行補寄 與 另行通知。​</li>
-                    <li>請確認為真實基本資料，以維護您的得獎權益。​</li>
-                    <li>活動期間系統若發生任何問題，或其他不可抗力之因素，導致活動無法順利進行，本公司保留變更或終止活動時間、內容之權利。​</li>
-                    <li>若玩家因觸犯遊戲規則遭受凍結處份，個人線路不穩，導致斷線、連接失敗等問題而影響活動參與，本公司均不負責，不另做補償。​</li>
-                    <li>所取得之使用者個人資料，僅供本網站於內部或依蒐集之特定目的和範圍使用，非經使用者同意或法律規定，本網站不會任意蒐集、處理及利用使用者之個人資料或提供予第三人或作其他目的之使用。​</li>
-                    <li>樂意傳播保留審核、決定或變更活動之權力，並且依照實際情況予以增刪、修定活動辦法，所有參加的玩家於活動中請配合官方網站的相關公告。​</li>
-                  </ul>
-                </dd>
-              </div>
-
-            </dl>
-          </div>
-
+  <!-- event notice popup -->
+  <div class="modal fade" id="eventNoticeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">活動注意事項​</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <div class="modal-body">
+          <dl>
+            <div class="section">
+              <dd>
+                <ul class="dots">
+                  <li>活動獎勵實體品項不限一個帳號獲得各項活動獎勵，如參與多項活動並幸運抽中為中獎者，您將可獲得中獎的所有實體品項。​</li>
+                  <li>11月28日限量菁英刪檔封測(CBT)活動結束後，將於12月9日前公佈中獎名單。​</li>
+                  <li>(※中獎名單將公佈於FB官方粉絲團、活動頁右方功能列中可查看。)​</li>
+                  <li>(※如參加抽獎之登錄資料有誤，請至快樂玩平台客服中心回報。)​</li>
+                  <li>限量菁英刪檔封測(CBT)為刪檔測試，活動結束後僅保留快樂玩平台帳號，遊戲內資料將會全數刪除。</li>
+                  <li>活動虛擬獎勵序號於快樂玩平台＞服務中心＞兌換優惠券進行兌換，且兌換之遊戲帳號內需先有遊戲角色存在。​</li>
+                  <li>虛擬獎勵項目以官方電磁資料為依據進行發放。</li>
+                  <li>正式營運虛擬獎勵序號兌換將於正式營運開服後即可兌換，每帳號限領一次，逾時恕不補發。</li>
+                  <li>若實體獎勵發生缺貨或其它無法採購之情事，將以同類型且價位相近之獎勵取代。 ​</li>
+                  <li>此為機會中獎商品，消費者購買或參與活動不代表即可獲得特定商品。 ​</li>
+                  <li>本次活動僅運送台灣地區(恕不含離島、不運送海外，敬請見諒)，如因填寫資料有誤造成失聯或退件，導致無法收到贈品，將無法重覆投遞。​</li>
+                  <li>實體獎項於抽出得獎者後，依所得稅法規定，機會中獎之獎項價值若超過NT$1,000，所得將列入個人年度綜合所得稅申報，需下載<span class="link"><a
+                        href="https://www.mangot5.com/Index/Service/Download"
+                        target="_blank">「活動領獎單」</a></span>填妥後寄回本公司或活動小組信箱。​</li>
+                  <li>實體獎項的寄出時間於上述程序完成後另行通知。​</li>
+                  <li>實體獎勵寄出後，如未領取導致獎勵遭到退回，則視同放棄得獎權利，獎勵將不再寄出。 ​</li>
+                  <li>活動獎勵皆無法轉讓及折抵現金或其它等值商品，若拒絕領取則視同放棄得獎資格。</li>
+                  <li>實體獎項若因中獎者填寫資料錯誤或不完整而遭退回，或因屢次配送聯絡不到本人而遭退回時，將不進行補寄 與 另行通知。​</li>
+                  <li>請確認為真實基本資料，以維護您的得獎權益。​</li>
+                  <li>活動期間系統若發生任何問題，或其他不可抗力之因素，導致活動無法順利進行，本公司保留變更或終止活動時間、內容之權利。​</li>
+                  <li>若玩家因觸犯遊戲規則遭受凍結處份，個人線路不穩，導致斷線、連接失敗等問題而影響活動參與，本公司均不負責，不另做補償。​</li>
+                  <li>所取得之使用者個人資料，僅供本網站於內部或依蒐集之特定目的和範圍使用，非經使用者同意或法律規定，本網站不會任意蒐集、處理及利用使用者之個人資料或提供予第三人或作其他目的之使用。​</li>
+                  <li>樂意傳播保留審核、決定或變更活動之權力，並且依照實際情況予以增刪、修定活動辦法，所有參加的玩家於活動中請配合官方網站的相關公告。​</li>
+                </ul>
+              </dd>
+            </div>
+
+          </dl>
+        </div>
+
       </div>
     </div>
-    <!-- event notice popup -->
+  </div>
+  <!-- event notice popup -->
+
+  <!-- Growth reward popup -->
+  <div class="modal fade" id="growthRewardModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">成長型獎勵獲得說明</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <dl>
+            <div class="section">
+              <dd>
+                <ol>
+                  <li>只要在活動期間內完成各天數的獎勵成長所需的累積時間，就能夠使獎勵稀有度成長。​</li>
+                  <li>累積時間信息將在每天的早上七點進行初始化。​<i>(即使成長所需的累積時間無法達成 ，每天還是會將累積時間信息初始化，請特別注意這點)​</i></li>
+                  <li>直到獎勵活動結束之前都能獲得最終完成成長階段對應的獎勵。​</li>
+                  <li>在獎勵活動的最後日程2022.11.26(六)07:00~2022.11.27(日)06:59時能獲得獎勵，相關時程之前無法領取獎勵。</li>
+                  <li>
+                    如2022.11.24(四)07:00~2022.11.25(五)06:59期間內如果下一階段的獎勵可進行成長的情況下無法獲得獎勵時，會提示您下一階段可進行升級的時間，之後獎勵成長到最終階段全部完成的狀況下，將獲得成長至最終階段的獎勵。​
+                  </li>
+                  <li>
+                    如活動結束前成長所需要的累積時間還有剩一點時間才能到下一階段的話，將會獲得當前已成長完成的對應階段獎勵。
+              <dt>【成長型獎勵獲得範例】</dt>
+              <dd>．<span class="badge badge-warning">一天累積時間未達到60分 = 0 階段：</span> 現在還無法獲得獎勵</dd>
+              <dd>．<span class="badge badge-warning">一天累積時間達到60分 = 1階段：</span> 在活動最後一天能獲得1階段的獎勵</dd>
+              <dd>．<span class="badge badge-warning">兩天累積時間達到60分 = 2階段：</span> 在活動最後一天能獲得2階段的獎勵</dd>
+              <dd>．<span class="badge badge-warning">三天累積時間未達到60分 = 2階段：</span>
+                如果下一階段的獎勵可進行成長的情況下卻無法獲得獎勵，會提示您下一階段可進行升級的時間，如活動結束前還有剩一點時間才能到下一階段的話，將會獲得當前已成長完成的對應階段獎勵。</dd>
+              <dd>．<span class="badge badge-warning">三天累積時間達到60分 = 3階段：</span> 在活動最後一天能獲得3階段的獎勵</dd>
+              ​</li>
+              <li>HOTTIME活動獎勵將會發送至點擊獎勵圖示的角色信箱裡。​</li>
+              <li>HOTTIME活動獎勵只能夠由遠征隊的一名角色獲得。​</li>
+              <li>發送至信箱的獎勵在信箱收到的30天後將會消失，請一定要在期限內領取獎勵。​</li>
+              <li>戰鬥等級須滿10以上才能參加活動。</li>
+              <li>如獎勵在活動期間內無法領取的，只要在活動結束後的七天以內進入遊戲，就會被保管在右下角的[指南>財物綜合保管箱裡，在財物綜合保管箱裡所保管的道具將在保管期限內的30天到期，請一定要在時限內領取。​</li>
+              </ol>
+              </dd>
+
+            </div>
+
+          </dl>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Growth reward popup -->
   </div>
 
   <script src="js/jquery-3.6.0.min.js"></script>
@@ -1774,6 +2274,15 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/ui.js"></script>
 
+  <script>
+    $(function () {
+      $('.soon').on('click', function (e) {
+        e.preventDefault();
+        alert("11/24 12:00開放，敬請期待！");
+      });
+
+    });
+  </script>
 </body>
 
 </html>

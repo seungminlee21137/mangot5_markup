@@ -1,2861 +1,3097 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Playfair+Display&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Playfair+Display&display=swap");
 body {
-    font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'Playfair Display', sans-serif, Arial;
-    font-weight: 400;
-    font-size: 18px;
-    color: #fff;
-    position: relative;
+  font-family: "Noto Sans TC", "Microsoft JhengHei", "Playfair Display",
+ sans-serif, Arial;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  position: relative;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 a {
-    color: #fff;
+  color: #fff;
 }
 
 a:hover {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .gutters-5 {
-    margin-right: -5px;
-    margin-left: -5px;
+  margin-right: -5px;
+  margin-left: -5px;
 }
 
 .gutters-5 > .col,
-.gutters-5 > [class*='col-'] {
-    padding-right: 5px;
-    padding-left: 5px;
+.gutters-5 > [class*="col-"] {
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .mgt40 {
-    margin-top: 40px !important;
+  margin-top: 40px !important;
 }
 
 hr {
-    border-top: 1px solid #41372f;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    margin: 30px 0;
+  border-top: 1px solid #41372f;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 30px 0;
 }
 
 .txt-scroll::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }
 
 .txt-scroll::-webkit-scrollbar {
-    width: 4px;
-    background-color: rgba(255, 255, 255, 0.3);
+  width: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .txt-scroll::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
 }
 
-#wrapper {
-    overflow: hidden;
-}
-
-#sidemenu-bar {
-    background: rgba(0, 0, 0, 0.7);
-    border: 1px solid #8d7860;
-    width: 222px;
-    left: -222px;
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    z-index: 991;
-    padding: 25px;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+.scroll-top {
+  background: #342c25;
+  border: 1px solid #786857;
+  bottom: 50px;
+  cursor: pointer;
+  height: 50px;
+  margin: 0;
+  opacity: 0;
+  position: fixed;
+  right: 50px;
+  width: 50px;
+  z-index: 99;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 @media (max-width: 1024px) {
-    #sidemenu-bar {
-        display: none;
-    }
+  .scroll-top {
+    right: 10px;
+    bottom: 250px;
+  }
+}
+
+.scroll-top.up {
+  opacity: 1;
+}
+
+.scroll-top .arrow {
+  border: solid #f4d7aa;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  margin-top: 5px;
+  padding: 4px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.scroll-top:hover {
+  background: #786857;
+}
+
+.scroll-top:hover .arrow {
+  border: solid #f4d7aa;
+  border-width: 0 1px 1px 0;
+}
+
+.badge {
+  font-size: 16px;
+  border-radius: 0;
+}
+
+@media (max-width: 480px) {
+  .badge {
+    font-size: 12px;
+  }
+}
+
+.btn-submit {
+  max-width: 400px;
+  width: 100%;
+  height: 88px;
+  padding: 0;
+  background: #C45D49;
+  border: 1px solid #ff7c62;
+  border-radius: 0;
+  line-height: 88px;
+  margin: 35px auto 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.btn-submit.btn-grow {
+  max-width: 300px;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .btn-submit {
+    font-size: 20px;
+  }
+}
+
+.btn-submit:hover {
+  color: #fff;
+  background: #954737;
+}
+
+#wrapper {
+  overflow: hidden;
+}
+
+#sidemenu-bar {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #8d7860;
+  width: 222px;
+  left: -222px;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 991;
+  padding: 25px;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  #sidemenu-bar {
+    display: none;
+  }
 }
 
 #sidemenu-bar.on {
-    left: 0;
+  left: 0;
 }
 
 #sidemenu-bar .sidemenu-btn {
-    background: #8d7860;
-    color: #352616;
-    font-size: 18px;
-    position: absolute;
-    left: 199px;
-    top: 21px;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    vertical-align: top;
-    width: 72px;
-    border: none;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/side-btn.png) no-repeat 0 0;
+  width: 25px;
+  height: 72px;
+  position: absolute;
+  left: 221px;
+  top: -1px;
+  border: none;
+  text-indent: -99999em;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+#sidemenu-bar .sidemenu-btn:hover {
+  -webkit-filter: brightness(130%);
+  filter: brightness(130%);
 }
 
 #sidemenu-bar ul li {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
+}
+
+#sidemenu-bar ul li.active a {
+  color: #f4d7aa;
 }
 
 #sidemenu-bar ul li:first-child a {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 #sidemenu-bar ul li:last-child a {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 #sidemenu-bar ul li a {
-    padding: 15px 0;
-    font-size: 18px;
-    display: block;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  padding: 15px 0;
+  font-size: 18px;
+  display: block;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 #sidemenu-bar ul li a:hover,
 #sidemenu-bar ul li a .active {
-    color: #8d7860;
+  color: #f4d7aa;
 }
 
 dl dt {
-    margin: 0 0 10px;
-    font-size: 18px;
+  margin: 0 0 10px;
+  font-size: 18px;
 }
 
 @media (max-width: 480px) {
-    dl dt {
-        font-size: 13px;
-    }
+  dl dt {
+    font-size: 13px;
+  }
 }
 
 dl dd {
-    font-size: 16px;
-    margin-left: 20px;
+  font-size: 16px;
+  margin-left: 20px;
 }
 
 @media (max-width: 480px) {
-    dl dd {
-        font-size: 12px;
-        margin-left: 0;
-    }
+  dl dd {
+    font-size: 12px;
+    margin-left: 0;
+  }
 }
 
 ol {
-    margin: 0 0 20px;
-    padding: 0 0 0 30px;
-    list-style-type: none;
-    counter-reset: elementcounter;
+  margin: 0 0 20px;
+  padding: 0 0 0 30px;
 }
 
 @media (max-width: 480px) {
-    ol {
-        padding-left: 15px;
-    }
-}
-
-ol li {
-    position: relative;
-}
-
-ol li::before {
-    display: inline-block;
-    position: absolute;
-    top: -2px;
-    left: -30px;
-    content: '(' counter(elementcounter) ') ';
-    counter-increment: elementcounter;
-}
-
-@media (max-width: 480px) {
-    ol li::before {
-        left: -17px;
-    }
+  ol {
+    padding-left: 15px;
+  }
 }
 
 ol.roman {
-    list-style-type: lower-roman;
-    counter-reset: elementromancounter;
-}
-
-ol.roman li::before {
-    content: counter(elementromancounter) ') ';
-    counter-increment: elementromancounter;
-}
-
-ol.roman {
-    margin: 0 0 20px;
-    padding: 0 0 0 30px;
-    list-style-type: lower-roman;
-    counter-reset: none;
-}
-
-ol.roman li {
-    position: relative;
-}
-
-ol.roman li::before {
-    display: inline-block;
-    position: absolute;
-    top: -2px;
-    left: -30px;
-    content: '';
-    counter-increment: none;
+  margin: 0 0 20px;
+  padding: 0 0 0 30px;
+  list-style-type: lower-roman;
 }
 
 ul.dots {
-    list-style-type: disc;
-    margin: 0 0 20px;
-    padding: 0 0 0 30px;
+  list-style-type: disc;
+  margin: 0 0 20px;
+  padding: 0 0 0 30px;
 }
 
 .form-check {
-    padding: 0;
+  padding: 0;
 }
 
 .form-check-input {
-    padding: 0;
-    height: initial;
-    width: initial;
-    margin-bottom: 0;
-    display: none;
-    cursor: pointer;
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
 }
 
 .form-check-label {
-    position: relative;
-    cursor: pointer;
+  position: relative;
+  cursor: pointer;
 }
 
 .form-check-label:before {
-    content: '';
-    -webkit-appearance: none;
-    background-color: transparent;
-    border: 2px solid #fff;
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
-        inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-    padding: 10px;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    cursor: pointer;
-    margin-right: 8px;
-    margin-top: -3px;
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-top: -3px;
 }
 
 .form-check-input:checked + .form-check-label:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 5px;
-    left: 9px;
-    width: 6px;
-    height: 14px;
-    border: solid #fff;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .sidebar {
-    background: transparent;
-    width: 252px;
-    height: auto;
-    position: fixed;
-    right: -252px;
-    top: 244px;
-    z-index: 991;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  background: transparent;
+  width: 252px;
+  height: auto;
+  position: fixed;
+  right: -252px;
+  top: 244px;
+  z-index: 991;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 .sidebar.on {
-    right: 0;
+  right: 0;
 }
 
 .sidebar .sidebtn {
-    width: 27px;
-    height: 122px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    left: -27px;
-    padding: 0;
-    border: 1px solid #465078;
-    border-bottom: none;
-    background: #151826;
-    border-top-left-radius: 25px;
-    border-end-start-radius: 25px;
-    color: #fff;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: -2px;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  width: 27px;
+  height: 122px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -27px;
+  padding: 0;
+  border: 1px solid #465078;
+  border-bottom: none;
+  background: #151826;
+  border-top-left-radius: 25px;
+  border-end-start-radius: 25px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -2px;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 .sidebar .sidebtn:hover {
-    background: #323a5a;
+  background: #323a5a;
 }
 
 .sidebar .side-close {
-    position: absolute;
-    right: 5px;
-    top: -32px;
-    width: 26px;
-    height: 26px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 50%;
-    border: none;
-    white-space: nowrap;
-    text-indent: -99999em;
+  position: absolute;
+  right: 5px;
+  top: -32px;
+  width: 26px;
+  height: 26px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  border: none;
+  white-space: nowrap;
+  text-indent: -99999em;
 }
 
 .sidebar .side-close:hover {
-    background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.7);
 }
 
-.sidebar .side-close::after,
-.sidebar .side-close::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: 0;
-    margin-left: -7px;
-    display: block;
-    height: 1px;
-    width: 14px;
-    background-color: #fff;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+.sidebar .side-close::after, .sidebar .side-close::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 0;
+  margin-left: -7px;
+  display: block;
+  height: 1px;
+  width: 14px;
+  background-color: #fff;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .sidebar .side-close::before {
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .sidebar .side-close::after {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .sidebar .side-go {
-    background: #fff;
-    border-radius: 5px;
-    color: #000;
-    font-size: 18px;
-    padding: 6px 12px;
-    position: absolute;
-    bottom: 8px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    display: block;
-    max-width: 121px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  background: #fff;
+  border-radius: 5px;
+  color: #000;
+  font-size: 18px;
+  padding: 6px 12px;
+  position: absolute;
+  bottom: 8px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: block;
+  max-width: 121px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 .sidebar .side-go:hover {
-    background: #1a1a1a;
-    color: #fff;
+  background: #1a1a1a;
+  color: #fff;
 }
 
 .lottery .carousel {
-    height: auto;
+  height: auto;
 }
 
 .lottery .carousel .table-hover tbody tr:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .lottery .carousel .table {
-    color: #fff;
-    text-align: center;
+  color: #fff;
+  text-align: center;
 }
 
 .lottery .carousel .table caption {
-    text-align: center;
-    font-size: 20px;
-    color: #f0dec6;
-    caption-side: top;
+  text-align: center;
+  font-size: 20px;
+  color: #f0dec6;
+  caption-side: top;
 }
 
 @media (max-width: 480px) {
-    .lottery .carousel .table caption {
-        font-size: 13px;
-    }
+  .lottery .carousel .table caption {
+    font-size: 13px;
+  }
 }
 
 .lottery .carousel .table thead th {
-    border-bottom: 2px solid #333643;
+  border-bottom: 2px solid #333643;
 }
 
 @media (max-width: 480px) {
-    .lottery .carousel .table thead th {
-        font-size: 12px;
-    }
+  .lottery .carousel .table thead th {
+    font-size: 12px;
+  }
 }
 
 .lottery .carousel .table td,
 .lottery .carousel .table th {
-    border-top: 1px solid #333643;
+  border-top: 1px solid #333643;
 }
 
 @media (max-width: 480px) {
-    .lottery .carousel .table td,
-    .lottery .carousel .table th {
-        font-size: 12px;
-    }
+  .lottery .carousel .table td,
+  .lottery .carousel .table th {
+    font-size: 12px;
+  }
 }
 
 .lottery .carousel-control-next,
 .lottery .carousel-control-prev {
-    bottom: auto;
+  bottom: auto;
 }
 
 .lottery .carousel-control-next-icon,
 .lottery .carousel-control-prev-icon {
-    width: 20px;
-    height: 33px;
+  width: 20px;
+  height: 33px;
 }
 
 .download-btn {
-    max-width: 300px;
-    width: 100%;
-    height: 60px;
-    margin: 35px auto 5px;
-    background: #605146;
-    color: #d7bfac;
-    display: block;
-    font-size: 18px;
-    line-height: 60px;
-    text-align: center;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  max-width: 300px;
+  width: 100%;
+  height: 60px;
+  margin: 35px auto 5px;
+  background: #605146;
+  color: #d7bfac;
+  display: block;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 .download-btn:hover {
-    background: #736154;
+  background: #736154;
 }
 
 .modal .modal-dialog {
-    margin: 120px auto;
+  margin: 120px auto;
 }
 
 @media (max-width: 480px) {
-    .modal .modal-dialog {
-        margin: 60px 10px;
-    }
+  .modal .modal-dialog {
+    margin: 60px 10px;
+  }
 }
 
 .modal.fade .modal-dialog {
-    -webkit-filter: blur(20);
-    filter: blur(20);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-    -webkit-transition: all 0.6s ease-in-out;
-    transition: all 0.6s ease-in-out;
+  -webkit-filter: blur(20);
+          filter: blur(20);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .modal.fade.show .modal-dialog {
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .modal .modal-content {
-    border: 1px solid #8d7860;
-    background: rgba(0, 0, 0, 0.7);
-    background-size: cover;
-    border-radius: 0;
+  border: 1px solid #8d7860;
+  background: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  border-radius: 0;
 }
 
 .modal .modal-content .modal-header {
-    border: none;
-    padding: 30px;
-    border-radius: 0;
+  border: none;
+  padding: 30px;
+  border-radius: 0;
 }
 
 @media (max-width: 480px) {
-    .modal .modal-content .modal-header {
-        padding: 15px;
-    }
+  .modal .modal-content .modal-header {
+    padding: 15px;
+  }
 }
 
 .modal .modal-content .modal-header .modal-title {
-    font-size: 24px;
-    width: 100%;
+  font-size: 24px;
+  width: 100%;
 }
 
 @media (max-width: 480px) {
-    .modal .modal-content .modal-header .modal-title {
-        font-size: 20px;
-    }
+  .modal .modal-content .modal-header .modal-title {
+    font-size: 20px;
+  }
 }
 
 .modal .modal-content .modal-header button.close {
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 30px;
-    color: #ddd9cd;
-    border: 1px solid #ddd9cd;
-    text-shadow: none;
-    position: absolute;
-    right: 15px;
-    top: -48px;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ddd9cd;
+  border: 1px solid #ddd9cd;
+  text-shadow: none;
+  position: absolute;
+  right: 15px;
+  top: -48px;
 }
 
 @media (max-width: 480px) {
-    .modal .modal-content .modal-header button.close {
-        font-size: 15px;
-        line-height: 15px;
-        top: -34px;
-    }
+  .modal .modal-content .modal-header button.close {
+    font-size: 15px;
+    line-height: 15px;
+    top: -34px;
+  }
 }
 
 .modal .modal-content .modal-header button.close:hover {
-    color: #f0dec6;
+  color: #f0dec6;
 }
 
 .modal .modal-content .modal-body {
-    padding: 0 30px 30px;
+  padding: 0 30px 30px;
 }
 
 @media (max-width: 480px) {
-    .modal .modal-content .modal-body {
-        padding: 0 15px 15px;
-    }
+  .modal .modal-content .modal-body {
+    padding: 0 15px 15px;
+  }
 }
 
 .modal .modal-content .modal-footer {
-    border-top: none;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  border-top: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .modal .modal-content .btn-back {
-    max-width: 200px;
-    width: 100%;
-    height: 60px;
-    background: #605146;
-    border-radius: 0;
-    color: #fff;
-    margin: 0 auto;
-    font-size: 18px;
+  max-width: 200px;
+  width: 100%;
+  height: 60px;
+  background: #605146;
+  border-radius: 0;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 18px;
 }
 
 .modal .newsall-modal .modal-header {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .modal .newsall-modal h5.modal-title {
-    font-family: 'Playfair Display', serif;
-    color: #fff;
-    font-size: 24px;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 24px;
 }
 
 .modal .newsall-modal .table {
-    color: #fff;
+  color: #fff;
 }
 
 .modal .newsall-modal .table caption {
-    text-align: center;
-    font-size: 20px;
-    color: #f0dec6;
-    caption-side: top;
+  text-align: center;
+  font-size: 20px;
+  color: #f0dec6;
+  caption-side: top;
 }
 
 .modal .newsall-modal .table thead th {
-    border-bottom: 2px solid #333643;
+  border-bottom: 2px solid #333643;
 }
 
 .modal .newsall-modal .table td a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .modal .newsall-modal .table td,
 .modal .newsall-modal .table th {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 #acceptModal .modal-content {
-    height: 600px;
-    text-align: center;
+  height: 600px;
+  text-align: center;
 }
 
 #acceptModal .terms-and-conditions {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    text-align: left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-align: left;
 }
 
 #acceptModal .terms-and-conditions p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 @media (max-width: 480px) {
-    #acceptModal .terms-and-conditions p {
-        font-size: 16px;
-    }
+  #acceptModal .terms-and-conditions p {
+    font-size: 16px;
+  }
 }
 
 #acceptModal .accept {
-    max-width: 300px;
-    width: 100%;
-    height: 60px;
-    margin: 30px auto;
-    background: #605146;
-    color: #d7bfac;
-    display: block;
-    font-size: 20px;
-    line-height: 60px;
-    border: none;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  max-width: 300px;
+  width: 100%;
+  height: 60px;
+  margin: 30px auto;
+  background: #605146;
+  color: #d7bfac;
+  display: block;
+  font-size: 20px;
+  line-height: 60px;
+  border: none;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 #acceptModal .accept[disabled] {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 #acceptModal .accept:hover {
-    background: #736154;
+  background: #736154;
 }
 
 .pagination-box {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 .pagination-box .page-link {
-    color: #000;
-    padding: 7px 12px;
+  color: #000;
+  padding: 7px 12px;
 }
 
 .pagination-box .page-link:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .pagination-box .page-item.active .page-link {
-    background-color: #535353;
-    color: #fff;
-    border-radius: 0;
+  background-color: #535353;
+  color: #fff;
+  border-radius: 0;
 }
 
 .app_overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    z-index: 1000;
-    -webkit-transition: opacity 0.4s linear;
-    transition: opacity 0.4s linear;
-    opacity: 0;
-    visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  z-index: 1000;
+  -webkit-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .app_overlay.open {
-    opacity: 0.6;
-    visibility: visible;
+  opacity: 0.6;
+  visibility: visible;
 }
 
 .fullscreen-video {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
 }
 
 .fullscreen-video::before {
-    position: absolute;
-    content: '';
-    background: rgba(0, 0, 0, 0.3)
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/overlay.png) 0 0
-        repeat;
-    height: 100%;
-    width: 100%;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 0;
-    display: block;
+  position: absolute;
+  content: "";
+  background: rgba(0, 0, 0, 0.3) url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/overlay.png) 0 0 repeat;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  display: block;
 }
 
 .fullscreen-video #video-background {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    z-index: -100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
 }
 
 .navbar {
-    padding: 0 80px;
+  padding: 0 80px;
 }
 
 @media (max-width: 1024px) {
-    .navbar {
-        padding: 10px 15px;
-    }
+  .navbar {
+    padding: 10px 15px;
+  }
 }
 
 .navbar.navbar-dark {
-    background-color: rgba(0, 0, 0, 0.8) !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .navbar .logo {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/landing/test99/images/nav-logo.png)
-        no-repeat 0 0;
-    max-width: 175px;
-    height: 54px;
-    text-indent: -99999em;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    background-size: contain;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/landing/test99/images/nav-logo.png) no-repeat 0 0;
+  max-width: 175px;
+  height: 54px;
+  text-indent: -99999em;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-size: contain;
 }
 
 @media (max-width: 1024px) {
-    .navbar .logo {
-        display: none;
-    }
+  .navbar .logo {
+    display: none;
+  }
 }
 
 .navbar .main-navbar .navbar-nav .nav-link {
-    font-size: 20px;
-    color: #ffffff;
-    opacity: 0.7;
-    padding: 0 50px;
-    height: 70px;
-    line-height: 70px;
-    position: relative;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  font-size: 20px;
+  color: #ffffff;
+  opacity: 0.7;
+  padding: 0 50px;
+  height: 70px;
+  line-height: 70px;
+  position: relative;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
-.navbar .main-navbar .navbar-nav .nav-link:hover,
-.navbar .main-navbar .navbar-nav .nav-link.active {
-    opacity: 1;
+.navbar .main-navbar .navbar-nav .nav-link:hover, .navbar .main-navbar .navbar-nav .nav-link.active {
+  opacity: 1;
 }
 
 .navbar .main-navbar .navbar-nav .nav-link::before {
-    content: '';
-    height: 0;
-    background: #fff;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  content: "";
+  height: 0;
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
-.navbar .main-navbar .navbar-nav .nav-link.active::before,
-.navbar .main-navbar .navbar-nav .nav-link:hover::before {
-    content: '';
-    height: 3px;
+.navbar .main-navbar .navbar-nav .nav-link.active::before, .navbar .main-navbar .navbar-nav .nav-link:hover::before {
+  content: "";
+  height: 3px;
 }
 
 .navbar .nav-icon .music {
-    width: 45px;
-    height: 45px;
-    position: relative;
-    background: #fff;
-    border-radius: 50%;
-    cursor: pointer;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .navbar .nav-icon .music.active .s1 {
-    -webkit-animation: wave 0.66s linear infinite;
-    animation: wave 0.66s linear infinite;
+  -webkit-animation: wave 0.66s linear infinite;
+          animation: wave 0.66s linear infinite;
 }
 
 .navbar .nav-icon .music.active .s2 {
-    -webkit-animation: wave 0.8s linear infinite;
-    animation: wave 0.8s linear infinite;
+  -webkit-animation: wave 0.8s linear infinite;
+          animation: wave 0.8s linear infinite;
 }
 
 .navbar .nav-icon .music.active .s3 {
-    -webkit-animation: wave 0.7s linear infinite;
-    animation: wave 0.7s linear infinite;
+  -webkit-animation: wave 0.7s linear infinite;
+          animation: wave 0.7s linear infinite;
 }
 
 .navbar .nav-icon .music.active .s4 {
-    -webkit-animation: wave 0.5s linear infinite;
-    animation: wave 0.5s linear infinite;
+  -webkit-animation: wave 0.5s linear infinite;
+          animation: wave 0.5s linear infinite;
 }
 
 .navbar .nav-icon .music span {
-    position: absolute;
-    width: 4px;
-    bottom: 10px;
-    background: #2c2c2c;
+  position: absolute;
+  width: 4px;
+  bottom: 10px;
+  background: #2c2c2c;
 }
 
 .navbar .nav-icon .music .s1 {
-    height: 11px;
-    right: 6px;
+  height: 11px;
+  right: 6px;
 }
 
 .navbar .nav-icon .music .s2 {
-    height: 19px;
-    right: 14px;
+  height: 19px;
+  right: 14px;
 }
 
 .navbar .nav-icon .music .s3 {
-    height: 25px;
-    right: 23px;
+  height: 25px;
+  right: 23px;
 }
 
 .navbar .nav-icon .music .s4 {
-    height: 13px;
-    right: 32px;
+  height: 13px;
+  right: 32px;
 }
 
 .navbar .nav-icon ul li {
-    margin: 0 6px;
+  margin: 0 6px;
 }
 
 .navbar .nav-icon ul li:nth-child(3) {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .navbar .nav-icon ul li a {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/sns-icon.png)
-        no-repeat 0 0;
-    width: 45px;
-    height: 45px;
-    text-indent: -99999em;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/sns-icon.png) no-repeat 0 0;
+  width: 45px;
+  height: 45px;
+  text-indent: -99999em;
 }
 
 .navbar .nav-icon ul li:nth-child(2) a {
-    background-position-x: -45px;
+  background-position-x: -45px;
 }
 
 .navbar .nav-icon ul li:nth-child(3) a {
-    background-position-x: -90px;
+  background-position-x: -90px;
 }
 
 .navbar-toggler {
-    border: none;
+  border: none;
 }
 
 .nav-left-panel {
-    z-index: 9999;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    max-width: 320px;
-    visibility: hidden;
-    left: 0;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  max-width: 320px;
+  visibility: hidden;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 .nav-left-panel.show {
-    display: block;
-    visibility: visible;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  display: block;
+  visibility: visible;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 .nav-left-panel .nav-left-wrap {
-    height: 100%;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    overflow-y: scroll;
-    background: #212121;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: scroll;
+  background: #212121;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .nav-left-panel .nav-left-wrap .nav-left-toggle {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    white-space: nowrap;
-    text-indent: -99999em;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  white-space: nowrap;
+  text-indent: -99999em;
 }
 
-.nav-left-panel .nav-left-wrap .nav-left-toggle::after,
-.nav-left-panel .nav-left-wrap .nav-left-toggle::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -1px;
-    margin-left: -10px;
-    display: block;
-    height: 1px;
-    width: 20px;
-    background-color: #fff;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+.nav-left-panel .nav-left-wrap .nav-left-toggle::after, .nav-left-panel .nav-left-wrap .nav-left-toggle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  margin-left: -10px;
+  display: block;
+  height: 1px;
+  width: 20px;
+  background-color: #fff;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .nav-left-panel .nav-left-wrap .nav-left-toggle::before {
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .nav-left-panel .nav-left-wrap .nav-left-toggle::after {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .nav-left-panel .nav-left-wrap .nav-left-header {
-    height: 48px;
-    width: 50px;
-    margin: 0;
-    overflow: hidden;
-    position: absolute;
-    right: 15px;
-    top: 15px;
+  height: 48px;
+  width: 50px;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 15px;
+  top: 15px;
 }
 
 .nav-left-panel .nav-left-wrap .nav-left-header .navbar-brand-mb {
-    display: inline-block;
-    max-width: 120px;
-    margin: 20px 0 0;
+  display: inline-block;
+  max-width: 120px;
+  margin: 20px 0 0;
 }
 
 .nav-left-panel .nav-left-wrap .nav-left-list {
-    color: #fff;
+  color: #8f8571;
 }
 
 .nav-left-panel .nav-left-wrap .nav-left-list .navbar-brand {
-    max-width: 238px;
-    padding: 0;
-    margin: 0 0 60px;
+  max-width: 238px;
+  padding: 0;
+  margin: 0 0 60px;
 }
 
 .nav-left-panel .nav-left-wrap .nav-left-list ul li {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .nav-left-panel .nav-left-wrap .nav-left-list ul li:first-child a {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .nav-left-panel .nav-left-wrap .nav-left-list ul li:last-child a {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .nav-left-panel .nav-left-wrap .nav-left-list ul li a {
-    padding: 15px 0;
-    font-size: 18px;
-    display: block;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  padding: 15px 0;
+  font-size: 16px;
+  display: block;
+  color: #d6c8b9;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 .nav-left-panel .nav-left-wrap .nav-left-list ul li a:hover,
 .nav-left-panel .nav-left-wrap .nav-left-list ul li a .active {
-    color: #8d7860;
+  color: #f0dec6;
 }
 
 .nav-left-panel .nav-left-wrap .nav-left-list .nav-title {
-    font-size: 18px;
-    border-bottom: 1px solid #383838;
-    margin: 0;
-    height: 43px;
-    line-height: 43px;
-    padding: 0 25px;
-    background: #1d1d1d;
+  font-size: 18px;
+  border-bottom: 1px solid #383838;
+  margin: 0;
+  height: 43px;
+  line-height: 43px;
+  padding: 0 25px;
+  background: #1d1d1d;
 }
 
 .head-bg {
-    background: url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/bg.jpg)
-        no-repeat 50%;
-    height: 950px;
-    background-size: cover;
-    position: relative;
+  background: url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/bg.jpg) no-repeat 50%;
+  height: 950px;
+  background-size: cover;
+  position: relative;
 }
 
 @media (max-width: 1024px) {
-    .head-bg {
-        height: 100vh;
-    }
+  .head-bg {
+    height: 100vh;
+  }
 }
 
 .head-bg .title-info {
-    margin: 90px 0 0;
+  margin: 90px 0 0;
 }
 
 @media (max-width: 480px) {
-    .head-bg .title-info {
-        margin: 0;
-        padding: 0 15px;
-    }
+  .head-bg .title-info {
+    margin: 0;
+    padding: 0 15px;
+  }
 }
 
 .head-bg .title-info .logo {
-    margin: 0 0 40px;
+  margin: 0 0 40px;
 }
 
 @media (max-width: 480px) {
-    .head-bg .title-info .logo {
-        margin-bottom: 20px;
-    }
+  .head-bg .title-info .logo {
+    margin-bottom: 20px;
+  }
 }
 
 .head-bg .title-info .title {
-    margin: 0 0 20px;
+  margin: 0 0 20px;
 }
 
 @media (max-width: 480px) {
-    .head-bg .title-info .title {
-        margin-bottom: 10px;
-    }
+  .head-bg .title-info .title {
+    margin-bottom: 10px;
+  }
 }
 
 .head-bg .title-info .date {
-    margin: 0 0 50px;
+  margin: 0 0 50px;
 }
 
 @media (max-width: 480px) {
-    .head-bg .title-info .date {
-        margin-bottom: 25px;
-    }
+  .head-bg .title-info .date {
+    margin-bottom: 25px;
+  }
 }
 
 .head-bg .title-info .cbt-btn {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/joinbtn.png)
-        no-repeat 0 0;
-    background-size: contain;
-    width: 322px;
-    height: 97px;
-    text-indent: -99999em;
-    margin: 0 auto;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/joinbtn.png) no-repeat 0 0;
+  background-size: contain;
+  width: 322px;
+  height: 97px;
+  text-indent: -99999em;
+  margin: 0 auto;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 .head-bg .title-info .cbt-btn:hover {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/joinbtn-hover.png)
-        no-repeat 0 0;
-    background-size: contain;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/joinbtn-hover.png) no-repeat 0 0;
+  background-size: contain;
 }
 
 @media (max-width: 480px) {
-    .head-bg .title-info .cbt-btn {
-        width: 45.833vw;
-        height: 13.75vw;
-    }
+  .head-bg .title-info .cbt-btn {
+    width: 45.833vw;
+    height: 13.75vw;
+  }
 }
 
 .head-bg .title-info .news-info {
-    max-width: 567px;
-    width: 100%;
-    height: 90px;
-    background: rgba(0, 0, 0, 0.7);
-    margin: 50px auto;
-    padding: 0;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  max-width: 567px;
+  width: 100%;
+  height: 90px;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 50px auto;
+  padding: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .head-bg .title-info .news-info .news-plus {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 20%;
-    flex: 0 0 20%;
-    max-width: 20%;
-    position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  max-width: 20%;
+  position: relative;
 }
 
 .head-bg .title-info .news-info .news-plus .news-more {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    left: 0;
-    right: 0;
-    margin: -4px auto 0;
-    line-height: 1;
-    display: block;
-    z-index: 1;
-    font-family: 'Playfair Display', serif;
-    color: #fff;
-    font-size: 20px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: -4px auto 0;
+  line-height: 1;
+  display: block;
+  z-index: 1;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 20px;
 }
 
 .head-bg .title-info .news-info .news-list {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 80%;
-    flex: 0 0 80%;
-    max-width: 80%;
-    overflow-y: scroll;
-    overflow-x: hidden;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+  max-width: 80%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .head-bg .title-info .news-info .news-list ul {
-    padding: 0;
-    padding-right: 10px;
-    list-style: none;
+  padding: 0;
+  padding-right: 10px;
+  list-style: none;
 }
 
 .head-bg .title-info .news-info .news-list ul li {
-    margin: 5px 0;
-    width: 100%;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    position: relative;
-    height: 22px;
+  margin: 5px 0;
+  width: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  height: 22px;
 }
 
 .head-bg .title-info .news-info .news-list ul li .tit {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    min-width: 0;
-    padding: 0 10px 0 0;
-    position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 0;
+  padding: 0 10px 0 0;
+  position: relative;
 }
 
 .head-bg .title-info .news-info .news-list ul li .tit a {
-    font-size: 13px;
-    color: #fff;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    font-weight: 300;
+  font-size: 13px;
+  color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 300;
 }
 
 .head-bg .title-info .news-info .news-list ul li .tit a:hover {
-    color: #d9ac37;
-    text-decoration: underline;
+  color: #d9ac37;
+  text-decoration: underline;
 }
 
 @media (max-width: 480px) {
-    .head-bg .title-info .news-info .news-list ul li .tit a {
-        font-size: 12px;
-    }
+  .head-bg .title-info .news-info .news-list ul li .tit a {
+    font-size: 12px;
+  }
 }
 
 .head-bg .title-info .news-info .news-list ul li .info-icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0;
 }
 
 .head-bg .title-info .news-info .news-list ul li .info-icon .time {
-    position: relative;
-    font-size: 13px;
-    color: #fff;
+  position: relative;
+  font-size: 13px;
+  color: #fff;
 }
 
 @media (max-width: 480px) {
-    .head-bg .title-info .news-info .news-list ul li .info-icon .time {
-        font-size: 12px;
-    }
+  .head-bg .title-info .news-info .news-list ul li .info-icon .time {
+    font-size: 12px;
+  }
 }
 
 .head-bg .title-info .scroll-down {
-    position: relative;
-    color: #fff;
-    font-size: 18px;
+  position: relative;
+  color: #fff;
+  font-size: 18px;
 }
 
 @media (max-width: 480px) {
-    .head-bg .title-info .scroll-down {
-        font-size: 16px;
-    }
+  .head-bg .title-info .scroll-down {
+    font-size: 16px;
+  }
 }
 
 .head-bg .title-info .scroll-down::before {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/scroll-down.png)
-        no-repeat 0 0;
-    width: 29px;
-    height: 19px;
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: -30px;
-    -webkit-animation: arrow-movement 2s ease-in-out infinite;
-    animation: arrow-movement 2s ease-in-out infinite;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/scroll-down.png) no-repeat 0 0;
+  width: 29px;
+  height: 19px;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -30px;
+  -webkit-animation: arrow-movement 2s ease-in-out infinite;
+          animation: arrow-movement 2s ease-in-out infinite;
 }
 
 .main-content {
-    position: relative;
-    padding: 70px 0 400px;
+  position: relative;
+  padding: 70px 0 400px;
 }
 
 @media (max-width: 480px) {
-    .main-content {
-        padding-bottom: 150px;
-    }
+  .main-content {
+    padding-bottom: 150px;
+  }
 }
 
 .main-content .main-tabs {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/tab-bg.png)
-        no-repeat 50% 0;
-    height: 121px;
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-    border: none;
-    box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.79);
-    -webkit-box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.79);
-    -moz-box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.79);
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/tab-bg.png) no-repeat 50% 0;
+  height: 121px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  border: none;
+  box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.79);
 }
 
 @media (max-width: 1024px) {
-    .main-content .main-tabs {
-        height: 100px;
-        background-size: cover;
-    }
+  .main-content .main-tabs {
+    height: 100px;
+    background-size: cover;
+  }
 }
 
 @media (max-width: 480px) {
-    .main-content .main-tabs {
-        height: 80px;
-    }
+  .main-content .main-tabs {
+    height: 80px;
+  }
 }
 
 .main-content .main-tabs li {
-    height: 98%;
+  height: 98%;
 }
 
 .main-content .main-tabs li .nav-link {
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    border: none;
-    border-radius: 0;
-    font-size: 30px;
-    font-weight: 700;
-    padding: 0 60px;
-    mix-blend-mode: soft-light;
-    white-space: nowrap;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0 60px;
+  mix-blend-mode: soft-light;
+  white-space: nowrap;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 .main-content .main-tabs li .nav-link span {
-    color: #dfd4b6;
+  color: #dfd4b6;
 }
 
-.main-content .main-tabs li .nav-link.active,
-.main-content .main-tabs li .nav-link:hover {
-    background-color: #2f2318;
+.main-content .main-tabs li .nav-link.active, .main-content .main-tabs li .nav-link:hover {
+  background-color: #2f2318;
 }
 
-.main-content .main-tabs li .nav-link.active span,
-.main-content .main-tabs li .nav-link:hover span {
-    color: #fff597;
-    mix-blend-mode: hard-light;
+.main-content .main-tabs li .nav-link.active span, .main-content .main-tabs li .nav-link:hover span {
+  color: #fff597;
+  mix-blend-mode: hard-light;
 }
 
 @media (max-width: 768px) {
-    .main-content .main-tabs li .nav-link {
-        font-size: 24px;
-        padding: 0 10px;
-    }
+  .main-content .main-tabs li .nav-link {
+    font-size: 24px;
+    padding: 0 10px;
+  }
 }
 
 @media (max-width: 480px) {
-    .main-content .main-tabs li .nav-link {
-        font-size: 20px;
-    }
+  .main-content .main-tabs li .nav-link {
+    font-size: 20px;
+  }
 }
 
 .main-content .main-tabs li.cbt-new {
-    position: relative;
+  position: relative;
 }
 
 .main-content .main-tabs li.cbt-new::before {
-    content: 'NEW';
-    display: inline-block;
-    position: absolute;
-    left: 15px;
-    top: -40px;
-    font-size: 30px;
-    font-family: 'Playfair Display', serif;
-    color: #ffc107;
+  content: "NEW";
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+  top: -40px;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  color: #ffc107;
 }
 
 @media (max-width: 480px) {
-    .main-content .main-tabs li.cbt-new::before {
-        font-size: 20px;
-        left: 5px;
-        top: -28px;
-    }
+  .main-content .main-tabs li.cbt-new::before {
+    font-size: 20px;
+    left: 5px;
+    top: -28px;
+  }
 }
 
 @media (max-width: 768px) {
-    .main-content .main-tabs li {
-        -webkit-box-flex: 0;
+  .main-content .main-tabs li {
+    -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 
 .main-content .adventure {
-    margin: 100px 0 0;
+  margin: 100px 0 0;
 }
 
 @media (max-width: 480px) {
-    .main-content .adventure {
-        margin: 50px 0 0;
-    }
+  .main-content .adventure {
+    margin: 50px 0 0;
+  }
 }
 
 .main-content .adventure .tit {
-    margin: 0 0 50px;
+  margin: 0 0 50px;
 }
 
 .main-content .adventure .notice {
-    padding: 150px 0 0;
-    max-width: 800px;
+  padding: 150px 0 0;
+  max-width: 820px;
+}
+
+.main-content .adventure .notice-gift {
+  margin: 60px auto 0;
+  max-width: 1000px;
+}
+
+.main-content .adventure .notice-gift a {
+  display: block;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+.main-content .adventure .notice-gift a:hover {
+  -webkit-filter: brightness(130%);
+  filter: brightness(130%);
 }
 
 .main-content .content-box {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/content-bg.png)
-        repeat-y 50% 0;
-    position: relative;
-    padding: 10px 10px 150px;
-    max-width: 1200px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/content-bg.png) repeat-y 50% 0;
+  position: relative;
+  padding: 10px 10px 150px;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 @media (max-width: 480px) {
-    .main-content .content-box {
-        padding-bottom: 100px;
-    }
+  .main-content .content-box {
+    padding-bottom: 100px;
+  }
 }
 
 .main-content .content-box h4 {
-    color: #f4d7aa;
-    font-size: 24px;
-    margin: 35px 0 10px;
+  color: #f4d7aa;
+  font-size: 24px;
+  margin: 35px 0 10px;
 }
 
 @media (max-width: 480px) {
-    .main-content .content-box h4 {
-        font-size: 18px;
-    }
+  .main-content .content-box h4 {
+    font-size: 18px;
+  }
 }
 
 .main-content .content-box p {
-    color: #f8f3ee;
-    font-size: 18px;
-    font-weight: 300;
-    margin: 0;
+  color: #f8f3ee;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0;
 }
 
 @media (max-width: 480px) {
-    .main-content .content-box p {
-        font-size: 13px;
-    }
+  .main-content .content-box p {
+    font-size: 13px;
+  }
 }
 
 .main-content .content-box p.icon-txt {
-    color: #d6c8b9;
-    font-size: 16px;
-    margin: 5px 0 0;
+  color: #d6c8b9;
+  font-size: 16px;
+  margin: 5px 0 0;
+  line-height: 18px;
 }
 
 @media (max-width: 480px) {
-    .main-content .content-box p.icon-txt {
-        font-size: 13px;
-    }
+  .main-content .content-box p.icon-txt {
+    font-size: 13px;
+  }
 }
 
 .main-content .content-box p.icon-txt i {
-    display: inline-block;
-}
-
-.main-content .content-box i {
-    font-style: normal;
-    color: #62a6fd;
-    font-size: 16px;
-    font-weight: 300;
-    margin: 0 0 10px;
-    display: block;
-}
-
-@media (max-width: 480px) {
-    .main-content .content-box i {
-        font-size: 13px;
-    }
+  display: inline-block;
 }
 
 .main-content .content-box::before {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/content-up.png)
-        no-repeat 50% 0;
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 0;
-    width: 100%;
-    height: 20px;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/content-up.png) no-repeat 50% 0;
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 0;
+  width: 100%;
+  height: 18px;
 }
 
 .main-content .content-box::after {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/content-end.png)
-        no-repeat 50% 0;
-    content: '';
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    width: 100%;
-    height: 12px;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/content-end.png) no-repeat 50% 0;
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 100%;
+  height: 18px;
 }
 
 .main-content .content-box .adventure-form-end {
-    background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    align-item: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-item: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
 .main-content .content-box .adventure-form-end span {
-    max-width: 100px;
-    margin: 0 auto 20px;
+  max-width: 100px;
+  margin: 0 auto 20px;
 }
 
 .main-content .content-box .adventure-form-end h3 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .main-content .content-box .adventure-form {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/adventure-form-bg.png)
-        repeat-y 50% 0;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    margin: 100px auto 0;
-    z-index: 1;
-    padding: 0 15px;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/adventure-form-bg.png) repeat-y 50% 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 100px auto 0;
+  z-index: 1;
+  padding: 0 15px;
 }
 
 .main-content .content-box .adventure-form .adventure-form-box {
-    max-width: 670px;
-    margin: 0 auto;
-    padding: 15px 0;
-    position: relative;
+  max-width: 670px;
+  margin: 0 auto;
+  padding: 15px 0;
+  position: relative;
 }
 
 .main-content .content-box .adventure-form .adventure-form-box h5 {
-    color: #988678;
-    font-size: 18px;
+  color: #988678;
+  font-size: 18px;
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group {
-    color: #988678;
+  color: #988678;
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group .success,
 .main-content .content-box .adventure-form .adventure-form-box .form-group .failing {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/form-icon.png)
-        no-repeat 0 0;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin: 0 auto;
-    left: 0;
-    right: 0;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/form-icon.png) no-repeat 0 0;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 
 @media (max-width: 480px) {
-    .main-content .content-box .adventure-form .adventure-form-box .form-group .success,
-    .main-content .content-box .adventure-form .adventure-form-box .form-group .failing {
-        -webkit-transform: none;
-        transform: none;
-        top: -35px;
-        left: auto;
-        right: 13px;
-    }
+  .main-content .content-box .adventure-form .adventure-form-box .form-group .success,
+  .main-content .content-box .adventure-form .adventure-form-box .form-group .failing {
+    -webkit-transform: none;
+            transform: none;
+    top: -35px;
+    left: auto;
+    right: 13px;
+  }
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group .is-invalid {
-    border: 1px solid #f9002f !important;
+  border: 1px solid #f9002f !important;
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group .invalid-feedback {
-    text-align: left;
-    font-size: 13px;
-    color: #f9002f;
+  text-align: left;
+  font-size: 13px;
+  color: #f9002f;
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group .failing {
-    background-position-y: -20px;
+  background-position-y: -20px;
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group .warning {
-    color: #f9002f;
-    font-size: 16px;
-    font-weight: 400;
-    text-align: left;
-    margin-top: 5px;
+  color: #f9002f;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 5px;
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group .col-form-label {
-    text-align: left;
+  text-align: left;
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group .form-control {
-    border-radius: 0;
-    background: #aba5a0;
-    border: none;
-    font-weight: 300;
-    height: 50px;
+  border-radius: 0;
+  background: #aba5a0;
+  border: none;
+  font-weight: 300;
+  height: 50px;
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group .btn-verification {
-    background: #3b495b;
-    border-radius: 0;
-    color: #d7bfac;
-    height: 50px;
-    font-size: 16px;
-    width: 100%;
-    margin: 0;
-    padding: 0 5px;
-    white-space: nowrap;
-    overflow: hidden;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  background: #3b495b;
+  border-radius: 0;
+  color: #d7bfac;
+  height: 50px;
+  font-size: 16px;
+  width: 100%;
+  margin: 0;
+  padding: 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group .btn-verification:hover {
-    -webkit-filter: brightness(130%);
-    filter: brightness(130%);
+  -webkit-filter: brightness(130%);
+  filter: brightness(130%);
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group .btn-sms {
-    background: #605146;
+  background: #605146;
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group .btn-count {
-    background: #6c757d;
+  background: #6c757d;
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group .btn-count:hover {
-    background: #6c757d;
-    -webkit-filter: brightness(100%);
-    filter: brightness(100%);
+  background: #6c757d;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group .btn-finish {
-    background: #5c3232;
+  background: #5c3232;
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group .btn-finish:hover {
-    background: #5c3232;
-    -webkit-filter: brightness(100%);
-    filter: brightness(100%);
+  background: #5c3232;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group .btn-event {
-    border-radius: 25px;
-    background: #685040;
-    color: #ddd9cd;
-    font-size: 24px;
-    padding: 5px 37px;
-    margin-top: 17px;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  border-radius: 25px;
+  background: #685040;
+  color: #ddd9cd;
+  font-size: 24px;
+  padding: 5px 37px;
+  margin-top: 17px;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group .btn-event:hover {
-    -webkit-filter: brightness(130%);
-    filter: brightness(130%);
+  -webkit-filter: brightness(130%);
+  filter: brightness(130%);
 }
 
 .main-content .content-box .adventure-form .adventure-form-box .form-group:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .main-content .content-box .adventure-form p {
-    font-size: 18px;
-    color: #988678;
+  font-size: 18px;
+  color: #988678;
 }
 
 .main-content .content-box .adventure-form::before {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/adventure-form-bg-up.png)
-        no-repeat 50% 0;
-    content: '';
-    position: absolute;
-    top: -85px;
-    left: 9px;
-    width: 100%;
-    height: 85px;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/adventure-form-bg-up.png) no-repeat 50% 0;
+  content: "";
+  position: absolute;
+  top: -85px;
+  left: 9px;
+  width: 100%;
+  height: 85px;
 }
 
 @media (max-width: 1024px) {
-    .main-content .content-box .adventure-form::before {
-        left: 0;
-    }
+  .main-content .content-box .adventure-form::before {
+    left: 0;
+  }
 }
 
 .main-content .content-box .adventure-form::after {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/adventure-form-bg-end.png)
-        no-repeat 50% 0;
-    content: '';
-    position: absolute;
-    bottom: -85px;
-    left: -10px;
-    width: 100%;
-    height: 85px;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/adventure-form-bg-end.png) no-repeat 50% 0;
+  content: "";
+  position: absolute;
+  bottom: -85px;
+  left: -10px;
+  width: 100%;
+  height: 85px;
 }
 
 @media (max-width: 1024px) {
-    .main-content .content-box .adventure-form::after {
-        left: 0;
-    }
+  .main-content .content-box .adventure-form::after {
+    left: 0;
+  }
 }
 
 .main-content .content-box .adventure-form .login-btn {
-    max-width: 200px;
-    height: 60px;
-    margin: 0 auto 20px;
-    background: #605146;
-    color: #fff;
-    display: block;
-    font-size: 18px;
-    line-height: 60px;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  max-width: 200px;
+  height: 60px;
+  margin: 0 auto 20px;
+  background: #605146;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  line-height: 60px;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 .main-content .content-box .adventure-form .login-btn:hover {
-    background: #736154;
+  background: #736154;
 }
 
 .main-content .content-box .adventure-form .logout {
-    max-width: 443px;
-    margin: 0 auto 20px;
+  max-width: 443px;
+  margin: 0 auto 20px;
 }
 
 .main-content .content-box .adventure-form .logout p {
-    margin: 0 0 15px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 18px;
+  margin: 0 0 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 18px;
 }
 
 .main-content .content-box .adventure-form .logout-btn {
-    max-width: 200px;
-    height: 60px;
-    margin: 0 auto;
-    background: #605146;
-    color: #fff;
-    display: block;
-    font-size: 18px;
-    line-height: 60px;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  max-width: 200px;
+  height: 60px;
+  margin: 0 auto;
+  background: #605146;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  line-height: 60px;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 .main-content .content-box .adventure-form .logout-btn:hover {
-    background: #736154;
+  background: #736154;
 }
 
 .main-content .content-box .adventure-form .rules {
-    max-width: 300px;
-    height: 60px;
-    margin: 35px auto 10px;
-    background: #605146;
-    color: #d7bfac;
-    display: block;
-    font-size: 20px;
-    line-height: 60px;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  max-width: 300px;
+  height: 60px;
+  margin: 35px auto 10px;
+  background: #605146;
+  color: #d7bfac;
+  display: block;
+  font-size: 20px;
+  line-height: 60px;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 @media (max-width: 480px) {
-    .main-content .content-box .adventure-form .rules {
-        font-size: 18px;
-    }
+  .main-content .content-box .adventure-form .rules {
+    font-size: 18px;
+  }
 }
 
 .main-content .content-box .adventure-form .rules:hover {
-    background: #736154;
-}
-
-.main-content .content-box .adventure-form .btn-submit {
-    max-width: 400px;
-    width: 100%;
-    height: 88px;
-    padding: 0;
-    background: rgba(59, 73, 91, 0.7);
-    border: 1px solid #576c87;
-    border-radius: 0;
-    line-height: 88px;
-    margin: 35px auto 0;
-    font-size: 24px;
-    color: #fff;
-}
-
-@media (max-width: 480px) {
-    .main-content .content-box .adventure-form .btn-submit {
-        font-size: 20px;
-    }
-}
-
-.main-content .content-box .adventure-form .btn-submit:hover {
-    background: #3b495b;
+  background: #736154;
 }
 
 .main-content .content-box .notice {
-    text-align: left;
-    margin: 0 auto;
+  text-align: left;
+  margin: 0 auto;
 }
 
 .main-content .content-box .notice ul li {
-    color: #8d8d8d;
-    font-size: 16px;
+  color: #8d8d8d;
+  font-size: 16px;
 }
 
 @media (max-width: 480px) {
-    .main-content .content-box .notice ul li {
-        font-size: 13px;
-    }
+  .main-content .content-box .notice ul li {
+    font-size: 13px;
+  }
 }
 
 .main-content .content-box .notice ul li span.note {
-    color: #f4d7aa;
-}
-
-.main-content .content-box .notice .notice-gift {
-    margin: 60px 0 0;
+  color: #f4d7aa;
 }
 
 .main-content .content-box .mm-1 {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/mm-1.png)
-        no-repeat 0 0;
-    width: 516px;
-    height: 765px;
-    position: absolute;
-    left: 50%;
-    top: -30px;
-    margin-left: -923px;
-    z-index: 10;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/mm-1.png) no-repeat 0 0;
+  width: 516px;
+  height: 765px;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  margin-left: -923px;
+  z-index: 10;
 }
 
 @media (max-width: 1024px) {
-    .main-content .content-box .mm-1 {
-        display: none;
-    }
+  .main-content .content-box .mm-1 {
+    display: none;
+  }
 }
 
 .main-content .content-box .mm-2 {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/mm-2.png)
-        no-repeat 0 0;
-    width: 606px;
-    height: 769px;
-    position: absolute;
-    left: 50%;
-    top: -90px;
-    margin-left: 356px;
-    z-index: 10;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/mm-2.png) no-repeat 0 0;
+  width: 606px;
+  height: 769px;
+  position: absolute;
+  left: 50%;
+  top: -90px;
+  margin-left: 356px;
+  z-index: 10;
 }
 
 @media (max-width: 1024px) {
-    .main-content .content-box .mm-2 {
-        display: none;
-    }
+  .main-content .content-box .mm-2 {
+    display: none;
+  }
 }
 
 .main-content .event {
-    margin: 100px 0 0;
+  margin: 100px 0 0;
 }
 
 @media (max-width: 480px) {
-    .main-content .event {
-        margin: 50px 0 0;
-    }
+  .main-content .event {
+    margin: 50px 0 0;
+  }
 }
 
 .main-content .event .event-tabs {
-    max-width: 1080px;
-    height: 110px;
-    margin: 80px auto 0;
-    border: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  max-width: 1080px;
+  height: 110px;
+  margin: 80px auto 0;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 480px) {
-    .main-content .event .event-tabs {
-        margin-top: 50px;
-    }
+  .main-content .event .event-tabs {
+    margin-top: 50px;
+  }
 }
 
 .main-content .event .event-tabs li {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    height: 100%;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background: #2e2721;
-    border: 1px solid #625343;
-    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.81) inset;
-    -webkit-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.81) inset;
-    -moz-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.81) inset;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333333%;
+          flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #2e2721;
+  border: 1px solid #625343;
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.81) inset;
+  -webkit-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.81) inset;
+  -moz-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.81) inset;
 }
 
 .main-content .event .event-tabs li .hint {
-    opacity: 0;
-    border-radius: 25px;
-    position: absolute;
-    text-indent: initial;
-    top: -55px;
-    background: #2e2721;
-    color: #88745d;
-    padding: 0;
-    width: 180px;
-    height: 30px;
-    line-height: 30px;
-    display: block;
-    left: 50%;
-    font-size: 16px;
-    font-weight: 400;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    white-space: nowrap;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  opacity: 0;
+  border-radius: 25px;
+  position: absolute;
+  text-indent: initial;
+  top: -55px;
+  background: #2e2721;
+  color: #88745d;
+  padding: 0;
+  width: 180px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  left: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 @media (max-width: 480px) {
-    .main-content .event .event-tabs li .hint {
-        top: -49px;
-        font-size: 12px;
-        width: 120px;
-    }
+  .main-content .event .event-tabs li .hint {
+    top: -49px;
+    font-size: 12px;
+    width: 120px;
+  }
 }
 
 .main-content .event .event-tabs li .hint::before {
-    position: absolute;
-    bottom: -9px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    content: '';
-    width: 0;
-    height: 0;
-    border-width: 10.4px 6px 0 6px;
-    border-color: #2e2721 transparent transparent transparent;
-    border-style: solid;
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 10.4px 6px 0 6px;
+  border-color: #2e2721 transparent transparent transparent;
+  border-style: solid;
 }
 
 .main-content .event .event-tabs li .nav-link {
-    height: 100%;
-    width: 100%;
-    border: none;
-    background: transparent;
-    border-radius: 0;
-    line-height: 1.3;
-    padding: 0;
-    position: relative;
-    color: #8d7860;
-    font-size: 28px;
-    text-align: center;
-    font-weight: 700;
-    padding: 10px 0;
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  line-height: 1.3;
+  padding: 0;
+  position: relative;
+  color: #8d7860;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px 0;
 }
 
 @media (max-width: 1024px) {
-    .main-content .event .event-tabs li .nav-link {
-        font-size: 20px;
-    }
+  .main-content .event .event-tabs li .nav-link {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 768px) {
-    .main-content .event .event-tabs li .nav-link {
-        font-size: 18px;
-    }
+  .main-content .event .event-tabs li .nav-link {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 480px) {
-    .main-content .event .event-tabs li .nav-link {
-        font-size: 16px;
-        padding: 3px;
-        line-height: 1.6;
-    }
+  .main-content .event .event-tabs li .nav-link {
+    font-size: 16px;
+    padding: 3px;
+    line-height: 1.6;
+  }
 }
 
 .main-content .event .event-tabs li .nav-link .event-tag {
-    color: #8d7860;
-    font-size: 16px;
-    font-weight: 400;
+  color: #8d7860;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 @media (max-width: 1024px) {
-    .main-content .event .event-tabs li .nav-link .event-tag {
-        font-size: 12px;
-    }
+  .main-content .event .event-tabs li .nav-link .event-tag {
+    font-size: 12px;
+  }
 }
 
 .main-content .event .event-tabs li .nav-link p {
-    color: #7e6432;
-    font-size: 20px;
-    font-weight: 400;
+  color: #7e6432;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 @media (max-width: 1024px) {
-    .main-content .event .event-tabs li .nav-link p {
-        font-size: 16px;
-    }
+  .main-content .event .event-tabs li .nav-link p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 480px) {
-    .main-content .event .event-tabs li .nav-link p {
-        font-size: 12px;
-    }
+  .main-content .event .event-tabs li .nav-link p {
+    font-size: 12px;
+  }
 }
 
-.main-content .event .event-tabs li .nav-link.active,
-.main-content .event .event-tabs li .nav-link:hover {
-    position: relative;
-    border: 1px solid #536a88;
-    background-color: #3b495b;
-    color: #7d99bd;
-    margin: -1px 0 0;
-    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.79);
-    -webkit-box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.79);
-    -moz-box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.79);
+.main-content .event .event-tabs li .nav-link.active, .main-content .event .event-tabs li .nav-link:hover {
+  position: relative;
+  border: 1px solid #536a88;
+  background-color: #3b495b;
+  color: #7d99bd;
+  margin: -1px 0 0;
+  box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.79);
 }
 
-.main-content .event .event-tabs li .nav-link.active::before,
-.main-content .event .event-tabs li .nav-link:hover::before {
-    position: absolute;
-    bottom: -17px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    content: '';
-    width: 0;
-    height: 0;
-    border-width: 17.3px 10px 0 10px;
-    border-color: #3b495b transparent transparent transparent;
-    border-style: solid;
-    -webkit-filter: drop-shadow(0px 2px 0px #536a88);
-    filter: drop-shadow(0px 2px 0px #536a88);
+.main-content .event .event-tabs li .nav-link.active::before, .main-content .event .event-tabs li .nav-link:hover::before {
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 17.3px 10px 0 10px;
+  border-color: #3b495b transparent transparent transparent;
+  border-style: solid;
+  -webkit-filter: drop-shadow(0px 2px 0px #536a88);
+          filter: drop-shadow(0px 2px 0px #536a88);
 }
 
-.main-content .event .event-tabs li .nav-link.active .hint,
-.main-content .event .event-tabs li .nav-link:hover .hint {
-    opacity: 1;
+.main-content .event .event-tabs li .nav-link.active .hint, .main-content .event .event-tabs li .nav-link:hover .hint {
+  opacity: 1;
 }
 
-.main-content .event .event-tabs li .nav-link.active .event-tag,
-.main-content .event .event-tabs li .nav-link:hover .event-tag {
-    color: #7d99bd;
+.main-content .event .event-tabs li .nav-link.active .event-tag, .main-content .event .event-tabs li .nav-link:hover .event-tag {
+  color: #7d99bd;
 }
 
-.main-content .event .event-tabs li .nav-link.active p,
-.main-content .event .event-tabs li .nav-link:hover p {
-    color: #fff;
+.main-content .event .event-tabs li .nav-link.active p, .main-content .event .event-tabs li .nav-link:hover p {
+  color: #fff;
 }
 
 .main-content .event .notice {
-    max-width: 840px;
+  max-width: 840px;
 }
 
 .main-content .event .tablelist {
-    position: relative;
-    z-index: 3;
+  position: relative;
+  z-index: 3;
 }
 
 .main-content .event .tablelist,
 .main-content .event .event-gift,
 .main-content .event .event-gift-list {
-    margin: 40px 0;
+  margin: 40px 0;
 }
 
 .main-content .event .mm-3 {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/mm-3.png)
-        no-repeat 0 0;
-    width: 534px;
-    height: 1244px;
-    position: absolute;
-    left: 50%;
-    top: 1165px;
-    margin-left: -853px;
-    z-index: 7;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/mm-3.png) no-repeat 0 0;
+  width: 534px;
+  height: 1244px;
+  position: absolute;
+  left: 50%;
+  top: 1165px;
+  margin-left: -853px;
+  z-index: 7;
 }
 
 .main-content .event .mm-4 {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/mm-4.png)
-        no-repeat 0 0;
-    width: 608px;
-    height: 748px;
-    position: absolute;
-    left: 50%;
-    top: 456px;
-    margin-left: 358px;
-    z-index: 1;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/mm-4.png) no-repeat 0 0;
+  width: 608px;
+  height: 748px;
+  position: absolute;
+  left: 50%;
+  top: 456px;
+  margin-left: 358px;
+  z-index: 1;
 }
 
 @media (max-width: 1024px) {
-    .main-content .event .mm-3,
-    .main-content .event .mm-4 {
-        display: none;
-    }
+  .main-content .event .mm-3,
+  .main-content .event .mm-4 {
+    display: none;
+  }
 }
 
 #ft {
-    padding: 25px 0;
-    background: #000;
-    margin: 0 auto;
-    position: relative;
-    z-index: 99;
+  padding: 25px 0;
+  background: #000;
+  margin: 0 auto;
+  position: relative;
+  z-index: 99;
 }
 
 #ft .copyright {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    list-style-type: none;
-    font-size: 12px;
-    line-height: 18px;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    max-width: 740px;
-    margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 740px;
+  margin: 0 auto;
 }
 
 @media (max-width: 480px) {
-    #ft .copyright {
-        text-align: center;
-    }
+  #ft .copyright {
+    text-align: center;
+  }
 }
 
 #ft .copyright li {
-    margin: 0 0 25px;
-    vertical-align: top;
-    line-height: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 14px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  margin: 0 0 25px;
+  vertical-align: top;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 1024px) {
-    #ft .copyright li {
-        font-size: 12px;
-        width: 100%;
-        -ms-flex-wrap: wrap;
+  #ft .copyright li {
+    font-size: 12px;
+    width: 100%;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        margin: 0 0 10px;
-    }
+    margin: 0 0 10px;
+  }
 }
 
 @media (max-width: 480px) {
-    #ft .copyright li {
-        line-height: 1.3;
-    }
+  #ft .copyright li {
+    line-height: 1.3;
+  }
 }
 
-#ft .copyright li:nth-child(1),
-#ft .copyright li:nth-child(2) {
-    width: 50%;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    padding: 0 10px;
+#ft .copyright li:nth-child(1), #ft .copyright li:nth-child(2) {
+  width: 50%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 0 10px;
 }
 
 #ft .copyright li:nth-child(3) {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 #ft .copyright li > span {
-    display: inline-block;
+  display: inline-block;
 }
 
 #ft .copyright li:last-child {
-    line-height: 25px;
-    margin-bottom: 0;
+  line-height: 25px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 1024px) {
-    #ft .copyright li:last-child {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
+  #ft .copyright li:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        line-height: 1.4;
-        -ms-flex-wrap: nowrap;
+    line-height: 1.4;
+    -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-        text-align: left;
-    }
+    text-align: left;
+  }
 }
 
 @media (max-width: 480px) {
-    #ft .copyright li .break {
-        display: block;
-    }
+  #ft .copyright li .break {
+    display: block;
+  }
 }
 
 #ft .copyright li .copytxt {
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
 @media (max-width: 480px) {
-    #ft .copyright li .copytxt {
-        padding-left: 0;
-    }
+  #ft .copyright li .copytxt {
+    padding-left: 0;
+  }
 }
 
 #ft .copyright .rating {
-    width: 50px;
-    margin-right: 12px;
+  width: 50px;
+  margin-right: 12px;
 }
 
 @media (max-width: 1024px) {
-    #ft .copyright .rating {
-        margin-right: 5px;
-        width: 35px;
-    }
+  #ft .copyright .rating {
+    margin-right: 5px;
+    width: 35px;
+  }
 }
 
 #ft .copyright .ratingInfo {
-    line-height: 17px;
+  line-height: 17px;
 }
 
 .dl-header {
-    background: url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/dl-bg.jpg)
-        no-repeat 50% 0;
-    background-size: cover;
-    margin: 0 0 20px;
-    padding: 20px;
+  background: url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/dl-bg.jpg) no-repeat 50% 0;
+  background-size: cover;
+  margin: 0 0 20px;
+  padding: 20px;
 }
 
 .dl-header .dl-info {
-    color: #fff;
+  color: #fff;
 }
 
 .dl-header .dl-info h1 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 @media (max-width: 1024px) {
-    .dl-header .dl-info h1 {
-        font-size: 24px;
-    }
+  .dl-header .dl-info h1 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 480px) {
-    .dl-header .dl-info h1 {
-        font-size: 20px;
-    }
+  .dl-header .dl-info h1 {
+    font-size: 20px;
+  }
 }
 
 .dl-header .dl-info p {
-    font-size: 16px;
-    font-weight: 300;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 @media (max-width: 480px) {
-    .dl-header .dl-info p {
-        font-size: 12px;
-    }
+  .dl-header .dl-info p {
+    font-size: 12px;
+  }
 }
 
 .dl-header .dl-info .dl-btn {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/dl-btn.png)
-        no-repeat 0 0;
-    background-size: contain;
-    width: 336px;
-    height: 90px;
-    text-indent: -99999em;
-    display: block;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/dl-btn.png) no-repeat 0 0;
+  background-size: contain;
+  width: 336px;
+  height: 90px;
+  text-indent: -99999em;
+  display: block;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 @media (max-width: 1024px) {
-    .dl-header .dl-info .dl-btn {
-        width: 32.81vw;
-        height: 8.78vw;
-    }
+  .dl-header .dl-info .dl-btn {
+    width: 32.81vw;
+    height: 8.78vw;
+  }
 }
 
 .dl-header .dl-info .dl-btn:hover {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/dl-btn-hover.png)
-        no-repeat 0 0;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/dl-btn-hover.png) no-repeat 0 0;
 }
 
 .dl-detail h6 {
-    color: #f8f3ee;
-    font-size: 18px;
+  color: #f8f3ee;
+  font-size: 18px;
 }
 
 .dl-detail .dl-client-check .table-bordered td,
 .dl-detail .dl-client-check .table-bordered th {
-    border: 1px solid #41372f;
+  border: 1px solid #41372f;
 }
 
 .dl-detail .dl-client-check .table {
-    text-align: center;
+  text-align: center;
 }
 
 .dl-detail .dl-client-check .table thead tr {
-    background-color: #605146;
+  background-color: #605146;
 }
 
 .dl-detail .dl-client-check .table tr {
-    font-size: 16px;
-    background-color: #aba5a0;
+  font-size: 16px;
+  background-color: #aba5a0;
 }
 
 @media (max-width: 480px) {
-    .dl-detail .dl-client-check .table tr {
-        font-size: 12px;
-    }
+  .dl-detail .dl-client-check .table tr {
+    font-size: 12px;
+  }
 }
 
 .dl-detail .dl-client-check .table tr th {
-    border-top: 1px solid #41372f;
-    border-bottom: 1px solid #41372f;
-    white-space: nowrap;
-    color: #d7bfac;
+  border-top: 1px solid #41372f;
+  border-bottom: 1px solid #41372f;
+  white-space: nowrap;
+  color: #d7bfac;
 }
 
 .dl-detail .dl-client-check .table tr td,
 .dl-detail .dl-client-check .table tr th {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .dl-detail .dl-client-check .table tbody th {
-    color: #000;
+  color: #000;
 }
 
 .dl-detail .dl-client-check .table tbody .data ul {
-    display: inline-block;
+  display: inline-block;
 }
 
 .dl-detail .dl-client-check .table tbody .data ul li {
-    position: relative;
-    text-align: left;
-    margin-bottom: 6px;
-    padding: 0 0 0 15px;
+  position: relative;
+  text-align: left;
+  margin-bottom: 6px;
+  padding: 0 0 0 15px;
 }
 
 .dl-detail .dl-client-check .table tbody .data ul li::before {
-    display: inline-block;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 11px;
-    width: 4px;
-    height: 4px;
-    background-color: #000;
-    border-radius: 50%;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 50%;
 }
 
 .dl-detail .dl-client-check .table tbody .data ul li em {
-    font-style: normal;
+  font-style: normal;
 }
 
 .dl-detail .dl-notice {
-    padding: 10px 0 50px;
+  padding: 10px 0 50px;
 }
 
 .dl-detail .dl-notice ul {
-    list-style-type: disc;
-    padding-left: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
 .dl-detail .dl-notice ul li {
-    line-height: 1.8;
-    color: #f8f3ee;
-    font-size: 16px;
-    font-weight: 300;
+  line-height: 1.8;
+  color: #f8f3ee;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 @media (max-width: 480px) {
-    .dl-detail .dl-notice ul li {
-        font-size: 12px;
-    }
+  .dl-detail .dl-notice ul li {
+    font-size: 12px;
+  }
 }
 
 .dl-detail .dl-list {
-    color: #f8f3ee;
+  color: #f8f3ee;
 }
 
 .dl-detail .dl-list h6 {
-    font-size: 18px;
-    margin: 0 0 15px;
-    color: #f8f3ee;
+  font-size: 18px;
+  margin: 0 0 15px;
+  color: #f8f3ee;
 }
 
-.dl-detail .dl-list [class*='col-']:nth-child(odd) .dl-list-area {
-    background-color: #c3bcb6;
+.dl-detail .dl-list [class*="col-"]:nth-child(odd) .dl-list-area {
+  background-color: #c3bcb6;
 }
 
 .dl-detail .dl-list .dl-list-area {
-    border: 1px solid #cec7c1;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 30px 40px 30px;
-    text-align: center;
-    background-color: #aba5a0;
+  border: 1px solid #cec7c1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 40px 30px;
+  text-align: center;
+  background-color: #aba5a0;
 }
 
 @media (max-width: 1024px) {
-    .dl-detail .dl-list .dl-list-area {
-        padding: 15px 20px 15px;
-    }
+  .dl-detail .dl-list .dl-list-area {
+    padding: 15px 20px 15px;
+  }
 }
 
 .dl-detail .dl-list .dl-list-area .dl-icon {
-    margin: 0 auto 25px;
-    max-width: 126px;
-    min-height: 90px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  margin: 0 auto 25px;
+  max-width: 126px;
+  min-height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .dl-detail .dl-list .dl-list-area .dl-caption p {
-    margin: 0 0 5px;
-    color: #000;
+  margin: 0 0 5px;
+  color: #000;
 }
 
 .dl-detail .dl-list .dl-list-area .dl-caption .dl-list-btn {
-    display: block;
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/dl-list-btn.png)
-        no-repeat 0 0;
-    width: 136px;
-    height: 35px;
-    text-indent: -99999em;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  display: block;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/dl-list-btn.png) no-repeat 0 0;
+  width: 136px;
+  height: 35px;
+  text-indent: -99999em;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 .dl-detail .dl-list .dl-list-area .dl-caption .dl-list-btn:hover {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/dl-list-btn-hover.png)
-        no-repeat 0 0;
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/dl-list-btn-hover.png) no-repeat 0 0;
 }
 
 .dl-detail .dl-list .dl-notice {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .rewards {
-    max-width: 760px;
-    margin: 35px auto 0;
+  max-width: 760px;
+  margin: 35px auto 0;
+}
+
+.rewards .w12 {
+  width: 12%;
 }
 
 .rewards.rewards-gift-tb {
-    max-width: 1090px;
+  max-width: 1090px;
 }
 
 .rewards .carry {
-    border-bottom: 1px solid #786857;
-    margin: 0 0 10px;
+  border-bottom: 1px solid #786857;
+  margin: 0 0 10px;
 }
 
 .rewards .table {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .rewards .table-bordered td,
 .rewards .table-bordered th {
-    border-color: #786857;
-    border-bottom-width: 1px;
-    font-weight: 300;
-    padding: 15px;
+  border-color: #786857;
+  border-bottom-width: 1px;
+  font-weight: 300;
+  padding: 15px;
 }
 
 .rewards tr th,
 .rewards tr td {
-    color: #d6c8b9;
-    vertical-align: middle;
-    font-size: 16px;
+  color: #d6c8b9;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media (max-width: 480px) {
-    .rewards tr th,
-    .rewards tr td {
-        font-size: 13px;
-    }
+  .rewards tr th,
+  .rewards tr td {
+    font-size: 13px;
+  }
 }
 
 .rewards tr td {
-    background-color: rgba(46, 39, 33, 0.8);
+  background-color: rgba(46, 39, 33, 0.8);
+}
+
+.rewards tr td.precautions {
+  font-size: 13px;
+  color: #8d8d8d;
 }
 
 .rewards thead tr th {
-    background-color: #3b495b;
-    white-space: nowrap;
-}
-
-.rewards-gift {
-    border: 1px solid #786857;
-    max-width: 1030px;
-    margin: 0 auto 50px;
-    background: #2e2721;
-    height: 290px;
-    position: relative;
-}
-
-@media (max-width: 1024px) {
-    .rewards-gift {
-        height: 100%;
-    }
-}
-
-.rewards-gift .hot-gift {
-    height: 100%;
-    background: #3b495b;
-    position: absolute;
-    left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    max-width: 243px;
-    width: 100%;
-}
-
-@media (max-width: 1024px) {
-    .rewards-gift .hot-gift {
-        position: relative;
-        max-width: 100%;
-        margin-bottom: 50px;
-        padding: 30px 0;
-    }
-}
-
-.rewards-gift .hot-gift .icon {
-    width: 126px;
-    height: 123px;
-    border: none;
-}
-
-.rewards-gift .hot-gift::after {
-    left: 100%;
-    top: 50%;
-    border: solid transparent;
-    content: '';
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(59, 73, 91, 0);
-    border-left-color: #3b495b;
-    border-width: 15px;
-    margin-top: -15px;
-}
-
-@media (max-width: 1024px) {
-    .rewards-gift .hot-gift::after {
-        border-top-color: #3b495b;
-        border-left-color: transparent;
-        top: 100%;
-        left: 50%;
-        margin-left: -15px;
-        margin-top: 0;
-    }
-}
-
-.rewards-gift .rewards-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    padding-right: 35px;
-    height: 100%;
-}
-
-@media (max-width: 1024px) {
-    .rewards-gift .rewards-list {
-        padding-right: 0;
-        padding-bottom: 50px;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-}
-
-.rewards-gift .rewards-list ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-}
-
-@media (max-width: 1024px) {
-    .rewards-gift .rewards-list ul {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-}
-
-.rewards-gift .rewards-list ul li {
-    margin: 0 20px;
-}
-
-@media (max-width: 1024px) {
-    .rewards-gift .rewards-list ul li {
-        margin: 10px;
-    }
-}
-
-.rewards-gift .rewards-list ul li .icon-txt {
-    font-size: 13px;
+  background-color: #3b495b;
+  white-space: nowrap;
 }
 
 .popularity-tit {
-    margin: 75px 0 40px;
+  margin: 60px 0 40px;
 }
 
 .icon {
-    border: 1px solid #786857;
-    width: 75px;
-    height: 75px;
-    margin: 0 auto;
-    line-height: 67px;
+  border: 1px solid #786857;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  line-height: 67px;
 }
 
-.note {
-    font-size: 16px !important;
-    color: #d6c8b9 !important;
+.icon.iconfix {
+  padding-left: 8px;
+  line-height: 72px;
+}
+
+i {
+  font-style: normal;
+  color: #62a6fd;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 0;
+  display: inline-block;
+}
+
+i.note {
+  color: #d6c8b9;
 }
 
 @media (max-width: 480px) {
-    .note {
-        font-size: 13px !important;
-    }
+  i {
+    font-size: 13px;
+  }
 }
 
 .link a {
-    color: #62a6fd;
+  color: #62a6fd;
 }
 
 .link a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .notice-btn {
-    width: 300px;
-    height: 60px;
-    margin: 35px auto 0;
-    background: #2e2721;
-    color: #d7bfac;
-    display: block;
-    text-align: center;
-    font-size: 20px;
-    line-height: 60px;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  width: 300px;
+  height: 60px;
+  margin: 35px auto 0;
+  background: #2e2721;
+  color: #d7bfac;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  line-height: 60px;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 @media (max-width: 480px) {
-    .notice-btn {
-        font-size: 18px;
-    }
+  .notice-btn {
+    font-size: 18px;
+  }
 }
 
 .notice-btn:hover {
-    background: #736154;
+  background: #736154;
+}
+
+.turntable {
+  display: block;
+  max-width: 630px;
+  margin: 50px auto;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+.turntable:hover {
+  -webkit-filter: brightness(130%);
+  filter: brightness(130%);
 }
 
 .title-label {
-    border-radius: 25px;
-    font-size: 24px;
-    position: relative;
-    margin: 35px 0 10px;
-    padding: 8px 0;
-    background-color: #2e2721;
-    display: inline-block;
-    max-width: 440px;
-    width: 100%;
-    text-align: center;
+  border-radius: 25px;
+  font-size: 24px;
+  position: relative;
+  margin: 35px auto 10px;
+  padding: 8px 0;
+  background-color: #2e2721;
+  display: block;
+  max-width: 440px;
+  width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
-    .title-label {
-        font-size: 18px;
-    }
+  .title-label {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 480px) {
-    .title-label {
-        font-size: 16px;
-    }
+  .title-label {
+    font-size: 16px;
+  }
 }
 
 .title-label::before {
-    content: '';
-    background-color: #8d7860;
-    border-radius: 50%;
-    width: 37px;
-    height: 37px;
-    color: #fff;
-    display: block;
-    position: absolute;
-    line-height: 34px;
-    text-align: center;
-    top: 3px;
-    left: 5px;
+  content: "";
+  background-color: #8d7860;
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+  color: #fff;
+  display: block;
+  position: absolute;
+  line-height: 34px;
+  text-align: center;
+  top: 3px;
+  left: 5px;
 }
 
 @media (max-width: 1024px) {
-    .title-label::before {
-        width: 31px;
-        height: 31px;
-        line-height: 31px;
-    }
+  .title-label::before {
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+  }
 }
 
 @media (max-width: 480px) {
-    .title-label::before {
-        width: 29px;
-        height: 29px;
-        line-height: 29px;
-    }
+  .title-label::before {
+    width: 29px;
+    height: 29px;
+    line-height: 29px;
+  }
 }
 
 .title-label.t1::before {
-    content: '1';
+  content: "1";
 }
 
 .title-label.t2::before {
-    content: '2';
+  content: "2";
 }
 
-.char-1 {
-    background: transparent
-        url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/char-1.png)
-        no-repeat 0 0;
-    background-size: contain;
-    width: 696px;
-    height: 775px;
-    margin-left: -348px;
-    left: 50%;
-    top: 100%;
-    position: absolute;
-    z-index: 8;
-    margin-top: -70px;
+.title-label.t3::before {
+  content: "3";
+}
+
+.game-event .rewards-gift {
+  max-width: 790px;
+  height: 190px;
+  margin-bottom: 30px;
+}
+
+.game-event .rewards-gift:nth-of-type(7) {
+  margin-bottom: 20px;
+}
+
+.game-event .rewards-gift .hot-gift::before {
+  content: "";
+  width: 136px;
+  height: 29px;
+  background: #342c25;
+  border: 1px solid #786857;
+  border-radius: 25px;
+  position: absolute;
+  color: #f4d7aa;
+  font-size: 16px;
+  top: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.game-event .rewards-gift .hot-gift .icon {
+  border: 1px solid #4d5a6b;
+  width: 100px;
+  height: 100px;
+  line-height: 90px;
+}
+
+.game-event .rewards-gift .hot-gift.date-1::before {
+  content: "第一天";
+}
+
+.game-event .rewards-gift .hot-gift.date-2::before {
+  content: "第二天";
+}
+
+.game-event .rewards-gift .hot-gift.date-3::before {
+  content: "第三天";
+}
+
+.game-event .rewards-gift .hot-gift.date-4::before {
+  content: "11.27 (日)";
+}
+
+.game-event .rewards-gift .hot-gift.date-5::before {
+  content: "累積登入2天";
+  color: #6fadff;
+}
+
+.game-event .rewards-gift .hot-gift.date-6::before {
+  content: "累積登入3天";
+  color: #6fadff;
+}
+
+.game-event .rewards-gift .hot-gift.date-7::before {
+  content: "累積登入4天";
+  color: #6fadff;
+}
+
+.game-event .rewards-gift .rewards-list {
+  padding-left: 30px;
+}
+
+.game-event .rewards-gift .rewards-list ul {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 @media (max-width: 1024px) {
-    .char-1 {
-        width: 67.96vw;
-        height: 75.68vw;
-        margin-left: -33.98vw;
-    }
+  .game-event .rewards-gift .rewards-list ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.game-event .rewards-gift .rewards-list ul li {
+  margin: 0;
+}
+
+.game-event .rewards-graphics {
+  max-width: 266px;
+  margin: 0 auto;
+}
+
+.rewards-gifts {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.rewards-view {
+  max-width: 1135px;
+  margin: 0 auto;
+}
+
+.rewards-view .row > [class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.rewards-view .rewards-gift {
+  height: 300px;
+  margin-bottom: 0;
+}
+
+.rewards-view .rewards-gift .rewards-list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0;
+}
+
+.rewards-view .rewards-gift .rewards-list ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .rewards-view .rewards-gift .rewards-list ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.rewards-view .rewards-gift .rewards-list ul li {
+  max-width: 150px;
+}
+
+.rewards-gift {
+  border: 1px solid #786857;
+  max-width: 1030px;
+  margin: 0 auto 50px;
+  background: #2e2721;
+  height: 290px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .rewards-gift {
+    height: 100% !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.rewards-gift .hot-gift {
+  height: 100%;
+  background: #3b495b;
+  position: relative;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 243px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .rewards-gift .hot-gift {
+    position: relative;
+    max-width: 100%;
+    padding: 30px 0;
+  }
+}
+
+.rewards-gift .hot-gift .icon {
+  width: 126px;
+  height: 126px;
+  line-height: 110px;
+  border: none;
+}
+
+.rewards-gift .hot-gift::after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(59, 73, 91, 0);
+  border-left-color: #3b495b;
+  border-width: 15px;
+  margin-top: -15px;
+}
+
+@media (max-width: 1024px) {
+  .rewards-gift .hot-gift::after {
+    border-top-color: #3b495b;
+    border-left-color: transparent;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: 0;
+  }
+}
+
+.rewards-gift .rewards-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .rewards-gift .rewards-list {
+    padding: 35px 0 30px !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .rewards-gift .rewards-list {
+    padding: 20px 15px 15px !important;
+  }
+}
+
+.rewards-gift .rewards-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .rewards-gift .rewards-list ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.rewards-gift .rewards-list ul li {
+  margin: 0 10px;
+  max-width: 125px;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .rewards-gift .rewards-list ul li {
+    margin: 0;
+    padding: 15px;
+    max-width: 50% !important;
+  }
+}
+
+.rewards-gift .rewards-list ul li .icon-txt {
+  font-size: 14px;
+}
+
+.razer {
+  max-width: 209px;
+  margin: 0 auto;
+}
+
+.char-1 {
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/char-1.png) no-repeat 0 0;
+  background-size: contain;
+  width: 696px;
+  height: 775px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: 100%;
+  position: absolute;
+  z-index: 8;
+  margin-top: -70px;
+}
+
+@media (max-width: 1024px) {
+  .char-1 {
+    width: 67.96vw;
+    height: 75.68vw;
+  }
+}
+
+.char-2 {
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/char-2.png) no-repeat 0 0;
+  background-size: contain;
+  width: 754px;
+  height: 758px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: 100%;
+  position: absolute;
+  z-index: 8;
+  margin-top: -70px;
+}
+
+@media (max-width: 1024px) {
+  .char-2 {
+    width: 73.63vw;
+    height: 74.023vw;
+  }
+}
+
+.char-3 {
+  background: transparent url(https://landing.mangot5.com/template/lostark/event/cbt_test_v1/images/char-3.png) no-repeat 0 0;
+  background-size: contain;
+  width: 665px;
+  height: 764px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: 100%;
+  position: absolute;
+  z-index: 8;
+  margin-top: -70px;
+}
+
+@media (max-width: 1024px) {
+  .char-3 {
+    width: 64.94vw;
+    height: 74.6vw;
+  }
 }

@@ -7,38 +7,69 @@ $(function () {
     }
   });
 
-  $('.event-tab-btn').on('click', function () {
-    $('#event-tab').tab('show');
+  $(".event-tab-btn").on("click", function () {
+    $("#event-tab").tab("show");
   });
 
-  $('.cbt-btn-show').on('click', function () {
-    $('#adventure-tab').tab('show');
+  $(".adventure-tab-btn").on("click", function () {
+    $("#adventure-tab").tab("show");
   });
 
-  $('.js-confirm').on('click', function () {
-    
+  $(".cbt-tab-btn").on("click", function () {
+    $("#cbt-tab").tab("show");
+  });
+
+  $(".game-event-btn").on("click", function () {
+    $("#game-event-tab").tab("show");
+  });
+
+  $(".cbt-target-btn").on("click", function () {
+    $("#cbt-target-tab").tab("show");
+  });
+
+  $(".js-confirm").on("click", function () {
     var text;
-    if ($(this).attr('data-confirm-text')) {
-      text = $(this).attr('data-confirm-text');
+    if ($(this).attr("data-confirm-text")) {
+      text = $(this).attr("data-confirm-text");
     }
 
     var ok = confirm(text);
 
     if (ok) {
       console.log(text);
-      $('#event-tab').tab('show');
+      $("#event-tab").tab("show");
 
       setTimeout(function () {
-
-        $('html').stop().animate({
-          scrollTop: $('#mainTab').offset().top
-        }, 500);
-
+        $("html")
+          .stop()
+          .animate(
+            {
+              scrollTop: $("#mainTab").offset().top - 100,
+            },
+            500
+          );
       }, 100);
-
     } else {
       return false;
     }
+  });
+
+  // scroll top
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 500) {
+      $(".scroll-top").addClass("up");
+    } else {
+      $(".scroll-top").removeClass("up");
+    }
+  });
+
+  $(".scroll-top").click(function () {
+    $("body, html").animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    );
   });
 
   // music
@@ -58,36 +89,36 @@ $(function () {
 
   // scroll to
   $("a.scroll-btn[href^='#']").on("click", function (e) {
-    // prevent default anchor click behavior
     e.preventDefault();
 
     $(this).parent().addClass("active");
     $(this).parent().siblings().removeClass("active");
 
-    $(".navbar-collapse").removeClass("in");
-
-    // store hash
     var hash = this.hash;
 
-    // animate
-    $("html, body").animate({
-        scrollTop: $(hash).offset().top - 100,
-      },
-      800,
-      function () {
-        // when done, add hash to url
-        // (default click behaviour)
-        // window.location.hash = hash;
-      }
-    );
+    setTimeout(function () {
+      $("html, body")
+        .animate(
+          {
+            scrollTop: $(hash).offset().top - 100,
+          },
+          800
+        );
+    }, 200);
+
+    // $("html, body").animate(
+    //   {
+    //     scrollTop: $(hash).offset().top - 100,
+    //   },
+    //   800,
+    //   function () {}
+    // );
   });
 
   // sidebar btn
   $(".sidebtn, .side-close").on("click", function () {
     $(".sidebar").toggleClass("on");
   });
-
-
 
   // sidebar menu
   $("#sidebarCollapse").on("click", function () {
@@ -116,7 +147,8 @@ $(function () {
   });
 
   $(".scroll-top").click(function () {
-    $("body, html").animate({
+    $("body, html").animate(
+      {
         scrollTop: 0,
       },
       500
