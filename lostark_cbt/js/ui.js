@@ -9,6 +9,7 @@ $(function () {
 
   $(".event-tab-btn").on("click", function () {
     $("#event-tab").tab("show");
+    $("#cbt-tab").tab("show");
   });
 
   $(".adventure-tab-btn").on("click", function () {
@@ -38,7 +39,7 @@ $(function () {
     if (ok) {
       console.log(text);
       $("#event-tab").tab("show");
-
+      $("#cbt-tab").tab("show");
       setTimeout(function () {
         $("html")
           .stop()
@@ -60,6 +61,12 @@ $(function () {
       $(".scroll-top").addClass("up");
     } else {
       $(".scroll-top").removeClass("up");
+    }
+
+    if ($(window).scrollTop() >= $("#wrapper").offset().top + $("#wrapper").outerHeight() - window.innerHeight) {
+      $(".scroll-top").addClass("fixed-bottom");
+    } else {
+      $(".scroll-top").removeClass("fixed-bottom");
     }
   });
 
@@ -97,22 +104,13 @@ $(function () {
     var hash = this.hash;
 
     setTimeout(function () {
-      $("html, body")
-        .animate(
-          {
-            scrollTop: $(hash).offset().top - 100,
-          },
-          800
-        );
-    }, 200);
-
-    // $("html, body").animate(
-    //   {
-    //     scrollTop: $(hash).offset().top - 100,
-    //   },
-    //   800,
-    //   function () {}
-    // );
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top - 100,
+        },
+        800
+      );
+    }, 150);
   });
 
   // sidebar btn
@@ -132,27 +130,10 @@ $(function () {
     $("#sidemenu-bar").toggleClass("on");
   });
 
-  $(".nav-left-toggle, .app_overlay").on("click", function () {
+  $(".nav-left-toggle, .app_overlay, .bd-sidenav a").on("click", function () {
     $("#nav-panel").removeClass("show");
     $(".app_overlay").removeClass("open");
     $("body").removeClass("modal-open");
-  });
-
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 500) {
-      $(".scroll-top").addClass("up");
-    } else {
-      $(".scroll-top").removeClass("up");
-    }
-  });
-
-  $(".scroll-top").click(function () {
-    $("body, html").animate(
-      {
-        scrollTop: 0,
-      },
-      500
-    );
   });
 });
 

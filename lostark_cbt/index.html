@@ -566,7 +566,7 @@
 
                   <button class="nav-link" id="game-event-tab" data-toggle="tab" data-target="#game-event" type="button"
                     role="tab" aria-controls="game-event" aria-selected="false">
-                    <div class="event-tag">EVENT.2</div>
+                    <div class="event-tag">EVENT.2<i class="new-tag">NEW</i></div>
                     遊戲內活動開催中
                     <p>多樣獎勵任你拿</p>
                     <span class="hint">11.14開放 敬請期待</span>
@@ -577,7 +577,7 @@
 
                   <button class="nav-link" id="cbt-target-tab" data-toggle="tab" data-target="#cbt-target" type="button"
                     role="tab" aria-controls="cbt-target" aria-selected="false">
-                    <div class="event-tag">EVENT.3</div>
+                    <div class="event-tag">EVENT.3<i class="new-tag">NEW</i></div>
                     達成CBT成長目標
                     <p>拿OB限定紀念禮</p>
                     <span class="hint">11.14開放 敬請期待</span>
@@ -593,7 +593,7 @@
                     <li><a class="game-event-btn scroll-btn" href="#signIn" data-toggle="tab">每日簽到免費送</a></li>
                     <li><a class="game-event-btn scroll-btn" href="#hotTime" data-toggle="tab">HOT TIME領獎勵</a></li>
                     <li><a class="cbt-target-btn scroll-btn" href="#growUp" data-toggle="tab">成長達人送喵喵</a></li>
-                    <li><a class="cbt-target-btn scroll-btn" href="#forward"  data-toggle="tab">達成目標拿限定禮</a></li>
+                    
                     <li><a class="scroll-btn" href="#" data-toggle="modal" data-target="#eventNoticeModal">活動注意事項</a></li>
                     <li><a class="scroll-btn" href="#wrapper">TOP</a></li>
                   </ul>
@@ -673,7 +673,7 @@
                           </li>
                           <li>
                             <div class="icon"><img src="images/icon/event1-3.png" alt=""></div>
-                            <p class="icon-txt">復活羽毛<br><i>x5</i></p>
+                            <p class="icon-txt">復活羽毛<br><i>x20</i></p>
                           </li>
                           <li>
                             <div class="icon"><img src="images/icon/event1-4.png" alt=""></div>
@@ -1170,41 +1170,44 @@
                     <p>※虛擬獎勵於正式營運後，發放至符合活動條件的快樂玩平台遊戲帳號中，<br>
                       屆時請冒險家至【快樂玩平台】→【服務中心】→【兌換優惠券】進行獎勵兌換。</p>
                     <h1 id="forward" class="popularity-tit"><img src="images/forward-tit.png" alt=""></h1>
-                    <div class="razer"><img src="images/razer.png" alt=""></div>
-                    <div class="rewards table-responsive">
-                      <table class="table table-bordered">
-                        <thead>
-                          <tr>
-                            <th scope="col">活動獎勵</th>
-                            <th scope="col">活動條件</th>
-                            <th scope="col">抽出名額</th>
-
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td rowspan="3">RAZER ISKUR X 人體工學電競椅<br>(價值：11,900)</td>
-                            <td>角色最高等級<br>前50名</td>
-                            <td>1名</td>
-                          </tr>
-                          <tr>
-                            <td>收集最多摩可可種子<br>前50名</td>
-                            <td>1名</td>
-                          </tr>
-                          <tr>
-                            <td>完成最多任務<br>前50名</td>
-                            <td>1名</td>
-                          </tr>
-                          <tr>
-                            <td class="precautions" colspan="3">
-                              實體獎項於抽出得獎者後，依所得稅法規定，機會中獎之獎項價值若超過NT$1,000，所得將列入個人年度綜合所得稅申報，需下載<span class="link"><a
-                                  href="https://www.mangot5.com/Index/Service/Download"
-                                  target="_blank">「活動領獎單」</a></span>填妥後寄回本公司或<span class="link"><a
-                                  href="mailto:dna-angel@mangot5.com">活動小組信箱</a></span>，實體獎項的寄出時間於以上程序完成後另行通知。</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <div class="razer-box">
+                      <div class="razer"><img src="images/razer.png" alt=""></div>
+                      <div class="rewards table-responsive">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th scope="col">活動獎勵</th>
+                              <th scope="col">活動條件</th>
+                              <th scope="col">抽出名額</th>
+  
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td rowspan="3">RAZER ISKUR X 人體工學電競椅<br>(價值：11,900)</td>
+                              <td>角色最高等級<br>前50名</td>
+                              <td>1名</td>
+                            </tr>
+                            <tr>
+                              <td>收集最多摩可可種子<br>前50名</td>
+                              <td>1名</td>
+                            </tr>
+                            <tr>
+                              <td>完成最多任務<br>前50名</td>
+                              <td>1名</td>
+                            </tr>
+                            <tr>
+                              <td class="precautions" colspan="3">
+                                實體獎項於抽出得獎者後，依所得稅法規定，機會中獎之獎項價值若超過NT$1,000，所得將列入個人年度綜合所得稅申報，需下載<span class="link"><a
+                                    href="https://www.mangot5.com/Index/Service/Download"
+                                    target="_blank">「活動領獎單」</a></span>填妥後寄回本公司或<span class="link"><a
+                                    href="mailto:dna-angel@mangot5.com">活動小組信箱</a></span>，實體獎項的寄出時間於以上程序完成後另行通知。</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
+                    
                     <i class="note">※實體獎項中獎名單公佈※</i>
                     <p>活動結束後預計在2022.12.9(五)前於官方FB粉絲團、活動頁面中公佈。</p>
                     <i class="note mgt40">※實體獎項中獎通知方式※</i>
@@ -1230,8 +1233,7 @@
   <div class="fullscreen-video">
     <video id="video-background" autoplay muted playsinline loop
       poster="https://landing.mangot5.com/template/lostark/event/landing/test99/images/poster.jpg">
-      <source src="https://landing.mangot5.com/template/lostark/event/landing/test99/media/lostark_intro.mp4"
-        type="video/webm">
+      <source src="https://landing.mangot5.com/template/lostark/event/cbt_test_v1/media/cbt_intro.mp4" type="video/mp4">
     </video>
   </div>
   </main>
@@ -1240,6 +1242,10 @@
 
   <!-- footer info -->
   <footer id="ft">
+    <!-- scroll top -->
+    <button class="scroll-top">
+      <div class="arrow"></div>
+    </button>
     <div class="container">
       <ul class="copyright">
         <li>
@@ -1265,14 +1271,12 @@
         </li>
       </ul>
     </div>
+    
   </footer>
   <!-- mobile menu overlay -->
   <div class="app_overlay"></div>
 
-  <!-- scroll top -->
-  <button class="scroll-top">
-    <div class="arrow"></div>
-  </button>
+  
 
   <!-- sidebar -->
   <aside id="sidebar">
@@ -1480,61 +1484,62 @@
         </div>
         <div class="modal-body terms-and-conditions txt-scroll">
 
-          <p>這些使用條款規定了HAPPYTUK Co., Ltd(以下簡稱"公司")應向測試者提供由公司運營的“失落的方舟：LOST ARK”的限量菁英刪檔封測(CBT)版測試的條款和條件。測試應根據本使用條款提供。
+          <p>為使樂意傳播股份有限公司（以下簡稱“本公司”）所代理之遊戲”失落的方舟：LOST ARK”，由本公司向測試人員提供 “失落的方舟：LOST ARK”的限量菁英刪檔封測(CBT)版進行測試，相關使用條款如下：
           </p>
-          <p>遊戲正式上線後將無法繼承任何相關資料。</p>
+          
           <dl>
             <div class="section">
-              <dt>一、定義</dt>
+              <dt>第一條 名詞定義</dt>
               <dd>
-                <ol>
-                  <li>"遊戲"是指由本公司運營和提供的遊戲標題"失落的方舟：LOST ARK"。</li>
-                  <li>"測試"是指使用遊戲的測試版完成其最終版本的測試。</li>
+                <ul class="dots">
+                  <li>"遊戲"是指由測試人員透過電腦或其他電子化載具，連結網際網路至本公司所指定之伺服器進行"失落的方舟：LOST ARK"連線遊戲測試。 </li>
+                  <li>"測試"是指使用遊戲的測試版完成其最終版本的測試過程。</li>
                   <li>"測試人員"是指中選參與測試的每位使用者。</li>
-                  <li>"使用條款"是指這些“失落的方舟：LOST ARK”限量菁英刪檔封測(CBT)版測試使用條款，適用於公司和測試人員參與測試。</li>
-                  <li>"測試人員數據"是指通過測試人員參與測試而在公司伺服器等中積累的數據。</li>
-                </ol>
+                  <li>"測試人員"是指參與遊戲測試的每位使用者。</li>
+                  <li>"使用條款"是指"失落的方舟：LOST ARK"限量菁英刪檔封測(CBT)版測試之使用條款，適用於本公司和測試人員。 </li>
+                  <li>"測試數據"是指透過測試人員參與測試而在本公司之伺服器等積累的數據。</li>
+                </ul>
               </dd>
 
             </div>
             <div class="section">
-              <dt>二、測試人員的義務和責任</dt>
+              <dt>第二條 測試人員的義務和責任</dt>
               <dd>
-                <ol>
-                  <li>測試人員應與公司合作，回報在參與測試期間發現的與遊戲內容和/或遊戲環境有關的任何問題。</li>
-                  <li>測試人員應負責管理其ID和密碼(如適用)，不得將其洩露給任何第三方(包括測試中的其他測試人員)或允許任何第三方在有或沒有測試人員的情況下使用它們。</li>
-                  <li>測試人員應對測試中使用其ID和密碼(如適用)進行的任何和所有行為負責，無論測試人員是否進行了任何此類行為。</li>
-                </ol>
+                <ul class="dots">
+                  <li>測試人員應向本公司回報參與測試期間所發現與遊戲內容和/或遊戲環境有關的任何問題。 </li>
+                  <li>測試人員應負責管理其遊戲帳號和密碼，不得將其洩露給任何第三方（包括但不限於測試中的其他測試人員）或允許任何第三方（包括但不限於測試中的其他測試人員）在有或沒有測試人員的情況下使用它們。</li>
+                  <li>測試人員應對測試中使用其遊戲帳號和密碼進行的任何和所有行為負責，無論測試人員是否進行了任何此類行為。</li>
+                </ul>
               </dd>
             </div>
             <div class="section">
-              <dt>三、參加限量菁英刪檔封測(CBT)</dt>
+              <dt>第三條 參加限量菁英刪檔封測(CBT)</dt>
               <dd>
-                <ol>
-                  <li>當測試人員按下「我要參加CBT」按鈕申請參加限量菁英刪檔封測(CBT)時，被視為已同意這些使用條款。</li>
-                  <li>如果測試人員是未成年人，則測試人員向公司保證，他們已獲得其所有父母，監護人和/或其他法定代理人的事先同意，以參與測試並遵守本使用條款。</li>
-                  <li>測試人員應自行負責管理其遊戲帳戶資訊和與自己相關的其他資訊，以及與參與測試相關的設置和其他資訊。</li>
-                </ol>
+                <ul class="dots">
+                  <li>當測試人員按下參加按鈕申請參加限量菁英刪檔封測(CBT)時，被視為已同意這些使用條款及本公司官方網站所訂之隱私權政策。 </li>
+                  <li>如測試人員為限制行為能力者，則測試人員向公司保證已取得法定代理人同意，參與測試並遵守本使用條款。 </li>
+                  <li>測試人員應自行負責管理其遊戲帳戶資訊和與自己相關的其他資訊，以及與參與測試相關的設置和其他資訊。 </li>
+                </ul>
               </dd>
             </div>
             <div class="section">
-              <dt>四、使用條件 </dt>
+              <dt>第四條 使用條件</dt>
               <dd>
                 <ol>
-                  <li>測試人員應自行負責使用測試。</li>
+                  <li>測試人員應自行負責使用測試。 </li>
                   <li>測試人員應自行負責並支付費用，準備供其用於測試的電信線路和設備。</li>
-                  <li>推薦電腦規格由本公司CBT遊戲主程式下載頁中呈現。測試在除推薦規格以外的任何電腦規格中可能無法按預期運行。</li>
+                  <li>推薦之電腦規格請詳本公司CBT遊戲主程式下載網頁，除推薦規格以外的任何電腦規格中可能無法按預期運行。</li>
                 </ol>
               </dd>
             </div>
             <div class="section">
-              <dt>五、禁止事項</dt>
-              <dt>公司應禁止測試人員從事與測試有關的以下任何行為： </dt>
+              <dt>第五條 禁止事項</dt>
+              <dt>．本公司禁止測試人員以下任何行為：</dt>
               <dd>
                 <ol>
-                  <li>誹謗或侮辱本公司或任何第三方的行為，或其他使任何第三方感到不適的行為，無論此類行為是否公開;</li>
-                  <li>損害本公司或任何第三方的隱私、榮譽或聲譽的行為;</li>
-                  <li>侵犯或可能侵犯測試中包含的版權、商標權或其他智慧財產權、肖像權、形象權或其他權利的行為;</li>
+                  <li>誹謗或侮辱本公司或任何第三方的行為，或其他使任何第三方感到不適的行為，無論此類行為是否公開; </li>
+                  <li>損害本公司或任何第三方的隱私、榮譽或聲譽的行為; </li>
+                  <li>侵犯或可能侵犯測試中包含的版權、商標權或其他智慧財產權、肖像權、形象權或其他權利的行為; </li>
                   <li>發佈猥褻或暴力資訊;</li>
                   <li>違反公共政策的行為;</li>
                   <li>政治、宗教或其他類似行為;</li>
@@ -1542,10 +1547,10 @@
                   <li>未經本公司事先同意，使用測試牟利;</li>
                   <li>通過測試獲得的任何資訊的商業用途;</li>
                   <li>未經公司批准，舉辦與測試有關的任何活動;</li>
-                  <li>妨礙考試操作的行為;</li>
+                  <li>妨礙測試操作的行為;</li>
                   <li>損害測試聲譽的行為;</li>
                   <li>虛假信息登記;</li>
-                  <li>未經授權使用在測試中註冊的其他測試人員的資訊;</li>
+                  <li>未經授權使用在測試中註冊的其他測試人員的資訊; </li>
                   <li>未經授權訪問本公司或任何第三方的伺服器;</li>
                   <li>與測試相關的任何程式的更改，分析，逆向工程等;</li>
                   <li>其他本公司判斷為不適當的行為。</li>
@@ -1553,32 +1558,29 @@
               </dd>
             </div>
             <div class="section">
-              <dt>六、智慧財產權等</dt>
+              <dt>第六條 智慧財產權</dt>
               <dd>
-                <ol>
-                  <li>測試人員僅有權在本使用條款規定的範圍內使用測試的功能、內容和其他服務、利益等，不得獲得測試中的任何擁有權或智慧財產權或其他權利。</li>
-                  <li>與測試相關的版權和其他智慧財產權應屬於本公司或已將此類權利許可給本公司的任何人。除本使用條款中明確規定的權利外，測試的使用不得轉讓或授予測試人員任何權利。</li>
-                  <li>
-                    測試人員通過測試輸入或發佈的任何資訊的版權、商標權和其他智慧財產權均屬於測試人員;但是，如果測試人員不得獲得公司或第三方擁有版權或任何其他智慧財產權的測試者條目或發佈中包含的資訊的任何智慧財產權，包括但不限於公司在測試中提供的內容。測試人員保證測試人員通過測試輸入或發佈的資訊不會侵犯任何第三方的任何智慧財產權或其他權利，並應授予公司使用，複製，改編和對其智慧財產權進行其他二次使用的權利，而無需考慮，永久且沒有任何條件。測試者不得向本公司或任何可能繼承或已從本公司許可權利的第三方行使作者的精神權利。
-                  </li>
-                </ol>
+                <ul class="dots">
+                  <li>測試人員僅有權在本使用條款規定的範圍內使用測試的功能、內容和其他服務、利益等，不會獲得測試中的任何智慧財產權或其他權利。 </li>
+                  <li>與測試相關的版權和其他智慧財產權應屬於本公司或已將此類權利授權給本公司。除本使用條款中明確規定的權利外，測試的使用、數據或結果不會轉讓或授予測試人員任何權利。</li>
+                  
+                </ul>
               </dd>
             </div>
             <div class="section">
-              <dt>七、測試人員資訊和測試人員資料</dt>
+              <dt>第七條 個人資料及測試數據</dt>
               <dd>
-                <ol>
+                <ul class="dots">
+                  <li>關於個人資料之保護，依相關法律規定處理。</li>
                   <li>本公司應根據本公司另行規定的隱私政策處理測試人員的資訊。</li>
-                  <li>
-                    公司有權在測試期間未經測試人員同意的情況下使用測試人員於限量菁英刪檔封測(CBT)期間所有相關GAMELOG上的資訊，以分析和改進遊戲，並且在此範圍內，公司可以將測試人員客戶端中的任何相關信息上傳到公司的伺服器。
-                  </li>
-                  <li>測試期間累積的測試者數據不會作為測試者的玩家數據保留在遊戲的商業服務中。</li>
-                </ol>
+                  <li>本公司有權在測試期間未經測試人員同意的情況下使用測試人員於限量菁英刪檔封測(CBT)期間所有相關GAMELOG上的資訊，以分析和改進遊戲，並且在此範圍內，公司可以將測試人員客戶端中的任何相關信息上傳到公司的伺服器。 </li>
+                  <li>測試期間累積的測試者數據不會作為測試者的玩家數據而保留在遊戲的商業服務(正式版)中。 </li>
+                </ul>
               </dd>
             </div>
             <div class="section">
-              <dt>八、無擔保</dt>
-              <dt>本公司對以下事項不作任何保證：</dt>
+              <dt>第八條 免責聲明</dt>
+              <dt>．本公司對以下事項不作任何保證：</dt>
               <dd>
                 <ol>
                   <li>測試的內容將符合測試人員的意願或使用目的;</li>
@@ -1590,85 +1592,38 @@
                   <li>測試人員通過測試獲得的資訊將是正確或可靠的。</li>
                 </ol>
               </dd>
+              <dt>．本公司不主動介入參與測試人員與第三方（包括測試中的其他測試人員）之間就測試人員使用測試而引起的任何衝突。</dt>
             </div>
             <div class="section">
-              <dt>九、免責聲明</dt>
-              <dt>
-                (1) 如果以下任何損害不能歸因於公司的故意不當行為或疏忽，則公司不對以下任何損害承擔責任：
-              </dt>
-              <dd>
-                <ol class="roman">
-                  <li>由於任何第三方使用第3條第(3)款中定義的資訊而使測試人員遭受的損害;</li>
-                  <li>測試人員與測試中的任何其他測試人員或其他第三方之間產生的衝突和/或損害;</li>
-                  <li>測試人員因未經授權訪問或更改測試而造成的損害;</li>
-                  <li>測試人員因參與或不參與測試而遭受的損害;</li>
-                  <li>測試人員因測試而遭受的與測試有關或導致測試的任何其他損害。</li>
-                </ol>
-              </dd>
-              <dt>(2) 本公司不得參與測試人員與第三方（包括測試中的其他測試人員）之間就測試人員使用測試而引起的任何衝突。 </dt>
-            </div>
-            <div class="section">
-              <dt>十、暫停或終止提供測試</dt>
-              <dt>(1) 在以下情況下，公司可自行決定暫停提供測試，恕不另行通知或要求測試人員：</dt>
-              <dd>
-                <ol class="roman">
-                  <li>測試人員違反或涉嫌違反本使用條款;</li>
-                  <li>根據測試的目的，公司確定測試人員的任何行為都是不適當的。</li>
-                  <li>測試人員因未經授權訪問或更改測試而造成的損害;</li>
-                  <li>測試人員因參與或不參與測試而遭受的損害;</li>
-                  <li>測試人員因測試而遭受的與測試有關或導致測試的任何其他損害。</li>
-                </ol>
-              </dd>
-              <dt>(2) 在以下情況下，公司可以自行決定終止提供測試，恕不另行通知或要求測試人員： </dd>
-              <dd>
-                <ol class="roman">
-                  <li>測試人員違反這些使用條款，並且公司確定此類違反是重大的;</li>
-                  <li>測試人員的任何行為都會對公司造成損害。</li>
-                </ol>
-              </dd>
-              <dt>(3) 對於測試人員或任何第三方因上述第(1)和(2)款規定的暫停或終止測試規定而遭受的任何損害，公司概不負責。 </dt>
-            </div>
-            <div class="section">
-              <dt>十一、損害賠償 </dt>
-              <dd>如果公司因測試人員的行為而遭受任何損害，測試人員應賠償公司。</dd>
-            </div>
-            <div class="section">
-              <dt>十二、測試的修改、暫停、中止或終止</dt>
+              <dt>第九條　暫停或終止提供測試</dt>
+              <dt>．在以下情況下，公司可自行決定暫停或終止提供測試，恕不另行通知或要求測試人員：</dt>
               <dd>
                 <ol>
-                  <li>公司可以在事先通知後修改，暫停，中止或終止測試的全部或任何部分。</li>
-                  <li>儘管有前款規定，如果由於緊急原因而不可避免地，公司可以修改，暫停或終止測試，恕不另行通知。</li>
-                  <li>對於測試人員或任何第三方因公司根據本第12條採取的任何行為而遭受的任何損害，公司概不負責。</li>
+                  <li>測試人員違反或涉嫌違反本使用條款;</li>
+                  <li>根據測試的目的，本公司認為測試人員之任何行為有不適當時; </li>
+                  <li>其他本公司認為有必要之情形。</li>
                 </ol>
+              </dd>
+              <dt>．對於測試人員或任何第三方因前項規定的暫停或終止測試規定而遭受的任何損害，本公司概不負責，測試人員同意不得據此對本公司為任何法律上主張/請求。</dt>
+            </div>
+            <div class="section">
+              <dt>第十條 不可轉讓</dt>
+              <dd>未經本公司同意，測試人員不得將其與測試和本使用條款有關的全部或任何部分權利和義務轉讓給任何第三方或被任何第三方繼承。 </dd>
+            </div>
+            <div class="section">
+              <dt>第十一條 通知</dt>
+              <dd>本公司向測試人員發出的通知可以在限量菁英刪檔封測招募活動官方網站(包含但不限於網頁的NEWS、FB粉絲團等)上發佈，並且任何發出的通知在可訪問時，視為已送達。</dd>
+            </div>
+            <div class="section">
+              <dt>第十二條 修改</dt>
+              <dd>
+                本公司得在未經測試人員同意的情況下修改這些使用條款。對本使用條款的任何修改應按照第十五條規定的方式通知測試人員，並在通知後生效並適用於測試人員。 
               </dd>
             </div>
             <div class="section">
-              <dt>十三、不可轉讓</dt>
-              <dd>未經本公司明確同意，測試人員不得將其與測試和本使用條款有關的全部或任何部分權利和義務轉讓給任何第三方或已被任何第三方繼承。</dd>
-            </div>
-            <div class="section">
-              <dt>十四、準據法</dt>
-              <dd>測試和本使用條款應受日本法律管轄。</dd>
-            </div>
-            <div class="section">
-              <dt>十五、衝突解決</dt>
-              <dd>
-                如果測試人員與本公司之間就測試發生任何衝突，雙方應努力通過善意的討論來解決此類衝突。如果雙方通過討論無法達成協議，並且任何一方提起訴訟，則雙方同意對該訴訟的一審由東京地方法院專屬管轄。</dd>
-            </div>
-            <div class="section">
-              <dt>十六、通知</dt>
-              <dd>公司向測試人員發出的通知可以在限量菁英刪檔封測招募活動頁上NEWS上發佈，並且任何如此發出的通知應在可訪問時視為已發送給測試人員。</dd>
-            </div>
-            <div class="section">
-              <dt>十七、可分割性</dt>
-              <dd>如果本使用條款的任何規定因任何原因被認定為無效，則此類無效不應影響本使用條款其餘規定的有效性。</dd>
-            </div>
-            <div class="section">
-              <dt>十八、修改</dt>
-              <dd>公司可以在未經測試人員同意的情況下修改這些使用條款。對本使用條款的任何修改應按照第16條規定的方式通知測試人員，並在通知後生效並適用於測試人員。</dd>
-            </div>
-            <div class="section">
-              <dd>成立時間：2022年1月13日 </dd>
+              <dt>第十三條 終止</dt>
+              <dd>本服務條款於測試期間屆滿時自動終止。</dd>
+              <dd>對於測試因測試期間屆滿而終止，測試人員同意不得據此對本公司為任何法律上主張/請求。</dd>
             </div>
 
           </dl>
